@@ -1,0 +1,23 @@
+{
+  "name": "gulplman",
+  "version": "1.0.0",
+  "description": "internet shop @ gulp, pug, sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reutovsky/gulplman.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reutovsky/gulplman/issues"
+  },
+  "homepage": "https://github.com/Reutovsky/gulplman#readme",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0"
+  }
+}
