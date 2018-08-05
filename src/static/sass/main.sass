@@ -8,6 +8,26 @@
   margin-left: auto
   margin-right: auto
 
+@media (max-width: 1240px)
+  .container
+    width: 720px
+    padding-left: 15px
+    padding-right: 15px
+    margin-left: auto
+    margin-right: auto
+
+.header 
+  width: 100%
+
+
+@media (max-width: 1240px)
+  .header
+    width: 720px
+    padding-left: 15px
+    padding-right: 15px
+    margin-left: auto
+    margin-right: auto
+
 .header-wrapper
   display: grid
   grid-template-columns: auto 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px auto
@@ -15,12 +35,24 @@
   grid-template-areas: "ws1 cy cy cy cy pe pe pe te te te te pm pm pm pm pm ln ln ln ln ws2" "ws3 lo lo lo lo lo sh sh sh sh sh sh sh sh os os os os os os os ws4" "ws5 cg cg cg cg cg cg cg cs cs cs cs cs cs cs cs cs cs cs cs cs ws6"
   box-sizing: border-box
 
+@media (max-width: 1240px)
+  .header-wrapper
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 40px 60px 90px 45px
+    box-sizing: border-box
+    grid-template-areas: "cy cy cy pe pe pe te te te te pm pm" "sh sh sh sh sh sh sh sh ln ln ln ln" "lo lo lo lo lo os os os os os os os" "cg cg cg cg cs cs cs cs cs cs cs cs"
+
 .header-city
   grid-area: cy
 
 .header-phone
   grid-area: pe
   margin-left: -30px
+
+@media (max-width: 1240px)
+  .header-phone
+    margin-left: 0
 
 .header-time
   grid-area: te
@@ -70,6 +102,10 @@
   grid-area: ws6
   border-bottom: #e1e2e8 1px solid
 
+@media (max-width: 1240px)
+  .header__whitespace1, .header__whitespace2, .header__whitespace3, .header__whitespace4, .header__whitespace5, .header__whitespace6
+    display: none
+
 .header-city, .header-phone, .header-time, .header-problem, .header-login, .header-logo, .header-search, .header-options, .header-catalog, .header-conditions
   display: flex
   flex-flow: row nowrap
@@ -77,18 +113,30 @@
   font-size: 14px
   border-bottom: #e1e2e8 1px solid
 
+@media (max-width: 1240px)
+  .header-city, .header-phone, .header-time, .header-problem
+    border: none
+
+@media (max-width: 1240px)
+  .header-city, .header-phone, .header-time, .header-problem, .header-login, .header-logo, .header-search, .header-options, .header-catalog, .header-conditions
+    font-size: 13px
+
 .header-city__image-arrow
   width: 15px
 
+@media (max-width: 1240px)
+  .header-city__image-arrow
+    width: 12px
+
 .header-city__title-city
   font-weight: 400
-  padding-left: 10px
+  padding-left: 8px
 
 .header-city__link-chosen-city
   font-weight: 400
   text-decoration: underline
   color: #afafaf
-  padding-left: 10px
+  padding-left: 8px
 
 .header-phone__image-phone
   width: 15px
@@ -107,8 +155,18 @@
 .header-time
   margin-left: -30px
 
+@media (max-width: 1240px)
+  .header-time
+    margin-left: -20px
+
 .header-problem
   padding-left: 25px
+
+@media (max-width: 1240px)
+  .header-problem
+    display: flex
+    justify-content: flex-end
+    margin-left: -20px;
 
 .header-problem__link-dont-call
   color: #f7bb03
@@ -133,8 +191,16 @@
 .header-logo__image-logo
   width: 300px
 
+@media (max-width: 1240px)
+  .header-logo__image-logo
+    width: 275px
+
 .header-search
   padding-left: 35px
+
+@media (max-width: 1240px)
+  .header-search
+    padding-left: 0
 
 .header-search__input-search
   width: 425px
@@ -149,6 +215,11 @@
   background-repeat: no-repeat
   background-size: 50px 15px
   background-position: 5px 12px
+
+@media (max-width: 1240px)
+  .header-search__input-search
+    width: 470px
+    line-height: 35px
 
 .header-options
   display: flex
@@ -186,6 +257,15 @@
   outline: 0
   border: none
 
+@media (max-width: 1240px)
+  .header-catalog__button
+    width: 220px
+    height: 45px
+    background-image: url(../images/icon/svg/menu.svg)
+    background-repeat: no-repeat
+    background-size: 27px 20px
+    background-position: 20px 11px
+
 .header-conditions
   color: #6b6b6b
   display: flex
@@ -201,6 +281,11 @@
     &:last-child
       padding-right: 0
 
+@media (max-width: 1240px)
+  .header-conditions
+    > a
+      padding: 25px
+
 .header-bottomline-clicked
   background: #f7f8f6
 
@@ -210,6 +295,12 @@
   background-repeat: no-repeat
   background-size: 100px 30px
   background-position: 10px 10px
+
+@media (max-width: 1240px)
+  .header-catalog-button-clicked
+    background-repeat: no-repeat
+    background-size: 27px 20px
+    background-position: 20px 11px
 
 /* MENU STYLES + HEADER START
 
