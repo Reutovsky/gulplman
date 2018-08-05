@@ -22,7 +22,7 @@ gulp.task('pug', function() {
 });
 
 gulp.task('sass', function() {
-    return gulp.src('src/static/sass/main.sass')
+    return gulp.src('src/static/sass/**/*.sass')
         .pipe(gp.sourcemaps.init())
         .pipe(gp.sass({}))
         .pipe(gp.autoprefixer({

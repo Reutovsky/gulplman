@@ -1,15 +1,23 @@
 doctype html
-html(lang="ru-RU")
-head
-    link(rel="stylesheet", href="styles/main.css")
-    title Leatherman
-body
-    .container
-        p всем привет6
-        p всем привет6
-        p всем привет6
-        p всем привет6
-
-.one
-.two
-
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(http-equiv='X-UA-Compatible', content='ie=edge')
+		link(rel='stylesheet', href='styles/normalize.css')
+		link(rel='stylesheet', href='styles/fonts.css')
+		link(rel='stylesheet', href='styles/main.css')
+		title Lman
+	body
+		include modules/header
+		include modules/header-banner
+		include modules/multitools
+		include modules/novelties-wrapper-white
+		include modules/novelties-wrapper-grey
+		include modules/blog-wrapper
+		include modules/prefooter
+		include modules/helpful
+		include modules/footer
+		include modules/copyright
+		script(src='scripts/jquery331dev.js')
+		script(src='scripts/main.js')
