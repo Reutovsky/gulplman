@@ -285,6 +285,8 @@
   .header-conditions
     > a
       padding: 25px
+      &:last-child
+        padding-right: 2px
 
 .header-bottomline-clicked
   background: #f7f8f6
@@ -313,8 +315,14 @@
   background-color: #f7f8fb
   display: none
 
+@media (max-width: 1240px)
+  .menu
+    width: 720px
+    margin-left: auto
+    margin-right: auto
+
 .menu-visible
-  display: block
+  display: grid
   animation-name: fadeOut
   animation-duration: 0.3s
   animation-duration: alternate
@@ -332,6 +340,14 @@
   grid-template-rows: 100px 175px 200px 40px
   grid-template-areas: "eg1 mt bt ct kt pt at eg2" "eg3 mi bi ci ki pi ai eg4" "eg5 ml bl cl kl pl al eg6"
   grid-gap: 8px
+
+@media (max-width: 1240px)
+  .menu-wrapper-grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 50px 175px 120px 50px 175px 150px
+    grid-template-areas: "mt bt ct" "mi bi ci" "ml bl cl" "kt pt at" "ki pi ai" "kl pl al"
+ 
 
 .menu__wrapper-multitool-title
   grid-area: mt
@@ -405,12 +421,6 @@
 .empty-grey6
   grid-area: eg6
 
-.empty-darkgrey1
-  grid-area: ed1
-
-.empty-darkgrey2
-  grid-area: ed2
-
 .menu__close
   display: flex
   justify-content: center
@@ -430,10 +440,22 @@
   background-position: 140px 8px
   padding-left: 20px
 
+@media (max-width: 1240px)
+  .menu__close-button
+    font-size: 14px
+    background-size: 20px 20px
+    background-position: 130px 10px
+
 .menu__wrapper-title
   font-size: 16px
   font-weight: 500
   padding-top: 40px
+
+@media (max-width: 1240px)
+  .menu__wrapper-title
+    font-size: 14px
+    padding-top: 20px
+    padding-left: 10px
 
 .menu__wrapper-multitool-links > a, .menu__wrapper-bracelet-links > a, .menu__wrapper-clock-links > a, .menu__wrapper-knife-links > a, .menu__wrapper-pockettool-links > a, .menu__wrapper-accessory-links > a
   display: block
@@ -443,8 +465,17 @@
   font-weight: 400
   color: black
 
+@media (max-width: 1240px)
+  .menu__wrapper-multitool-links > a, .menu__wrapper-bracelet-links > a, .menu__wrapper-clock-links > a, .menu__wrapper-knife-links > a, .menu__wrapper-pockettool-links > a, .menu__wrapper-accessory-links > a
+    padding-bottom: 10px
+    padding-left: 10px
+
 .menu__wrapper-multitool-links > a:first-child, .menu__wrapper-bracelet-links > a:first-child, .menu__wrapper-clock-links > a:first-child, .menu__wrapper-knife-links > a:first-child, .menu__wrapper-pockettool-links > a:first-child, .menu__wrapper-accessory-links > a:first-child
   padding-top: 40px
+
+@media (max-width: 1240px)
+  .menu__wrapper-multitool-links > a:first-child, .menu__wrapper-bracelet-links > a:first-child, .menu__wrapper-clock-links > a:first-child, .menu__wrapper-knife-links > a:first-child, .menu__wrapper-pockettool-links > a:first-child, .menu__wrapper-accessory-links > a:first-child
+    padding-top: 5px
 
 .menu__wrapper-multitool-links > a:hover, .menu__wrapper-bracelet-links > a:hover, .menu__wrapper-clock-links > a:hover, .menu__wrapper-knife-links > a:hover, .menu__wrapper-pockettool-links > a:hover, .menu__wrapper-accessory-links > a:hover
   font-weight: 700
@@ -454,13 +485,21 @@
 .menu__image
   width: 150px
 
+@media (max-width: 1240px)
+  .menu__image
+    padding-left: 10px
+
 /* //MENU STYLES + HEADER END
 
 .banner
   margin-top: 20px
 
-.banner__imager-banner
-  width: 100%
+.banner__image-banner
+  width: 1240px
+
+@media (max-width: 1240px)
+  .banner__image-banner
+    width: 720px
 
 .multitools
   padding-bottom: 45px;
@@ -471,6 +510,13 @@
   grid-template-columns: repeat(5, 1fr)
   grid-template-rows: 100px 125px
   grid-template-areas: "ll ll ll ll ll" "dr wy sg fg at"
+
+@media (max-width: 1240px)
+  .multitool-wrapper
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 100px 100px 100px
+    grid-template-areas: "ll ll ll ll ll ll ll ll ll ll ll ll" "dr dr dr dr wy wy wy wy sg sg sg sg" ". . fg fg fg fg at at at at . ."
 
 .multitool__label
   grid-area: ll
@@ -488,6 +534,10 @@
   flex-flow: column nowrap
   justify-content: flex-end
   line-height: 40px
+
+@media (max-width: 1240px)
+  .multitool__dealer, .multitool__warranty, .multitool__shipping, .multitool__freeshipping, .multitool__alltypes-payment
+    justify-self: center
 
 .multitool__warranty
   grid-area: wy
@@ -821,18 +871,36 @@
   background: #f6f7f9
   padding-bottom: 100px
 
+@media (max-width: 1240px)
+  .prefooter
+    padding-bottom: 80px
+    padding-top: 20px
+
 .prefooter__title
   font-size: 24px
   font-weight: 900
   color: #c1c1c1
   text-transform: uppercase
-  padding-top: 70px
+
+@media (max-width: 1240px)
+  .prefooter__title
+    font-size: 22px
 
 .prefooter__text
   color: #3f3f40
   font-size: 13px
   font-weight: 300
-  padding-top: 25px
+  padding-top: 10px
+
+@media (max-width: 1240px)
+  .prefooter__text
+    font-size: 12px
+    padding-top: 20px
+
+@media (max-width: 1240px)
+  .prefooter > .container > p 
+    &:last-child
+      padding-top: 10px
 
 .helpful
   background: #f7bb03
@@ -1026,9 +1094,18 @@
   background-repeat: no-repeat
   background-position: center center
 
+@media (max-width: 1240px)
+  .error__image-container
+    width: 200px
+    height: 100px
+    background-image: url(../images/logo404.jpg)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 200px 80px
+
 .error-container-flex
   display: flex
-  flex-flow: row wrap
+  flex-flow: row nowrap
   justify-content: flex-start
   align-items: center
 
@@ -1038,14 +1115,26 @@
     padding-top: 0
     margin-top: 0
 
+@media (max-width: 1240px)
+  .error__notfound
+    padding-left: 30px
+
 .error__title
   font-weight: bold
   font-size: 16px
+
+@media (max-width: 1240px)
+  .error__title
+    font-size: 15px
 
 .error__text
   font-weight: 400
   font-size: 14px
   margin-top: 30px
+
+@media (max-width: 1240px)
+  .error__text
+    font-size: 13px
 
 .error__link-button
   width: 180px
@@ -1062,6 +1151,12 @@
   &:hover
     background-color: #f7bb03
     color: #fff
+
+@media (max-width: 1240px)
+  .error__link-button
+    width: 150px
+    height: 40px
+    font-size: 13px
 
 .error__link
   text-decoration: none
