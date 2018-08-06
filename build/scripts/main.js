@@ -25,4 +25,5 @@ $(document).ready(function(){
         $hs.removeClass('header-bottomline-clicked');
         $butt.removeClass('header-catalog-button-clicked');
     });
+
 });

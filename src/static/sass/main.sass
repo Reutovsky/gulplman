@@ -1,3 +1,5 @@
+@import modules/module-error
+
 *, body, html
   font-family: "OpenSans", sans-serif
 
@@ -16,15 +18,27 @@
     margin-left: auto
     margin-right: auto
 
-.header 
-  width: 100%
-
+@media (max-width: 740px)
+    .container
+      width: 320px
+      margin-left: auto
+      margin-right: auto
+      padding-left: 0
+      padding-right: 0
 
 @media (max-width: 1240px)
   .header
     width: 720px
     padding-left: 15px
     padding-right: 15px
+    margin-left: auto
+    margin-right: auto
+
+@media (max-width: 740px)
+  .header
+    width: 320px
+    padding-left: 0
+    padding-right: 0
     margin-left: auto
     margin-right: auto
 
@@ -40,8 +54,58 @@
     display: grid
     grid-template-columns: repeat(12, 1fr)
     grid-template-rows: 40px 60px 90px 45px
-    box-sizing: border-box
     grid-template-areas: "cy cy cy pe pe pe te te te te pm pm" "sh sh sh sh sh sh sh sh ln ln ln ln" "lo lo lo lo lo os os os os os os os" "cg cg cg cg cs cs cs cs cs cs cs cs"
+    box-sizing: border-box
+
+@media (max-width: 740px)
+  .header-wrapper
+    display: grid
+    grid-template-columns: 188px 132px
+    grid-template-rows: 45px 90px 60px
+    grid-template-areas: "cg bw" "lo lo" "sh sh"
+    margin-left: auto
+    margin-right: auto
+    box-sizing: border-box
+
+.header__buttons__shadow-wrapper
+  display: none
+
+@media (max-width: 740px)
+  .header__buttons__shadow-wrapper
+    grid-area: bw
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    box-sizing: border-box
+
+.header__shadow_basket, .header__shadow_avatar, .header__shadow_question
+  width: 44px
+  height: 45px
+  background: transparent
+  cursor: pointer
+  outline: none
+  border: none
+  border-bottom: #e3e5ea 1px solid
+  border-right: #e3e5ea 1px solid
+
+.header__shadow_basket
+  background-image: url(../images/icon/svg/shopping-cart.svg)
+  background-repeat: no-repeat
+  background-size: 20px 20px
+  background-position: 10px 10px
+
+.header__shadow_avatar
+  background-image: url(../images/icon/svg/avatar.svg)
+  background-repeat: no-repeat
+  background-size: 20px 20px
+  background-position: 10px 10px
+
+.header__shadow_question
+  background-image: url(../images/icon/svg/question.svg)
+  background-repeat: no-repeat
+  background-size: 20px 20px
+  background-position: 10px 10px
 
 .header-city
   grid-area: cy
@@ -191,6 +255,10 @@
 .header-logo__image-logo
   width: 300px
 
+@media (max-width: 740px)
+  .header-logo
+    border-bottom: none
+
 @media (max-width: 1240px)
   .header-logo__image-logo
     width: 275px
@@ -220,6 +288,12 @@
   .header-search__input-search
     width: 470px
     line-height: 35px
+
+@media (max-width: 740px)
+  .header-search__input-search
+    width: 290px
+    line-height: 35px
+    margin-bottom: 25px
 
 .header-options
   display: flex
@@ -266,6 +340,16 @@
     background-size: 27px 20px
     background-position: 20px 11px
 
+@media (max-width: 740px)
+  .header-catalog__button
+    width: 188px
+    height: 45px
+    background-image: url(../images/icon/svg/menu.svg)
+    background-repeat: no-repeat
+    background-size: 27px 20px
+    background-position: 10px 11px
+    font-size: 13px
+
 .header-conditions
   color: #6b6b6b
   display: flex
@@ -304,6 +388,22 @@
     background-size: 27px 20px
     background-position: 20px 11px
 
+@media (max-width: 740px)
+  .header-catalog-button-clicked
+    background-image: url(../images/icon/svg/menu.svg)
+    background-repeat: no-repeat
+    background-size: 27px 20px
+    background-position: 10px 11px
+    font-size: 13px
+
+// HIDE 320PX SOME ELEMENTS FROM HEADER
+
+@media (max-width: 740px)
+  .header__whitespace1, .header__whitespace2, .header__whitespace3, .header__whitespace4, .header__whitespace5, .header__whitespace6, .header-city, .header-city__image-arrow, .header-city__title-city, .header-city__link-chosen-city, .header-phone, .header-time, .header-time__image-clock, .header-time__span-time, .header-problem, .header-problem__link-dont-call, .header-login__image-avatar, .header-login__link-singin, header-login__link-reg, .header-login, .header-options, .header-options__link-favorites, .header-options__link-compare, .header-options__link-basket, .header-options__image-favorites, .header-options__image-compare, .header-options__image-basket, .header-conditions
+    display: none
+
+  
+
 /* MENU STYLES + HEADER START
 
 .header
@@ -321,6 +421,14 @@
     margin-left: auto
     margin-right: auto
 
+@media (max-width: 740px)
+  .menu
+    width: 320px
+    margin-left: auto
+    margin-right: auto
+    margin-top: -150px;
+    padding-top: 30px
+
 .menu-visible
   display: grid
   animation-name: fadeOut
@@ -332,7 +440,6 @@
     opacity: 0
   100%
     opacity: 1
-
 
 .menu-wrapper-grid
   display: grid
@@ -347,8 +454,16 @@
     grid-template-columns: repeat(3, 1fr)
     grid-template-rows: 50px 175px 120px 50px 175px 150px
     grid-template-areas: "mt bt ct" "mi bi ci" "ml bl cl" "kt pt at" "ki pi ai" "kl pl al"
- 
 
+@media (max-width: 740px)
+  .menu-wrapper-grid
+    display: grid
+    grid-template-columns: 160px 160px
+    grid-template-rows: 50px 150px 50px 150px 50px 150px 50px 150px 50px 150px 50px 200px
+    grid-template-areas: "mi mt" "mi ml" "bi bt" "bi bl" "ci ct" "ci cl" "ki kt" "ki kl" "pi pt" "pi pl" "ai at" "ai al"
+    grid-gap: 0px
+        
+    
 .menu__wrapper-multitool-title
   grid-area: mt
 
@@ -457,6 +572,10 @@
     padding-top: 20px
     padding-left: 10px
 
+@media (max-width: 740px)
+  .menu__wrapper-title
+    padding-top: 15px
+
 .menu__wrapper-multitool-links > a, .menu__wrapper-bracelet-links > a, .menu__wrapper-clock-links > a, .menu__wrapper-knife-links > a, .menu__wrapper-pockettool-links > a, .menu__wrapper-accessory-links > a
   display: block
   text-decoration: none
@@ -482,6 +601,12 @@
   text-decoration: underline
   color: black
 
+@media (max-width: 740px)
+  .menu__wrapper-multitool-links > a, .menu__wrapper-bracelet-links > a, .menu__wrapper-clock-links > a, .menu__wrapper-knife-links > a, .menu__wrapper-pockettool-links > a, .menu__wrapper-accessory-links > a
+    font-size: 12px
+  .menu__wrapper-pockettool-links
+    padding-top: 10px
+
 .menu__image
   width: 150px
 
@@ -489,10 +614,31 @@
   .menu__image
     padding-left: 10px
 
+@media (max-width: 740px)
+  .menu__image
+    padding-left: 10px
+    padding-top: 20px
+
+@media (max-width: 740px)
+  .menu__empty-grey1, .menu__empty-grey2, .menu__empty-grey3, .menu__empty-grey4, .menu__empty-grey5, .menu__empty-grey6
+    display: none
+
+@media (max-width: 740px)
+  .menu__wrapper-multitool-image, .menu__wrapper-multitool-links, .menu__wrapper-bracelet-image, .menu__wrapper-bracelet-links, .menu__wrapper-clock-image, .menu__wrapper-clock-links, .menu__wrapper-knife-image, .menu__wrapper-knife-links, .menu__wrapper-pockettool-image, .menu__wrapper-pockettool-links
+    border-bottom: #e9ebf0 1px solid
 /* //MENU STYLES + HEADER END
 
 .banner
   margin-top: 20px
+
+@media (max-width: 740px)
+  .banner
+    width: 320px
+    height: 350px
+    background-image: url(../images/banner_big.jpg)
+    background-repeat: no-repeat
+    background-size: 800px 400px
+    background-position: center
 
 .banner__image-banner
   width: 1240px
@@ -500,6 +646,10 @@
 @media (max-width: 1240px)
   .banner__image-banner
     width: 720px
+
+@media (max-width: 740px)
+  .banner__image-banner
+    display: none
 
 .multitools
   padding-bottom: 45px;
@@ -518,6 +668,13 @@
     grid-template-rows: 100px 100px 100px
     grid-template-areas: "ll ll ll ll ll ll ll ll ll ll ll ll" "dr dr dr dr wy wy wy wy sg sg sg sg" ". . fg fg fg fg at at at at . ."
 
+@media (max-width: 740px)
+  .multitool-wrapper
+    display: grid
+    grid-template-columns: 100px 220px
+    grid-template-rows: 140px 60px 60px 60px 60px 60px
+    grid-template-areas: "ll ll" "dr dr" "wy wy" "sg sg" "fg fg" "at at"
+
 .multitool__label
   grid-area: ll
   color: #000
@@ -527,6 +684,12 @@
   flex-flow: row wrap
   justify-content: center
   align-items: center
+
+@media (max-width: 740px)
+  .multitool__label
+    grid-area: ll
+    text-align: center
+    padding-top: 20px
 
 .multitool__dealer
   grid-area: dr
@@ -571,9 +734,21 @@
   align-items: flex-end
   line-height: 40px
 
+@media (max-width: 740px)
+  .multitool__dealer, .multitool__warranty, .multitool__shipping, .multitool__freeshipping, .multitool__alltypes-payment
+    display: flex
+    flex-flow: row nowrap
+    justify-self: start
+    align-items: center
+    padding-left: 15px
+
 .multitool__dealer-image-handshake
   width: 45px
   margin-left: 60px
+
+@media (max-width: 740px)
+  .multitool__dealer-image-handshake
+    margin-left: 0
 
 .multitool__warranty-image-warranty
   width: 45px
@@ -587,6 +762,35 @@
 .multitool__alltypes-payment-image-wallet
   width: 40px
   margin-right: 80px
+
+@media (max-width: 740px)
+  .multitool__alltypes-payment-image-wallet
+    margin-right: 0
+
+@media (max-width: 740px)
+  .multitool__dealer-label
+    padding-left: 40px
+    font-size: 15px
+
+@media (max-width: 740px)
+  .multitool__warranty-label
+    padding-left: 40px
+    font-size: 15px
+
+@media (max-width: 740px)
+  .multitool__shipping-label
+    padding-left: 45px
+    font-size: 15px
+
+@media (max-width: 740px)
+  .multitool__freeshipping-label
+    padding-left: 28px
+    font-size: 15px
+
+@media (max-width: 740px)
+  .multitool__alltypes-payment-label
+    padding-left: 44px
+    font-size: 15px
 
 .novelties-wrapper-white
   padding-bottom: 65px
@@ -876,6 +1080,10 @@
     padding-bottom: 80px
     padding-top: 20px
 
+@media (max-width: 740px)
+  .prefooter
+    padding-bottom: 40px
+
 .prefooter__title
   font-size: 24px
   font-weight: 900
@@ -885,6 +1093,12 @@
 @media (max-width: 1240px)
   .prefooter__title
     font-size: 22px
+
+@media (max-width: 740px)
+  .prefooter__title
+    font-size: 22px
+    padding-left: 15px
+    padding-right: 15px
 
 .prefooter__text
   color: #3f3f40
@@ -897,6 +1111,12 @@
     font-size: 12px
     padding-top: 20px
 
+@media (max-width: 740px)
+  .prefooter__text
+    font-size: 12px
+    padding-left: 15px
+    padding-right: 15px
+
 @media (max-width: 1240px)
   .prefooter > .container > p 
     &:last-child
@@ -906,11 +1126,27 @@
   background: #f7bb03
   line-height: 36px
 
+@media (max-width: 740px)
+  .helpful
+    line-height: 20px
+
 .helpful__container-flex
   display: flex
-  flex-flow: row wrap
+  flex-flow: row nowrap
   align-items: center
   justify-content: space-between
+
+@media (max-width: 1240px)
+  .helpful__container-flex
+    display: flex
+    flex-flow: column nowrap
+
+@media (max-width: 740px)
+  .helpful__container-flex
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+
 
 .helpful__container-imagetext
   display: flex
@@ -918,15 +1154,35 @@
   justify-content: flex-start
   align-items: center
 
+@media (max-width: 740px)
+  .helpful__container-imagetext
+    display: flex
+    flex-flow: column nowrap
+
 .helpful__container-inputbutton
   display: flex
-  flex-flow: row wrap
+  flex-flow: row nowrap
   justify-content: flex-end
   align-items: center
+
+@media (max-width: 1240px)
+  .helpful__container-inputbutton
+    height: 68px
+
+@media (max-width: 740px)
+  .helpful__container-inputbutton
+    display: flex
+    flex-flow: column nowrap
+    height: 120px
+    justify-content: space-around
 
 .helpful__image-envelope
   width: 30px
   margin-top: 10px
+
+@media (max-width: 740px)
+  .helpful__image-envelope
+    margin-top: 20px
 
 .helpful__text
   color: #fff
@@ -947,6 +1203,12 @@
   z-index: 10
   margin-right: -35px
 
+@media (max-width: 740px)
+  .helpful__input-email
+    line-height: 35px
+    width: 290px
+    margin-right: 0
+
 .helpful__button-join
   border: none
   border-radius: 20px
@@ -964,6 +1226,22 @@
   display: flex
   padding-left: 22px
 
+@media (max-width: 745px)
+  .helpful__button-join
+    line-height: 35px
+    width: 175px
+    padding-left: 20px
+    background-image: url(../images/icon/png/right-arrow.png)
+    background-repeat: no-repeat
+    background-position: 135px 13px
+    font-size: 12px
+    font-weight: 900
+
+@media (max-width: 740px)
+  .helpful__container-text
+    text-align: center
+  .helpful__container-button
+    
 /* FOOTER
 
 .footer__wrapper-grid
@@ -974,6 +1252,14 @@
   margin-top: 35px
   grid-gap: 5px
 
+@media (max-width: 1240px)
+  .footer__wrapper-grid
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 100px 70px 200px
+    grid-template-areas: "cl  cl  cl  cl  cl  cp  cp  cp  cp  cs  cs  cs" "ctc ctc ctc cti cti cti cti ctb ctb ctb cta cta" "cc  cc  cc  ci  ci  ci  ci  cb  cb  cb  ca  ca"
+    grid-gap: 0px
+
 .footer__container-logo
   grid-area: cl
   background-image: url(../images/logo_leatherman.png)
@@ -981,36 +1267,94 @@
   background-repeat: no-repeat
   background-position: 0px -14px
 
+@media (max-width: 1240px)
+  .footer__container-logo
+    background-image: url(../images/logo_leatherman.png)
+    background-size: 275px
+    background-repeat: no-repeat
+    background-position: 0px 10px 
+
 .footer__container-phone
   grid-area: cp
 
+@media (max-width: 1240px)
+  .footer__container-phone
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 12px
+
 .footer__container-socials
   grid-area: cs
+
+@media (max-width: 1240px)
+  .footer__container-logo, .footer__container-phone, .footer__container-socials
+    border-bottom: #eaebef 1px solid
+
+@media (max-width: 1240px)
+  .footer__container-socials
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    justify-content: center
 
 .footer__container-title-catalog
   grid-area: ctc
   margin-left: 35px
 
+@media (max-width: 1240px)
+  .footer__container-title-catalog
+    margin-left: 0px
+    padding-top: 20px
+    font-size: 15px
+
 .footer__container-title-info
   grid-area: cti
   margin-left: 30px
 
+@media (max-width: 1240px)
+  .footer__container-title-info
+    margin-left: 0
+    padding-top: 20px
+    font-size: 15px
+
 .footer__container-title-buyer
   grid-area: ctb
 
+@media (max-width: 1240px)
+  .footer__container-title-buyer
+    font-size: 15px
+    padding-top: 20px
+
 .footer__container-title-acceptforpay
   grid-area: cta
+
+@media (max-width: 1240px)
+  .footer__container-title-acceptforpay
+    padding-top: 20px
 
 .footer__container-catalog
   grid-area: cc
   margin-left: 35px
 
+@media (max-width: 1240px)
+  .footer__container-catalog
+    margin-left: 0
+
 .footer__container-info
   grid-area: ci
   margin-left: 30px
 
+@media (max-width: 1240px)
+  .footer__container-info
+    margin-left: 0
+
 .footer__container-buyer
   grid-area: cb
+
+@media (max-width: 1240px)
+  .footer__container-catalog > a, .footer__container-info > a, .footer__container-buyer > a
+    font-size: 12px
 
 .footer__container-acceptforpay
   grid-area: ca
@@ -1018,10 +1362,19 @@
 .footer__phone-image
   width: 25px
 
+@media (max-width: 1240px)
+  .footer__phone-image
+    width: 20px
+
 .footer__phone-number
   padding-left: 15px
   font-weight: 900
   font-size: 24px
+
+@media (max-width: 1240px)
+  .footer__phone-number
+    padding-left: 10px
+    font-size: 22px
 
 .footer__phone-text
   color: #8d8d8d
@@ -1030,8 +1383,19 @@
   margin-left: 88px
   margin-top: 5px
 
+@media (max-width: 1240px)
+  .footer__phone-text
+    font-size: 12px
+    margin-left: 68px
+    margin-top: -30px
+
+
 .footer__socials-image
   width: 35px
+
+@media (max-width: 1240px)
+  .footer__socials-image
+    width: 30px
 
 .footer__container-socials > img
   padding-left: 8px
@@ -1054,11 +1418,10 @@
     font-weight: 700
     padding-left: 30px
 
-/* .footer__container-catalog,
- *.footer__container-info,
- *.footer__container-buyer {
- *    margin-top: -40px;
- *}
+@media (max-width: 1240px)
+  .footer__catalog-link
+    &:hover, &:first-child:hover
+      padding-left: 20px
 
 .footer__container-catalog > a, .footer__container-info > a, .footer__container-buyer > a
   padding: 20px 0 0 0
@@ -1069,98 +1432,73 @@
 .footer__image-acceptforpay
   margin-left: -5px
 
+@media (max-width: 1240px)
+  .footer__image-acceptforpay
+    width: 120px
+
 .footer
-  border-bottom: 2px solid #e5e7eb
+  border-bottom: 1px solid #e5e7eb
+
+.copyright-wrapper
+  width: auto
+  height: 40px
+  border-top: #dee0e6 1px solid
+@media (max-width: 740px)
+  .copyright-wrapper
+    height: 300px
+
+.copyright-container-grid
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: 20px 20px
+  grid-template-areas: "ct ct cs" "ct ct cs"
+  padding-top: 18px
+
+@media (max-width: 740px)
+  .copyright-container-grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 40px 40px
+    grid-template-areas: "ct ct ct" "cs cs cs"
 
 .copyright__text
-  line-height: 16px
+  grid-area: ct
+  justify-self: left
   color: #8d8d8d
   font-size: 11px
   text-transform: uppercase
-  text-align: center
+
+@media (max-width: 1240px)
+  .copyright__text
+    grid-area: ct
+    justify-self: left
+    font-size: 10px
+
+@media (max-width: 740px)
+  .copyright__text
+    grid-area: ct
+    justify-self: center
+    font-size: 10px
+    text-align: center
+    line-height: 15px
+
+.copyright__studio
+  grid-area: cs
+  justify-self: right
+  color: #8d8d8d
+  font-size: 11px
+
+@media (max-width: 1240px)
+  .copyright__studio
+    font-size: 10px
+    grid-area: cs
+
+@media (max-width: 740px)
+  .copyright__studio
+    font-size: 10px
+    grid-area: cs
+    justify-self: center
+    align-self: center
+
 
 /* // FOOTER
-
-/* ERROR.html
-
-.error-wrapper
-  padding-top: 80px
-  padding-bottom: 145px
-
-.error__image-container
-  width: 285px
-  height: 128px
-  background-image: url(../images/logo404.jpg)
-  background-repeat: no-repeat
-  background-position: center center
-
-@media (max-width: 1240px)
-  .error__image-container
-    width: 200px
-    height: 100px
-    background-image: url(../images/logo404.jpg)
-    background-repeat: no-repeat
-    background-position: center center
-    background-size: 200px 80px
-
-.error-container-flex
-  display: flex
-  flex-flow: row nowrap
-  justify-content: flex-start
-  align-items: center
-
-.error__notfound
-  padding-left: 65px
-  > p:first-child
-    padding-top: 0
-    margin-top: 0
-
-@media (max-width: 1240px)
-  .error__notfound
-    padding-left: 30px
-
-.error__title
-  font-weight: bold
-  font-size: 16px
-
-@media (max-width: 1240px)
-  .error__title
-    font-size: 15px
-
-.error__text
-  font-weight: 400
-  font-size: 14px
-  margin-top: 30px
-
-@media (max-width: 1240px)
-  .error__text
-    font-size: 13px
-
-.error__link-button
-  width: 180px
-  height: 50px
-  border: #f7bb03 1px solid
-  display: flex
-  justify-content: center
-  align-items: center
-  cursor: pointer
-  outline: none
-  font-size: 14px
-  font-weight: 500
-  text-decoration: none
-  &:hover
-    background-color: #f7bb03
-    color: #fff
-
-@media (max-width: 1240px)
-  .error__link-button
-    width: 150px
-    height: 40px
-    font-size: 13px
-
-.error__link
-  text-decoration: none
-  margin-top: 30px
-  display: block
-
-/* ERROR.END
