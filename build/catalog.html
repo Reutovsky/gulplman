@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Lman - Каталог</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="header__whitespace1"></div>
+        <div class="header-city"><img class="header-city__image-arrow" src="images/icon/svg/you-are-here.svg" alt="target"><span class="header-city__title-city">Ваш город:</span><a class="header-city__link-chosen-city" href="javascript: void(0);">Москва</a></div>
+        <div class="header-phone"><img class="header-phone__image-phone" src="images/icon/svg/phone-call.svg" alt="phone"><span class="header-phone__span-number">8 800 123-45-67</span></div>
+        <div class="header-time"><img class="header-time__image-clock" src="images/icon/svg/clock.svg" alt="clock"><span class="header-time__span-time">Без выходных с 9:00 до 21:00</span></div>
+        <div class="header-problem"><a class="header-problem__link-dont-call" href="javascript: void(0);">Не дозвонились?</a></div>
+        <div class="header-login"><img class="header-login__image-avatar" src="images/icon/svg/avatar.svg" alt="avatar"><a class="header-login__link-singin" href="javascript: void(0);">Вход</a>&nbsp; |  <a class="header-login__link-reg" href="javascript: void(0);">Регистрация</a></div>
+        <div class="header__whitespace2"></div>
+        <div class="header__whitespace3"></div>
+        <div class="header-logo"><a class="header-logo__link-logo" href="index.html"><img class="header-logo__image-logo" src="images/logo_leatherman.png" alt="logo"></a></div>
+        <div class="header-search">
+          <input class="header-search__input-search" type="text" placeholder="Поиск по разделам, названию или артикулу">
+        </div>
+        <div class="header-options"><a class="header-options__link-favorites" href="javascript: void(0);"><img class="header-options__image-favorites" src="images/icon/svg/heart.svg" alt="favorites">Избранное (0)</a><a class="header-options__link-compare" href="javascript: void(0);"><img class="header-options__image-compare" src="images/icon/png/bar-chart.png" alt="compare">Сравнение (12)</a><a class="header-options__link-basket" href="javascript: void(0);"><img class="header-options__image-basket" src="images/icon/svg/shopping-cart.svg" alt="basket">Корзина (5)</a></div>
+        <div class="header__whitespace4"></div>
+        <div class="header__whitespace5"></div>
+        <div class="header-catalog">
+          <button class="header-catalog__button" id="hcb">Каталог товаров</button>
+        </div>
+        <div class="header-conditions"><a class="header-conditions__link-delivery" href="javascript: void(0);">Условия доставки</a>|<a class="header-conditions__link-payment" href="javascript: void(0);">Условия оплаты</a>|<a class="header-conditions__link-exchange" href="javascript: void(0);">Обмен и возврат</a></div>
+        <div class="header__whitespace6"></div>
+        <div class="header__buttons__shadow-wrapper">
+          <button class="header__shadow_basket"></button>
+          <button class="header__shadow_avatar"></button>
+          <button class="header__shadow_question"></button>
+        </div>
+      </div>
+      <div class="menu" id="menu">
+        <div class="menu-wrapper-grid">
+          <div class="menu__empty-grey1"></div>
+          <div class="menu__empty-grey2"></div>
+          <div class="menu__empty-grey3"></div>
+          <div class="menu__empty-grey4"></div>
+          <div class="menu__empty-grey5"></div>
+          <div class="menu__empty-grey6"></div>
+          <div class="menu__wrapper-multitool-title menu__wrapper-title">Мультитулы</div>
+          <div class="menu__wrapper-multitool-image"><img class="menu__image" src="images/menu/menu__image-1.png" alt="image knife"></div>
+          <div class="menu__wrapper-multitool-links"><a class="menu__link" href="javascript: void(0);">Все мультитулы</a><a class="menu__link" href="javascript: void(0);">Полноразмерные</a><a class="menu__link" href="javascript: void(0);">Усиленные</a><a class="menu__link" href="javascript: void(0);">Брелоки</a></div>
+          <div class="menu__wrapper-bracelet-title menu__wrapper-title">Браслеты</div>
+          <div class="menu__wrapper-bracelet-image"><img class="menu__image" src="images/menu/menu__image-2.png" alt="image knife"></div>
+          <div class="menu__wrapper-bracelet-links"><a class="menu__link" href="javascript: void(0);">Все браслеты</a><a class="menu__link" href="javascript: void(0);">Широкие браслеты</a><a class="menu__link" href="javascript: void(0);">Узские браслеты</a><a class="menu__link" href="javascript: void(0);">Стальные браслеты</a></div>
+          <div class="menu__wrapper-clock-title menu__wrapper-title">Часы</div>
+          <div class="menu__wrapper-clock-image"><img class="menu__image" src="images/menu/menu__image-3.png" alt="image knife"></div>
+          <div class="menu__wrapper-clock-links"><a class="menu__link" href="javascript: void(0);">Все часы</a><a class="menu__link" href="javascript: void(0);">Стальные часы</a><a class="menu__link" href="javascript: void(0);">Черные часы</a></div>
+          <div class="menu__wrapper-knife-title menu__wrapper-title">Ножи</div>
+          <div class="menu__wrapper-knife-image"><img class="menu__image" src="images/menu/menu__image-4.png" alt="image knife"></div>
+          <div class="menu__wrapper-knife-links"><a class="menu__link" href="javascript: void(0);">Все ножи</a><a class="menu__link" href="javascript: void(0);">Полусеррейтор</a><a class="menu__link" href="javascript: void(0);">Прямой клинок</a></div>
+          <div class="menu__wrapper-pockettool-title menu__wrapper-title">Карманные инструменты</div>
+          <div class="menu__wrapper-pockettool-image"><img class="menu__image" src="images/menu/menu__image-5.png" alt="image knife"></div>
+          <div class="menu__wrapper-pockettool-links"><a class="menu__link" href="javascript: void(0);">Все инструменты</a><a class="menu__link" href="javascript: void(0);">Для оружия</a><a class="menu__link" href="javascript: void(0);">Для скейтборда</a><a class="menu__link" href="javascript: void(0);">Для сноуборда</a></div>
+          <div class="menu__wrapper-accessory-title menu__wrapper-title">Аксессуары</div>
+          <div class="menu__wrapper-accessory-image"><img class="menu__image" src="images/menu/menu__image-6.png" alt="image knife"></div>
+          <div class="menu__wrapper-accessory-links"><a class="menu__link" href="javascript: void(0);">Все аксессуары</a><a class="menu__link" href="javascript: void(0);">Кожаные чехлы</a><a class="menu__link" href="javascript: void(0);">Нейлоновые чехлы</a><a class="menu__link" href="javascript: void(0);">Дополнения / Запчасти</a><a class="menu__link" href="javascript: void(0);">Черные браслеты</a><a class="menu__link" href="javascript: void(0);">Для серфинга</a></div>
+        </div>
+        <div class="menu__close">
+          <buttom class="menu__close-button" id="hmc">Закрыть меню </buttom>
+        </div>
+      </div>
+    </header>
+    <div class="ordercall-overlay">
+      <div class="ordercall-form-container">
+        <div class="ordercall-container-button-close">
+          <button class="ordercall-button-close" id="ordercall-button-close"></button>
+        </div>
+        <form class="form-overcall" id="form-ordercall" name="form-ordercall">
+          <div class="ordercall-wrapper-flex">
+            <div class="ordercall-container-title">Заказать звонок</div>
+            <div class="ordercall-container-inputname">
+              <input class="form-ordercall__inputname" type="text" name="ordercall-name" placeholder="Имя">
+            </div>
+            <div class="ordercall-container-inputphone">
+              <input class="form-ordercall__inputphone" type="text" name="ordercall-phone" placeholder="Телефон">
+            </div>
+            <div class="ordercall-container-checkboxed">
+              <input class="ordercall-accept-label" id="ordercall-accept" type="checkbox" name="ordercall-accept" value="ordercall-accept" checked>
+              <label class="ordercall-accept-label" for="ordercall-accept">Согласен(на) обработку персональных данных</label>
+            </div>
+            <div class="ordercall-container-submit">
+              <input class="form-odercall__submit" type="submit" value="Заказать звонок">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="catalog__header-links-wrapper">
+      <div class="container">
+        <div class="catalog__header-links-container"><a class="catalog__header-links-link" href="javascript: void(0);">Главная</a><span class="catalog__header-links-unablespan">&nbsp;&nbsp;| Мультитулы</span></div>
+      </div>
+    </div>
+    <div class="catalog__bigtitle-wrapper">
+      <div class="container">
+        <div class="catalog__bigtitle-text">	Мультитулы Leatherman</div>
+        <div class="catalog__bigtitle-filter-wrapper">
+          <select class="catalog__bigtitle-select" name="bigtitle-select">
+            <option value="min">По цене min</option>
+            <option value="max">По цене max</option>
+          </select>
+          <button class="catalog__bigtitle-button-filter">Фильтр</button>
+        </div>
+      </div>
+    </div>
+    <div class="catalog__allpage-wrapper">
+      <div class="container">
+        <div class="catalog__bothsides-wrapper">
+          <aside class="catalog__menu-wrapper">
+            <div class="catalog__menu-container-type">
+              <p class="catalog__menu-link-opened">Все мультитулы</p><a class="catalog__menu-link" href="javascript: void(0);">Полноразмерные мультитулы</a><a class="catalog__menu-link" href="javascript: void(0);">Силовые мультитулы</a><a class="catalog__menu-link" href="javascript: void(0);">Мультитулы-брелоки</a><a class="catalog__menu-link" href="javascript: void(0);">Карманные инструменты</a>
+            </div>
+            <div class="catalog__menu-container-cost">
+              <div class="catalog__menu-cost-title">Цена</div><span class="catalog__menu-cost-span">от&nbsp;</span>
+              <input class="catalog__menu-cost-inputtextfrom" type="text" value="200"><span class="catalog__menu-cost-span">&nbsp;&nbsp;до&nbsp;</span>
+              <input class="catalog__menu-cost-inputtextto" type="text" value="400">
+            </div>
+            <div class="catalog__menu-container-model">
+              <div class="catalog-menu-model-title">Модель</div>
+              <select class="catalog__model-select" name="hero">
+                <option> </option>
+                <option value="m1">1</option>
+                <option value="m2">2</option>
+                <option value="m3">3</option>
+                <option value="m4">4</option>
+              </select>
+            </div>
+            <div class="catalog__menu-container-tools">
+              <div class="catalog-menu-tools-title">Инструменты</div>
+            </div>
+            <div class="catalog__menu-container-cover">
+              <div class="catalog-menu-cover-title">Чехол в комлекте</div>
+            </div>
+            <div class="catalog__menu-container-pack">
+              <div class="catalog-menu-pack-title">Упаковка</div>
+            </div>
+            <div class="catalog__menu-container-reset">
+              <input class="catalog__menu-inputreset" type="reset" value="Сбросить все фильтры">
+            </div>
+            <div class="catalog__menu-banner-small">
+              <div class="catalog__menu-banner-warranty"><span class="catalog__menu-banner-warranty-text">- 25 year - warranty</span></div>
+              <div class="catalog__menu-banner-title">we build products we love, and also stand by.</div><a class="catalog__menu-banner-link" href="javascript: void(0);">Подробнее</a>
+            </div>
+          </aside>
+          <main class="catalog__main-wrapper">
+            <div class="catalog__main-wrapper-grid">
+              <div class="catalog__sorting-wrapper"><span class="catalog__sorting-title">Сортировка:</span><span class="catalog__sorting-opened">Сначала популярные</span><a class="catalog__sorting-link" href="javascript: void(0);">Сначала функциональные</a><a class="catalog__sorting-link" href="javascript: void(0);">По цене</a><a class="catalog__sorting-link" href="javascript: void(0);">По массе</a><a class="catalog__sorting-link" href="javascript: void(0);">По размеру</a></div>
+              <div class="catalog__item1">
+                <div class="item-wrapper">
+                  <div class="item__quantity">
+                    <div class="item__quantity-container"><img class="item__quantity-image" src="images/icon/svg/tools.svg" alt="tools"><span class="item__quantity-span">17</span></div>
+                  </div>
+                  <div class="item__image"></div>
+                  <div class="item__bonus">
+                    <div class="item__bonus-container">Новинка</div>
+                  </div>
+                  <div class="item__about"><span class="item__about-text">Мультититул Leatherman Charge ALX, 18 функций, кожаный чехол</span></div>
+                  <div class="item__stars-and-reviews"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><a class="item__stars-and-reviews-link" href="javascript: void(0);">6 отзывов</a></div>
+                  <div class="item__price"><span class="item__price-span">3 900 Р</span><span class="item__price-span-underlined"></span></div>
+                  <div class="item__buttons">
+                    <button class="item__buttons-inbasket">В корзину</button>
+                    <button class="item__buttons-heart"></button>
+                    <button class="item__buttons-diagram"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item2">
+                <div class="item-wrapper">
+                  <div class="item__quantity">
+                    <div class="item__quantity-container"><img class="item__quantity-image" src="images/icon/svg/tools.svg" alt="tools"><span class="item__quantity-span">17</span></div>
+                  </div>
+                  <div class="item__image"></div>
+                  <div class="item__bonus">
+                    <div class="item__bonus-container">Новинка</div>
+                  </div>
+                  <div class="item__about"><span class="item__about-text">Мультититул Leatherman Charge ALX, 18 функций, кожаный чехол</span></div>
+                  <div class="item__stars-and-reviews"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><a class="item__stars-and-reviews-link" href="javascript: void(0);">6 отзывов</a></div>
+                  <div class="item__price"><span class="item__price-span">3 900 Р</span><span class="item__price-span-underlined"></span></div>
+                  <div class="item__buttons">
+                    <button class="item__buttons-inbasket">В корзину</button>
+                    <button class="item__buttons-heart"></button>
+                    <button class="item__buttons-diagram"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item3">
+                <div class="item-wrapper">
+                  <div class="item__quantity">
+                    <div class="item__quantity-container"><img class="item__quantity-image" src="images/icon/svg/tools.svg" alt="tools"><span class="item__quantity-span">17</span></div>
+                  </div>
+                  <div class="item__image"></div>
+                  <div class="item__bonus">
+                    <div class="item__bonus-container">Новинка</div>
+                  </div>
+                  <div class="item__about"><span class="item__about-text">Мультититул Leatherman Charge ALX, 18 функций, кожаный чехол</span></div>
+                  <div class="item__stars-and-reviews"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><a class="item__stars-and-reviews-link" href="javascript: void(0);">6 отзывов</a></div>
+                  <div class="item__price"><span class="item__price-span">3 900 Р</span><span class="item__price-span-underlined"></span></div>
+                  <div class="item__buttons">
+                    <button class="item__buttons-inbasket">В корзину</button>
+                    <button class="item__buttons-heart"></button>
+                    <button class="item__buttons-diagram"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item4">
+                <div class="item-wrapper">
+                  <div class="item__quantity">
+                    <div class="item__quantity-container"><img class="item__quantity-image" src="images/icon/svg/tools.svg" alt="tools"><span class="item__quantity-span">17</span></div>
+                  </div>
+                  <div class="item__image"></div>
+                  <div class="item__bonus">
+                    <div class="item__bonus-container">Новинка</div>
+                  </div>
+                  <div class="item__about"><span class="item__about-text">Мультититул Leatherman Charge ALX, 18 функций, кожаный чехол</span></div>
+                  <div class="item__stars-and-reviews"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><a class="item__stars-and-reviews-link" href="javascript: void(0);">6 отзывов</a></div>
+                  <div class="item__price"><span class="item__price-span">3 900 Р</span><span class="item__price-span-underlined"></span></div>
+                  <div class="item__buttons">
+                    <button class="item__buttons-inbasket">В корзину</button>
+                    <button class="item__buttons-heart"></button>
+                    <button class="item__buttons-diagram"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item5">
+                <div class="item-wrapper">
+                  <div class="item__quantity">
+                    <div class="item__quantity-container"><img class="item__quantity-image" src="images/icon/svg/tools.svg" alt="tools"><span class="item__quantity-span">17</span></div>
+                  </div>
+                  <div class="item__image"></div>
+                  <div class="item__bonus">
+                    <div class="item__bonus-container">Новинка</div>
+                  </div>
+                  <div class="item__about"><span class="item__about-text">Мультититул Leatherman Charge ALX, 18 функций, кожаный чехол</span></div>
+                  <div class="item__stars-and-reviews"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><a class="item__stars-and-reviews-link" href="javascript: void(0);">6 отзывов</a></div>
+                  <div class="item__price"><span class="item__price-span">3 900 Р</span><span class="item__price-span-underlined"></span></div>
+                  <div class="item__buttons">
+                    <button class="item__buttons-inbasket">В корзину</button>
+                    <button class="item__buttons-heart"></button>
+                    <button class="item__buttons-diagram"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item6">
+                <div class="item-wrapper">
+                  <div class="item__quantity">
+                    <div class="item__quantity-container"><img class="item__quantity-image" src="images/icon/svg/tools.svg" alt="tools"><span class="item__quantity-span">17</span></div>
+                  </div>
+                  <div class="item__image"></div>
+                  <div class="item__bonus">
+                    <div class="item__bonus-container">Новинка</div>
+                  </div>
+                  <div class="item__about"><span class="item__about-text">Мультититул Leatherman Charge ALX, 18 функций, кожаный чехол</span></div>
+                  <div class="item__stars-and-reviews"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><a class="item__stars-and-reviews-link" href="javascript: void(0);">6 отзывов</a></div>
+                  <div class="item__price"><span class="item__price-span">3 900 Р</span><span class="item__price-span-underlined"></span></div>
+                  <div class="item__buttons">
+                    <button class="item__buttons-inbasket">В корзину</button>
+                    <button class="item__buttons-heart"></button>
+                    <button class="item__buttons-diagram"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__banner-big">
+                <div class="catalog__banner-big-title">new!<br>black & silver surge</div><a class="catalog__banner-big-link" href="javascript: void(0);">Подробнее</a>
+                <div class="catalog__banner-big-logo"></div>
+              </div>
+              <div class="catalog__item7">
+                <div class="item-wrapper">
+                  <div class="item__quantity">
+                    <div class="item__quantity-container"><img class="item__quantity-image" src="images/icon/svg/tools.svg" alt="tools"><span class="item__quantity-span">17</span></div>
+                  </div>
+                  <div class="item__image"></div>
+                  <div class="item__bonus">
+                    <div class="item__bonus-container">Новинка</div>
+                  </div>
+                  <div class="item__about"><span class="item__about-text">Мультититул Leatherman Charge ALX, 18 функций, кожаный чехол</span></div>
+                  <div class="item__stars-and-reviews"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><a class="item__stars-and-reviews-link" href="javascript: void(0);">6 отзывов</a></div>
+                  <div class="item__price"><span class="item__price-span">3 900 Р</span><span class="item__price-span-underlined"></span></div>
+                  <div class="item__buttons">
+                    <button class="item__buttons-inbasket">В корзину</button>
+                    <button class="item__buttons-heart"></button>
+                    <button class="item__buttons-diagram"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item8">
+                <div class="item-wrapper">
+                  <div class="item__quantity">
+                    <div class="item__quantity-container"><img class="item__quantity-image" src="images/icon/svg/tools.svg" alt="tools"><span class="item__quantity-span">17</span></div>
+                  </div>
+                  <div class="item__image"></div>
+                  <div class="item__bonus">
+                    <div class="item__bonus-container">Новинка</div>
+                  </div>
+                  <div class="item__about"><span class="item__about-text">Мультититул Leatherman Charge ALX, 18 функций, кожаный чехол</span></div>
+                  <div class="item__stars-and-reviews"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><a class="item__stars-and-reviews-link" href="javascript: void(0);">6 отзывов</a></div>
+                  <div class="item__price"><span class="item__price-span">3 900 Р</span><span class="item__price-span-underlined"></span></div>
+                  <div class="item__buttons">
+                    <button class="item__buttons-inbasket">В корзину</button>
+                    <button class="item__buttons-heart"></button>
+                    <button class="item__buttons-diagram"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item9">
+                <div class="item-wrapper">
+                  <div class="item__quantity">
+                    <div class="item__quantity-container"><img class="item__quantity-image" src="images/icon/svg/tools.svg" alt="tools"><span class="item__quantity-span">17</span></div>
+                  </div>
+                  <div class="item__image"></div>
+                  <div class="item__bonus">
+                    <div class="item__bonus-container">Новинка</div>
+                  </div>
+                  <div class="item__about"><span class="item__about-text">Мультититул Leatherman Charge ALX, 18 функций, кожаный чехол</span></div>
+                  <div class="item__stars-and-reviews"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><a class="item__stars-and-reviews-link" href="javascript: void(0);">6 отзывов</a></div>
+                  <div class="item__price"><span class="item__price-span">3 900 Р</span><span class="item__price-span-underlined"></span></div>
+                  <div class="item__buttons">
+                    <button class="item__buttons-inbasket">В корзину</button>
+                    <button class="item__buttons-heart"></button>
+                    <button class="item__buttons-diagram"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item10">
+                <div class="item-wrapper">
+                  <div class="item__quantity">
+                    <div class="item__quantity-container"><img class="item__quantity-image" src="images/icon/svg/tools.svg" alt="tools"><span class="item__quantity-span">17</span></div>
+                  </div>
+                  <div class="item__image"></div>
+                  <div class="item__bonus">
+                    <div class="item__bonus-container">Новинка</div>
+                  </div>
+                  <div class="item__about"><span class="item__about-text">Мультититул Leatherman Charge ALX, 18 функций, кожаный чехол</span></div>
+                  <div class="item__stars-and-reviews"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><a class="item__stars-and-reviews-link" href="javascript: void(0);">6 отзывов</a></div>
+                  <div class="item__price"><span class="item__price-span">3 900 Р</span><span class="item__price-span-underlined"></span></div>
+                  <div class="item__buttons">
+                    <button class="item__buttons-inbasket">В корзину</button>
+                    <button class="item__buttons-heart"></button>
+                    <button class="item__buttons-diagram"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item11">
+                <div class="item-wrapper">
+                  <div class="item__quantity">
+                    <div class="item__quantity-container"><img class="item__quantity-image" src="images/icon/svg/tools.svg" alt="tools"><span class="item__quantity-span">17</span></div>
+                  </div>
+                  <div class="item__image"></div>
+                  <div class="item__bonus">
+                    <div class="item__bonus-container">Новинка</div>
+                  </div>
+                  <div class="item__about"><span class="item__about-text">Мультититул Leatherman Charge ALX, 18 функций, кожаный чехол</span></div>
+                  <div class="item__stars-and-reviews"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><a class="item__stars-and-reviews-link" href="javascript: void(0);">6 отзывов</a></div>
+                  <div class="item__price"><span class="item__price-span">3 900 Р</span><span class="item__price-span-underlined"></span></div>
+                  <div class="item__buttons">
+                    <button class="item__buttons-inbasket">В корзину</button>
+                    <button class="item__buttons-heart"></button>
+                    <button class="item__buttons-diagram"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item12">
+                <div class="item-wrapper">
+                  <div class="item__quantity">
+                    <div class="item__quantity-container"><img class="item__quantity-image" src="images/icon/svg/tools.svg" alt="tools"><span class="item__quantity-span">17</span></div>
+                  </div>
+                  <div class="item__image"></div>
+                  <div class="item__bonus">
+                    <div class="item__bonus-container">Новинка</div>
+                  </div>
+                  <div class="item__about"><span class="item__about-text">Мультититул Leatherman Charge ALX, 18 функций, кожаный чехол</span></div>
+                  <div class="item__stars-and-reviews"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><img class="item__image-star" src="images/icon/svg/star.svg" alt="star"><a class="item__stars-and-reviews-link" href="javascript: void(0);">6 отзывов</a></div>
+                  <div class="item__price"><span class="item__price-span">3 900 Р</span><span class="item__price-span-underlined"></span></div>
+                  <div class="item__buttons">
+                    <button class="item__buttons-inbasket">В корзину</button>
+                    <button class="item__buttons-heart"></button>
+                    <button class="item__buttons-diagram"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__showbutton-wrapper">
+                <button class="catalog__showbutton-button">Показать еще</button>
+              </div>
+              <div class="catalog__showoptions-wrapper">
+                <button class="catalog__showoptions-button-tostart"></button><a class="catalog__showoptions-link-disabled" href="javascript: void(0);">1</a><a class="catalog__showoptions-link" href="javascript: void(0);">2</a><a class="catalog__showoptions-link" href="javascript: void(0);">3</a><span class="catalog__showoptions-text-points">........</span><a class="catalog__showoptions-link" href="javascript: void(0);">10</a>
+                <button class="catalog__showoptions-button-next"></button>
+              </div>
+              <div class="catalog__showoptions-displaymode-wrapper"><span class="catalog__showoptions-text-show">Показывать по</span>
+                <select class="catalog__model-select" name="catalog-show">
+                  <option value="s1">12</option>
+                  <option value="s2">48</option>
+                  <option value="s3">все</option>
+                </select>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <div class="prefooter">
+      <div class="container">
+        <p class="prefooter__title">Lorem ipsum dolor sit amet, quod exerci posidonium.</p>
+        <p class="prefooter__text">
+          Lorem ipsum dolor sit amet, cum ei antiopam facilisis.
+          Veniam malorum vim ut, has lorem mucius option at. No dicam
+          suscipit temporibus usu. In mel utamur iudicabit, platonem
+          vituperatoribus cu mea, modo imperdiet concludaturque in vix.
+          Dolor aliquando omittantur ei pri, nibh option oportere eos ea,
+          vim aeterno elaboraret ad. Amet prima id per.
+          Lorem ipsum dolor sit amet, cum ei antiopam facilisis.
+          Veniam malorum vim ut, has lorem mucius option at. No dicam
+          suscipit temporibus usu. In mel utamur iudicabit, platonem
+          vituperatoribus cu mea, modo imperdiet concludaturque in vix.
+          Dolor aliquando omittantur ei pri, nibh option oportere eos ea,
+          vim aeterno elaboraret ad. Amet prima id per.
+          Lorem ipsum dolor sit amet, cum ei antiopam facilisis.
+          Veniam malorum vim ut, has lorem mucius option at. No dicam
+          suscipit temporibus usu. In mel utamur iudicabit, platonem
+          vituperatoribus cu mea, modo imperdiet concludaturque in vix.
+          Dolor aliquando omittantur ei pri, nibh option oportere eos ea,
+          vim aeterno elaboraret ad. Amet prima id per.
+          Lorem ipsum dolor sit amet, cum ei antiopam facilisis.
+          Veniam malorum vim ut, has lorem mucius option at. No dicam
+          suscipit temporibus usu. In mel utamur iudicabit, platonem
+          vituperatoribus cu mea, modo imperdiet concludaturque in vix.
+          Dolor aliquando omittantur ei pri, nibh option oportere eos ea,
+          vim aeterno elaboraret ad. Amet prima id per.
+        </p>
+        <p class="prefooter__text">
+          Lorem ipsum dolor sit amet, cum ei antiopam facilisis.
+          Veniam malorum vim ut, has lorem mucius option at. No dicam
+          suscipit temporibus usu. In mel utamur iudicabit, platonem
+          vituperatoribus cu mea, modo imperdiet concludaturque in vix.
+          Dolor aliquando omittantur ei pri, nibh option oportere eos ea,
+          vim aeterno elaboraret ad. Amet prima id per.
+          Lorem ipsum dolor sit amet, cum ei antiopam facilisis.
+          Veniam malorum vim ut, has lorem mucius option at. No dicam
+          suscipit temporibus usu. In mel utamur iudicabit, platonem
+          vituperatoribus cu mea, modo imperdiet concludaturque in vix.
+          Dolor aliquando omittantur ei pri, nibh option oportere eos ea,
+          vim aeterno elaboraret ad. Amet prima id per.
+        </p>
+      </div>
+    </div>
+    <div class="helpful">
+      <div class="container">
+        <div class="helpful__container-flex">
+          <div class="helpful__container-imagetext">
+            <div class="helpful__container-image"><img class="helpful__image-envelope" src="images/icon/svg/envelope.svg" alt="envelope"></div>
+            <div class="helpful__container-text">
+              <p class="helpful__text">Только полезная информация, новинки и скидки для своих!</p>
+            </div>
+          </div>
+          <div class="helpful__container-inputbutton">
+            <div class="helpful__container-input">
+              <input class="helpful__input-email" type="text" placeholder="Введите Ваш E-mail">
+            </div>
+            <div class="helpful__container-button">
+              <button class="helpful__button-join">Вступить в клуб</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper-grid">
+          <div class="footer__container-logo"></div>
+          <div class="footer__container-phone"><img class="footer__phone-image" src="images/icon/svg/phone-call.svg" alt="phone"><span class="footer__phone-number">8 800 123-45-67</span>
+            <p class="footer__phone-text">Бесплатно по России</p>
+          </div>
+          <div class="footer__container-socials"><img class="footer__socials-image footer__socials-image-vkontakte" src="images/icon/png/vkontakte.png" alt="vkontakte"><img class="footer__socials-image footer__socials-image-facebook" src="images/icon/png/facebook.png" alt="facebook"><img class="footer__socials-image footer__socials-image-instagram" src="images/icon/png/instagram.png" alt="instagram"><img class="footer__socials-image footer__socials-image-youtubew" src="images/icon/png/youtube.png" alt="youtube"></div>
+          <div class="footer__container-title-catalog">Каталог товаров</div>
+          <div class="footer__container-title-info">Информация</div>
+          <div class="footer__container-title-buyer">Покупателю</div>
+          <div class="footer__container-title-acceptforpay">Принимаем к оплате</div>
+          <div class="footer__container-catalog"><a class="footer__catalog-link" href="javascript: void(0);">Мультититулы</a><a class="footer__catalog-link" href="javascript: void(0);">Браслеты</a><a class="footer__catalog-link" href="javascript: void(0);">Часы</a><a class="footer__catalog-link" href="javascript: void(0);">Ножи</a><a class="footer__catalog-link" href="javascript: void(0);">Аксессуары</a></div>
+          <div class="footer__container-info"><a class="footer__catalog-link" href="javascript: void(0);">О компании</a><a class="footer__catalog-link" href="javascript: void(0);">О бренде</a><a class="footer__catalog-link" href="javascript: void(0);">Бонусная программа</a><a class="footer__catalog-link" href="javascript: void(0);">Наш блог</a><a class="footer__catalog-link" href="javascript: void(0);">Пользовательское соглашение</a><a class="footer__catalog-link" href="javascript: void(0);">Политика конфиденциальности</a></div>
+          <div class="footer__container-buyer"><a class="footer__catalog-link" href="javascript: void(0);">Условия доставки</a><a class="footer__catalog-link" href="javascript: void(0);">Условия оплаты</a><a class="footer__catalog-link" href="javascript: void(0);">Обмен и возврат</a><a class="footer__catalog-link" href="javascript: void(0);">Гарантия 25 лет</a><a class="footer__catalog-link" href="javascript: void(0);">Как сделать заказ</a><a class="footer__catalog-link" href="javascript: void(0);">Как отследить заказ</a></div>
+          <div class="footer__container-acceptforpay"><img class="footer__image-acceptforpay" src="images/icon/png/acceptforpay.png" alt="visa mastercard МИР"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/jquery331dev.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

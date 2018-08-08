@@ -1,0 +1,126 @@
+.ordercall-overlay
+    position: absolute
+    width: 100%
+    height: 100vh
+    top: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0.4)
+    z-index: 100
+    display: none
+
+.ordercall-form-container
+    position: absolute
+    width: 500px
+    height: 370px
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    background-color: #fff
+
+@media (max-width: 740px)
+    .ordercall-form-container
+        width: 310px
+        height: 370px
+
+.ordercall-container-button-close
+    float: right
+    margin-top: 0
+    margin-bottom: 0
+
+.ordercall-button-close
+    width: 35px
+    height: 35px
+    border: none
+    background: #f7bb03 url(../images/icon/svg/ic_close_48px.svg) no-repeat
+    background-size: 25px 25px
+    background-position: 5px 5px
+    cursor: pointer
+    outline: none
+
+.ordercall-wrapper-flex
+    display: flex
+    flex-flow: column nowrap
+    margin-top: 40px
+
+.ordercall-container-title
+    font-weight: 900
+    font-size: 24px
+    text-transform: uppercase
+    line-height: 60px
+    align-self: center
+
+@media (max-width: 740px)
+    .ordercall-container-title
+        font-size: 20px
+
+.form-ordercall__inputname
+    width: 315px
+    line-height: 40px
+    border-radius: 20px
+    border: #dcdee4 1px solid
+    font-weight: 300
+    font-size: 14px
+    outline: none
+    text-align: center
+
+@media (max-width: 740px)
+    .form-ordercall__inputname
+        width: 290px
+        line-height: 30px
+
+.ordercall-container-inputname, .ordercall-container-inputphone, .ordercall-container-submit
+    height: 60px
+    align-self: center
+
+.form-ordercall__inputphone
+    width: 315px
+    line-height: 40px
+    border-radius: 20px
+    border: #dcdee4 1px solid
+    font-weight: 300
+    font-size: 14px
+    outline: none
+    text-align: center
+
+@media (max-width: 740px)
+    .form-ordercall__inputphone
+        width: 290px
+        line-height: 30px
+
+.form-odercall__submit
+    width: 190px
+    height: 50px
+    background: #fff
+    cursor: pointer
+    outline: none
+    border: #f7bb03 1px solid
+    font-weight: 500
+    font-size: 14px
+    background: #fff url(../images/icon/png/phone-call.png) no-repeat
+    background-size: 17px 17px
+    background-position: 15px 15px
+    padding-left: 20px
+
+@media (max-width: 740px)
+    .form-odercall__submit
+        width: 170px
+        height: 40px
+        background: #fff url(../images/icon/png/phone-call.png) no-repeat
+        background-size: 15px 15px
+        background-position: 12px 11px
+        padding-left: 20px
+        font-size: 13px
+
+.ordercall-container-checkboxed
+    align-self: center
+    justify-self: center
+    height: 50px
+    padding-top: 10px
+
+.ordercall-accept-label
+    font-size: 13px
+    font-weight: 300
+
+@mdia (max-width: 740px)
+    .ordercall-accept-label
+        font-size: 11px

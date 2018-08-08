@@ -1,0 +1,780 @@
+.catalog__header-links-wrapper
+  display: none
+
+@media (max-width: 1240px)
+  .catalog__header-links-wrapper
+    display: block
+
+@media (max-width: 740px)
+  .catalog__header-links-wrapper
+    display: none
+
+.catalog__header-links-link
+  font-size: 14px
+  font-weight: 400
+  text-decoration: none
+  color: #000
+
+.catalog__header-links-link
+  &:hover
+      text-decoration: underline
+
+.catalog__header-links-unablespan
+  font-size: 14px
+  font-weight: 300
+  color: #a1a1a1
+
+.catalog__bigtitle-wrapper
+  margin-top: 100px
+
+@media (max-width: 740px)
+  .catalog__bigtitle-wrapper
+    margin-top: 0
+    background: #e9ebf0
+
+.catalog__bigtitle-text
+  font-size: 30px
+  font-weight: 900
+  text-transform: uppercase
+
+@media (max-width: 740px)
+  .catalog__bigtitle-text
+    background: #e9ebf0
+    font-size: 18px
+    font-weight: 900
+    text-align: center
+    line-height: 60px
+
+.catalog__bigtitle-filter-wrapper
+  display: none
+
+@media (max-width: 740px)
+  .catalog__bigtitle-filter-wrapper
+    display: flex
+    flex-float: row nowrap
+    justify-content: space-between
+    align-items: center
+    background: #e9ebf0
+    padding-left: 15px
+    padding-right: 15px
+    height: 50px
+    padding-bottom: 20px
+
+@media (max-width: 740px)
+  .catalog__bigtitle-filter-wrapper > select
+    width: 160px
+    height: 33px
+    cursor: pointer
+    outline: none
+    border: #dbdce1 1px solid
+
+@media (max-width: 740px)
+  .catalog__bigtitle-button-filter
+    width: 92px
+    height: 33px
+    background: transparent
+    background-color: #fff
+    cursor: pointer
+    outline: none
+    border: none
+    border: #dbdce1 1px solid
+
+.catalog__allpage-wrapper
+  margin-top: 60px
+
+@media (max-width: 740px)
+  .catalog__allpage-wrapper
+    margin-top: 20px
+
+.catalog__bothsides-wrapper
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+  align-items: flex-start
+  align-content: flex-start
+
+@media (max-width: 740px)
+  .catalog__bothsides-wrapper
+    display: block
+
+.catalog__menu-wrapper
+  width: 295px
+
+@media (max-width: 1240px)
+  .catalog__menu-wrapper
+    width: 220px
+
+@media (max-width: 740px)
+  .catalog__menu-wrapper
+    display: none
+
+.catalog__main-wrapper
+  width: 925px
+
+@media (max-width: 1240px)
+  .catalog__main-wrapper
+    width: 470px
+
+@media (max-width: 740px)
+  .catalog__main-wrapper
+    width: 320px
+
+.catalog__menu-container-type
+  border: #e8eaef 1px solid
+  padding-left: 20px
+  padding-right: 15px
+
+.catalog__menu-link-opened
+  font-weight: 500
+  font-size: 16px
+  padding-left: 20px
+  &::before
+    content: ""
+    position: absolute
+    width: 2px
+    height: 25px
+    border: 0
+    background-color: #f7bb03
+    transform: translateX(-20px)
+    z-index: -10
+
+.catalog__menu-container-type > a
+  display: block
+  line-height: 45px
+  font-weight: 400
+  font-size: 13px
+  text-decoration: none
+  color: #000
+  border-top: #e8eaef 1px solid
+  &:hover
+    text-decoration: underline
+    font-weight: 500
+
+@media (max-width: 1240px)
+  .catalog__menu-container-type > a
+    font-size: 14px
+    line-height: 40px
+    &:hover
+      text-decoration: underline
+      font-weight: 500
+    &:first-child
+      line-height: 25px
+
+.catalog__menu-container-cost
+  border: #e8eaef 1px solid
+  padding-left: 20px
+  padding-right: 15px
+  background: url(../images/icon/png/downarrow-button.png)
+  background-repeat: no-repeat
+  background-size: 12px 10px
+  background-position: 270px 10px
+  margin-top: 10px
+  height: 120px
+
+.catalog__menu-cost-title
+  font-size: 16px
+  font-weight: 500
+  line-height: 50px
+
+.catalog__menu-cost-span
+  font-size: 14px
+  font-weight: 400
+
+.catalog__menu-cost-inputtextfrom, .catalog__menu-cost-inputtextto
+  line-height: 30px
+  width: 85px
+  border: #d8dadf 1px solid
+  text-align: center
+  outline: none
+
+@media (max-width: 1240px)
+  .catalog__menu-cost-inputtextfrom, .catalog__menu-cost-inputtextto
+    width: 60px
+
+.catalog__menu-container-model
+  border: #e8eaef 1px solid
+  padding-left: 20px
+  padding-right: 15px
+  padding-bottom: 20px
+  margin-top: 10px
+  background: url(../images/icon/png/downarrow-button.png)
+  background-repeat: no-repeat
+  background-size: 12px 10px
+  background-position: 270px 10px
+
+.catalog-menu-model-title
+  line-height: 50px
+  font-size: 16px
+  font-weight: 500
+
+.catalog__model-select
+  width: 241px
+  height: 30px
+  background: transparent
+  outline: none
+  cursor: pointer
+
+@media (max-width: 1240px)
+  .catalog__model-select
+    width: 180px
+
+.catalog__menu-container-tools
+  border: #e8eaef 1px solid
+  margin-top: 10px
+  padding-left: 20px
+  background: url(../images/icon/png/downarrow-button.png)
+  background-repeat: no-repeat
+  background-size: 12px 10px
+  background-position: 270px 10px
+
+.catalog-menu-tools-title
+  line-height: 50px
+  font-size: 16px
+  font-weight: 500
+
+.catalog__menu-container-cover
+  border: #e8eaef 1px solid
+  margin-top: 10px
+  padding-left: 20px
+  background: url(../images/icon/png/downarrow-button.png)
+  background-repeat: no-repeat
+  background-size: 12px 10px
+  background-position: 270px 10px
+
+.catalog-menu-cover-title
+  line-height: 50px
+  font-size: 16px
+  font-weight: 500
+
+.catalog__menu-container-pack
+  border: #e8eaef 1px solid
+  margin-top: 10px
+  padding-left: 20px
+  background: url(../images/icon/png/downarrow-button.png)
+  background-repeat: no-repeat
+  background-size: 12px 10px
+  background-position: 270px 10px
+  
+.catalog-menu-pack-title
+  line-height: 50px
+  font-size: 16px
+  font-weight: 500
+
+.catalog__menu-container-reset
+  margin-top: 10px
+
+.catalog__menu-inputreset
+  width: 295px
+  line-height: 45px
+  background: transparent
+  border: #000 1px solid
+  outline: none
+  cursor: pointer
+
+@media (max-width: 1240px)
+  .catalog__menu-inputreset
+    width: 220px
+    font-weight: 500
+
+.catalog__menu-banner-small
+  background: #000 url(../images/banner-small.png)
+  background-repeat: no-repeat
+  background-position: center top
+  margin-top: 60px
+  height: 400px
+  width: 295px
+  padding-top: 40px
+
+@media (max-width: 1240px)
+  .catalog__menu-banner-small
+    width: 100%
+    background: #000 url(../images/banner-small.png)
+    background-repeat: no-repeat
+    background-position: center top
+
+.catalog__menu-banner-warranty
+  color: #ffce00
+  border-radius: 50%
+  border: #ffce00 3px solid
+  width: 125px
+  height: 125px
+  text-align: center
+  font-weight: 500
+  font-size: 20px
+  text-transform: uppercase
+  margin-left: 90px
+
+@media (max-width: 1240px)
+  .catalog__menu-banner-warranty
+    margin-left: 45px
+
+.catalog__menu-banner-warranty-text
+  margin-top: 38px
+  display: inline-block
+
+.catalog__menu-banner-title
+  font-size: 24px
+  font-weight: 900
+  color: #fff
+  text-transform: uppercase
+  text-align: center
+  margin-top: 60px
+
+@media (max-width: 1240px)
+  .catalog__menu-banner-title
+    font-size: 22px
+    margin-top: 30px
+
+.catalog__menu-banner-link
+  color: #fff
+  font-weight: 500
+  text-decoration: none
+  display: inline-block
+  border: #fff 2px solid
+  width: 170px
+  text-align: center
+  padding-top: 15px
+  padding-bottom: 15px
+  margin-top: 50px
+  margin-left: 60px
+
+@media (max-width: 1240px)
+  .catalog__menu-banner-link
+    width: 155px
+    margin-left: 33px
+
+.catalog__sorting-title
+  font-size: 14px
+  font-weight: 400
+
+.catalog__sorting-opened
+  font-size: 14px
+  font-weight: 500
+  padding-left: 20px
+  text-decoration: underline
+
+.catalog__sorting-link
+  font-size: 14px
+  text-decoration: underline
+  color: #a1a1a1
+  padding-left: 10px
+  &:hover
+    color: black
+
+.catalog__main-wrapper-grid
+  display: grid
+  grid-template-columns: repeat(9, 1fr)
+  grid-template-rows: 50px 600px 600px 220px 600px 600px 70px 70px
+  grid-template-areas: "csw csw csw csw csw csw csw csw csw" "ci1 ci1 ci1 ci2 ci2 ci2 ci3 ci3 ci3" "ci4 ci4 ci4 ci5 ci5 ci5 ci6 ci6 ci6" "cbb cbb cbb cbb cbb cbb cbb cbb cbb" "ci7 ci7 ci7 ci8 ci8 ci8 ci9 ci9 ci9" "ci10 ci10 ci10 ci11 ci11 ci11 ci12 ci12 ci12" "csbw csbw csbw csbw csbw csbw csbw csbw csbw" "csow csow csow csow csow csow csdw csdw csdw"
+  grid-gap: 20px
+
+@media (max-width: 1240px)
+  .catalog__main-wrapper-grid
+    display: grid
+    grid-template-columns: repeat(8, 1fr)
+    grid-template-rows: 60px 600px 600px 600px 200px 600px 600px 600px 50px 70px
+    grid-template-areas: "csw csw csw csw csw csw csw csw" "ci1 ci1 ci1 ci1 ci2 ci2 ci2 ci2" "ci3 ci3 ci3 ci3 ci4 ci4 ci4 ci4" "ci5 ci5 ci5 ci5 ci6 ci6 ci6 ci6" "cbb cbb cbb cbb cbb cbb cbb cbb" "ci7 ci7 ci7 ci7 ci8 ci8 ci8 ci8" "ci9 ci9 ci9 ci9 ci10 ci10 ci10 ci10" "ci11 ci11 ci11 ci11 ci12 ci12 ci12 ci12" "csbw csbw csbw csbw csbw csbw csbw csbw" "csow csow csow csow csow csdw csdw csdw"
+    grid-gap: 30px
+
+@media (max-width: 740px)
+  .catalog__main-wrapper-grid
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: 40px 600px 600px 600px 320px 600px 600px 600px 40px 60px
+    grid-template-areas: "csdw csdw" "ci1  ci1" "ci2  ci2" "ci3  ci3" "cbb cbb" "ci4  ci4" "ci5  ci5" "ci6  ci6" "csbw csbw" "csow csow"
+    grid-gap: 20px
+
+.catalog__sorting-wrapper
+  grid-area: csw
+
+@media (max-width: 1240px)
+  .catalog__sorting-wrapper
+    align-self: start
+    justify-self: stretch
+    line-height: 40px
+
+@media (max-width: 740px)
+  .catalog__sorting-wrapper
+    display: none
+
+.catalog__item1
+  grid-area: ci1
+
+.catalog__item2
+  grid-area: ci2
+
+.catalog__item3
+  grid-area: ci3
+
+.catalog__item4
+  grid-area: ci4
+
+.catalog__item5
+  grid-area: ci5
+
+.catalog__item6
+  grid-area: ci6
+
+.catalog__banner-big
+  grid-area: cbb
+  width: 100%
+  height: 220px
+  background: url(../images/banner-big.png)
+  background-repeat: no-repeat
+  background-position: center top
+  box-sizing: content-box
+
+@media (max-width: 740px)
+  .catalog__banner-big
+    grid-area: cbb
+    width: 100%
+    height: 320px
+    background: url(../images/banner-big.png)
+    background-repeat: no-repeat
+    background-position: center top
+    background-size: 700px 500px
+    box-sizing: content-box
+    display: flex
+    flex-flow: column nowrap
+    align-items: center
+
+.catalog__banner-big-title
+  font-weight: 900
+  font-size: 28px
+  color: #fff
+  text-transform: uppercase
+  padding-left: 40px
+  padding-top: 45px
+
+@media (max-width: 740px)
+  .catalog__banner-big-title
+    text-align: center
+    padding-left: 0
+    padding-top: 30px
+
+.catalog__banner-big-link
+  color: #fff
+  font-weight: 500
+  text-decoration: none
+  display: inline-block
+  border: #fff 2px solid
+  width: 170px
+  text-align: center
+  padding-top: 15px
+  padding-bottom: 15px
+  margin-top: 35px
+  margin-left: 45px
+
+@media (max-width: 1240px)
+  .catalog__banner-big-link
+    width: 155px
+    margin-top: 40px
+
+@media (max-width: 740px)
+  .catalog__banner-big-link
+    width: 155px
+    margin-top: 25px
+    margin-left: 0
+
+.catalog__banner-big-logo
+  background: #f7bb03
+  width: 295px
+  height: 85px
+  float: right
+  margin-top: 26px
+  background-image: url(../images/logo_leatherman.png)
+  background-repeat: no-repeat
+  background-size: 200px 40px
+  background-position: 45px 22px
+  border: none
+
+@media (max-width: 1240px)
+  .catalog__banner-big-logo
+    width: 235px
+    height: 70px
+    margin-top: 41px
+    background-image: url(../images/logo_leatherman.png)
+    background-repeat: no-repeat
+    background-size: 200px 35px
+    background-position: 18px 20px
+
+@media (max-width: 740px)
+  .catalog__banner-big-logo
+    width: 244px
+    height: 73px
+    margin-top: 25px
+    display: block
+    background-image: url(../images/logo_leatherman.png)
+    background-repeat: no-repeat
+    background-size: 200px 35px
+    background-position: 18px 20px
+    float: none
+
+.catalog__item7
+  grid-area: ci7
+@media (max-width: 740px)
+  .catalog__item7
+    display: none
+
+.catalog__item8
+  grid-area: ci8
+@media (max-width: 740px)
+  .catalog__item8
+    display: none
+
+.catalog__item9
+  grid-area: ci9
+@media (max-width: 740px)
+  .catalog__item9
+    display: none
+
+.catalog__item10
+  grid-area: ci10
+@media (max-width: 740px)
+  .catalog__item10
+    display: none
+
+.catalog__item11
+  grid-area: ci11
+@media (max-width: 740px)
+  .catalog__item11
+    display: none
+
+.catalog__item12
+  grid-area: ci12
+@media (max-width: 740px)
+  .catalog__item12
+    display: none
+
+.catalog__showbutton-wrapper
+  grid-area: csbw
+  align-self: center
+  justify-self: stretch
+
+.catalog__showoptions-wrapper
+  grid-area: csow
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-start
+  align-items: center
+
+@media (max-width: 740px)
+  .catalog__showoptions-wrapper
+    grid-area: csow
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    background: #e9ebf0
+    margin-top: -20px
+
+.catalog__showoptions-displaymode-wrapper
+  grid-area: csdw
+  align-self: center
+  justify-self: end
+
+.catalog__showbutton-button
+  border: none
+  line-height: 40px
+  border-top: #e8e9ed 1px solid
+  border-bottom: #e8e9ed 1px solid
+  text-transform: uppercase
+  font-size: 14px
+  font-weight: 500
+  width: 100%
+  outline: none
+  cursor: pointer
+  background-image: url(../images/icon/png/menu_arrow_down.png)
+  background-repeat: no-repeat
+  background-size: 15px 8px
+  background-position: 530px 18px
+
+@media (max-width: 1240px)
+  .catalog__showbutton-button
+    background-image: url(../images/icon/png/menu_arrow_down.png)
+    background-repeat: no-repeat
+    background-size: 15px 8px
+    background-position: 300px 17px
+
+@media (max-width: 740px)
+  .catalog__showbutton-button
+    background-position: 225px 17px
+
+.catalog__showoptions-button-tostart
+  font-size: 13px
+  font-weight: 500
+  cursor: pointer
+  border: none
+  width: 105px
+  height: 38px
+  border-radius: 20px
+  border: #bcbfc4 1px solid
+  position: relative
+  outline: none
+  &:after
+    content: "В начало"
+    position: absolute
+    display: block
+    padding-left: 15px
+    margin-top: -5px
+
+@media (max-width: 1240px)
+  .catalog__showoptions-button-tostart
+    width: 45px
+    height: 1px
+    border-radius: 50%
+    visibility: hidden
+    position: relative
+    outline: none
+    &:after
+      content: "\2039"
+      visibility: visible
+      display: flex
+      justify-content: center
+      align-items: center
+      border: #bcbfc4 1px solid
+      width: 33px
+      height: 33px
+      border-radius: 50%
+      padding: 1px
+      position: absolute
+      font-size: 35px
+      margin-top: -20px
+
+.catalog__showoptions-button-next
+  font-size: 13px
+  font-weight: 500
+  cursor: pointer
+  border: none
+  width: 118px
+  height: 38px
+  border-radius: 20px
+  border: #bcbfc4 1px solid
+  outline: none
+  position: relative
+  &:after
+    content: "Следующая"
+    position: absolute
+    display: block
+    padding-left: 15px
+    margin-top: -5px
+
+@media (max-width: 1240px)
+  .catalog__showoptions-button-next
+    width: 1px
+    height: 1px
+    border-radius: 50%
+    visibility: hidden
+    position: relative
+    outline: none
+    &:after
+      content: "\203A"
+      visibility: visible
+      display: flex
+      justify-content: center
+      align-items: center
+      border: #bcbfc4 1px solid
+      width: 33px
+      height: 33px
+      border-radius: 50%
+      padding: 1px
+      position: absolute
+      font-size: 35px
+      margin-top: -20px
+
+@media (max-width: 740px)
+  .catalog__showoptions-button-next
+    width: 1px
+    height: 1px
+    visibility: hidden
+    position: relative
+    &:after
+      content: "\203A"
+      visibility: visible
+      display: flex
+      justify-content: center
+      align-items: center
+      border: #bcbfc4 1px solid
+      width: 33px
+      height: 33px
+      border-radius: 50%
+      padding: 1px
+      position: absolute
+      font-size: 35px
+      margin-top: -20px
+      margin-left: -27px
+
+.catalog__showoptions-link-disabled
+  font-weight: 700
+  font-size: 14px
+  text-decoration: underline
+  cursor: default
+  pointer-events: none
+  color: black
+  padding-left: 10px
+
+@media (max-width: 1240px)
+  .catalog__showoptions-link-disabled
+    padding-left: 25px
+
+.catalog__showoptions-link
+  font-weight: 400
+  font-size: 14px
+  color: black
+  text-decoration: none
+  padding-left: 15px
+  padding-right: 15px
+  &:hover
+    text-decoration: underline
+    font-weight: 500
+
+@media (max-width: 740px)
+  .catalog__showoptions-link
+    padding-left: 10px
+    padding-right: 10px
+  
+@media (max-width: 1240px)
+  .catalog__showoptions-link-disabled
+    padding-left: 10px
+    padding-right: 10px
+
+.catalog__showoptions-text-show
+  font-size: 14px
+  font-weight: 500
+  padding-right: 1px
+
+@media (max-width: 1240px)
+  .catalog__showoptions-text-show
+    font-size: 13px
+    font-weight: 400
+
+@media (max-width: 740px)
+  .catalog__showoptions-text-show
+    font-size: 12px
+    font-weight: 500
+    padding-right: 15px
+
+@media (max-width: 1240px)
+  font-size: 12px
+  font-weight: 500
+
+.catalog__showoptions-displaymode-wrapper > select
+  height: 35px
+  width: 85px
+  border: #bcbfc4 1px solid
+
+@media (max-width: 1240px)
+  .catalog__showoptions-displaymode-wrapper > select
+    width: 50px
+    height: 33px
+    display: inline
+
+@media (max-width: 740px)
+  .catalog__showoptions-displaymode-wrapper > select
+    width: 75px
+    height: 33px
+    display: inline
+
+@media (max-width: 740px)
+  .catalog__showoptions-displaymode-wrapper
+    padding-right: 15px

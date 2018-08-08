@@ -5,7 +5,7 @@ $(document).ready(function(){
         $ws6  = $('.header__whitespace6'),
         $hg   = $('.header-catalog'),
         $hs   = $('.header-conditions'),
-        $hmc  = $('#hmc')
+        $hmc  = $('#hmc');
 
     $butt.on('click', function(){
         $menu.toggleClass('menu-visible');
@@ -25,5 +25,5 @@ $(document).ready(function(){
         $hs.removeClass('header-bottomline-clicked');
         $butt.removeClass('header-catalog-button-clicked');
     });
-
+    
 });

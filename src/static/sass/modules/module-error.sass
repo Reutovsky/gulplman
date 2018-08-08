@@ -2,6 +2,11 @@
   padding-top: 80px
   padding-bottom: 145px
 
+@media (max-width: 740px)
+  .error-wrapper
+    padding-top: 30px
+    padding-bottom: 30px
+
 .error__image-container
   width: 285px
   height: 128px
@@ -24,6 +29,12 @@
   justify-content: flex-start
   align-items: center
 
+@media (max-width: 740px)
+  .error-container-flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: stretch
+
 .error__notfound
   padding-left: 65px
   > p:first-child
@@ -33,6 +44,9 @@
 @media (max-width: 1240px)
   .error__notfound
     padding-left: 30px
+@media (max-width: 740px)
+  .error__notfound
+    padding-left: 0px
 
 .error__title
   font-weight: bold
