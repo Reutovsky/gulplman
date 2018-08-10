@@ -1,0 +1,68 @@
+.singin__header-links-wrapper
+	.container
+		.singin__header-links-container
+			a.singin__header-links-link(href='javascript: void(0);')
+				|	Главная
+			span.singin__header-links-unablespan &nbsp;&nbsp;| &nbsp;Вход / Регистрация
+.singin__bigtitle-wrapper
+	.container
+		.singin__bigtitle-text
+			| Вход
+.singin__enterreg-wrapper
+	.container
+		.singin__enterreg-wrapper-flex
+			.singin__enter-wrapper
+				form.singin__enter-form(action="")
+					p.singin__enter-title
+						| Вход в личный кабинет
+					p.singin__enter-undersmall
+						| Для входа укажите адрес электронной почты и пароль
+					span.singin__enter-email
+						| Ваш E-mail
+					input.singin__enter-inputemail(type="text")
+					span.singin__enter-password
+						| Пароль
+					input.singin__enter-inputpassword(type="text")
+					.singin__remember
+						input.singin__enter-checkbox-remember(type="checkbox", id="remember", value="remember")
+						label.singin__enter-labelforcheckbox(for="remember")
+							| Запомнить меня
+					.singin__enter-submitforget-wrapper
+						input.singin__enter-button-submit(type="submit", value="Войти")
+						a.singin__enter-forget-link(href="javascript: void(0);")
+							| Забыли пароль
+					p.singin__enter-socials-text
+						| Вы также можете войти, используя свой аккаунт в соцсетях
+					img.singin__enter-socials-image-vk(src="images/icon/png/vkontakte-small.png", alt="vkontakte")
+					img.singin__enter-socials-image-ok(src="images/icon/png/ok-small.png", alt="odnoklassniki")
+					img.singin__enter-socials-image-yandex(src="images/icon/png/yandex-small.png", alt="yandex")
+					img.singin__enter-socials-image-mailru(src="images/icon/png/mailru-small.png", alt="mailru")
+					img.singin__enter-socials-image-facebook(src="images/icon/png/facebook-small.png", alt="facebook")
+					img.singin__enter-socials-image-googleplus(src="images/icon/png/googleplus-small.png", alt="google plus")
+			.singin__reg-wrapper
+				form.singin__reg-form(action="")
+					p.singin__reg-title
+						| Регистрация
+					p.singin__reg-undersmall
+						| Заполните все обязательные поля для регистрации
+					span.singin__reg-name
+						| Имя
+					input.singin__reg-inputname(type="text")
+					span.singin__reg-surname
+						| Фамилия
+					input.singin__reg-inputsurname(type="text")
+					span.singin__reg-email
+						| E-mail
+					input.singin__reg-inputemail(type="text")
+					span.singin__reg-errortext
+						| Ошибка! Не корректный e-mail адрес
+					.singin__helpful
+						input.singin__reg-checkbox-helpful(type="checkbox", id="helpful", value="helpful")
+						label.singin__reg-labelforcheckbox(for="helpful")
+							| Полезная информация, новинки и скидки для своих!
+					.singin__reg-submitandtext
+						input.singin__reg-submitbutton(type="submit" value="Регистрация")
+						p.singin__reg-submittext
+							| Нажимая на кнопку, Вы даете согласие на обработку
+							| персональных данных и принимаете правила продаж
+							| товаров через Интернет-магазин.
