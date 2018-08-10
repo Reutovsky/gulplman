@@ -1,0 +1,214 @@
+.bonus__header-links-wrapper
+  margin-top: 10px
+  display: block
+
+@media (max-width: 1240px)
+  .bonus__header-links-wrapper
+    display: block
+
+@media (max-width: 740px)
+  .bonus__header-links-wrapper
+    display: none
+
+.bonus__header-links-link
+  font-size: 14px
+  font-weight: 400
+  text-decoration: none
+  color: #000
+
+.bonus__header-links-link
+  &:hover
+    text-decoration: underline
+
+.bonus__header-links-unablespan
+  font-size: 14px
+  font-weight: 300
+  color: #a1a1a1
+
+.bonus__bigtitle-wrapper
+  margin-top: 100px
+
+@media (max-width: 1240px)
+  .bonus__bigtitle-wrapper
+    margin-top: 50px
+
+@media (max-width: 740px)
+  .bonus__bigtitle-wrapper
+    margin-top: 0px
+    background: #e9ebf0
+    box-sizing: border-box
+
+.bonus__bigtitle-text
+  font-size: 30px
+  font-weight: 900
+  text-transform: uppercase
+
+@media (max-width: 1240px)
+  .bonus__bigtitle-text
+    font-size: 26px
+
+@media (max-width: 740px)
+  .bonus__bigtitle-text
+    font-size: 18px
+    font-weight: 900
+    text-align: center
+    line-height: 60px
+
+.bonus__big-wrapper
+  margin-top: 60px
+  margin-bottom: 100px
+  box-sizing: border-box
+
+@media (max-width: 740px)
+  .bonus__big-wrapper
+    margin-top: 20px
+    margin-bottom: 20px
+
+.bonus__wrapper-flex
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+  align-items: flex-start
+  align-content: flex-start
+
+.aside__menu-wrapper
+  width: 295px
+
+@media (max-width: 1240px)
+  .aside__menu-wrapper
+    width: 240px
+
+@media (max-width: 740px)
+  .aside__menu-wrapper
+    display: none
+
+.aside__menu-container-type
+  border: #e8eaef 1px solid
+  padding-left: 20px
+  padding-right: 15px
+
+.aside__menu-container-type > a
+  display: block
+  line-height: 45px
+  font-weight: 400
+  font-size: 13px
+  text-decoration: none
+  color: #000
+  border-top: #e8eaef 1px solid
+  &:hover
+    text-decoration: underline
+    font-weight: 500
+
+.aside__menu-link-borderbottom
+  border-bottom: #e8eaef 1px solid
+
+@media (max-width: 1240px)
+  .aside__menu-container-type > a
+    font-size: 14px
+    line-height: 40px
+    &:hover
+      text-decoration: underline
+      font-weight: 500
+    &:first-child
+      line-height: 25px
+
+.aside__menu-link-opened
+  font-weight: 500
+  font-size: 16px
+  padding-left: 20px
+  &::before
+    content: ""
+    position: absolute
+    width: 2px
+    height: 25px
+    border: 0
+    background-color: #f7bb03
+    transform: translateX(-20px)
+    z-index: -10
+
+
+.bonus__main-wrapper
+  width: 820px
+  margin-top: 0
+
+@media (max-width: 1240px)
+  .bonus__main-wrapper
+    width: 460px
+
+.bonus__main-history-text
+  display: inline
+  text-transform: uppercase
+  font-weight: 400
+  font-size: 13px
+
+@media (max-width: 1240px)
+  .bonus__main-history-text
+    font-size: 12px
+
+.bonus__main-history-table
+  margin-top: 25px
+  width: 100%
+
+table.bonus__main-history-table > thead > tr > td
+  padding-left: 15px
+  line-height: 37px
+  font-weight: 700
+  font-size: 13px
+  background-color: #e8eaef
+  border: none
+
+@media (max-width: 1240px)
+  table.bonus__main-history-table > thead > tr > td
+    line-height: 20px
+
+table.bonus__main-history-table > tbody > tr > td
+  padding-left: 15px
+  line-height: 37px
+  font-size: 13px
+  font-weight: 400
+
+@media (max-width: 1240px)
+  table.bonus__main-history-table > tbody > tr > td
+    line-height: 22px
+
+table.bonus__main-history-table > tbody > tr > td
+  &:nth-child(1)
+    border-right: none
+    border-bottom: none
+  &:nth-child(2)
+    border-left: none
+    border-right: none
+    border-bottom: none
+  &:nth-child(3)
+    border-left: none
+    border-bottom: none
+
+table.bonus__main-history-table > tbody > tr
+  &:last-child > td
+    border-bottom: #e8eaef 1px solid
+
+table.bonus__main-history-table > tbody > tr
+  border-bottom: none
+
+.bonus__main-history-table-link
+  font-weight: 700
+  font-size: 13px
+  color: #a1a1a1
+  &:hover
+    color: #f7bb03
+
+.bonus__main-history-bonuspoints-wrapper
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-end
+  align-items: baseline
+
+.bonus__main-history-text-summ
+  font-weight: 900
+  font-size: 14px
+  display: inline
+
+.bonus__main-history-bonuspoints-total
+  font-weight: 900
+  font-size: 18px
+  display: inline
