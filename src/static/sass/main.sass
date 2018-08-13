@@ -7,6 +7,11 @@
 @import modules/module-signin
 @import modules/module-successreg
 @import modules/module-lk-bonus
+@import modules/module-history-thereis
+@import modules/module-history-noorders
+@import modules/module-history-order
+@import modules/module-personalarea
+@import modules/module-mydetails
 
 *, body, html
   font-family: "OpenSans", sans-serif
@@ -184,6 +189,10 @@
   align-items: center
   font-size: 14px
   border-bottom: #e1e2e8 1px solid
+
+@media (max-width: 740px)
+  .header-search
+    border-bottom: none
 
 @media (max-width: 1240px)
   .header-city, .header-phone, .header-time, .header-problem
@@ -1409,7 +1418,6 @@
 .copyright-wrapper
   width: auto
   height: 40px
-  border-top: #dee0e6 1px solid
 @media (max-width: 740px)
   .copyright-wrapper
     height: 100px

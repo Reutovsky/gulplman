@@ -1,0 +1,239 @@
+.personalarea__header-links-wrapper
+  margin-top: 10px
+  display: block
+
+@media (max-width: 1240px)
+  .personalarea__header-links-wrapper
+    display: block
+
+@media (max-width: 740px)
+  .personalarea__header-links-wrapper
+    display: none
+
+.personalarea__header-links-link
+  font-size: 14px
+  font-weight: 400
+  text-decoration: none
+  color: #000
+
+.personalarea__header-links-link
+  &:hover
+    text-decoration: underline
+
+.personalarea__header-links-unablespan
+  font-size: 14px
+  font-weight: 300
+  color: #a1a1a1
+
+.personalarea__bigtitle-wrapper
+  margin-top: 100px
+
+@media (max-width: 1240px)
+  .personalarea__bigtitle-wrapper
+    margin-top: 50px
+
+@media (max-width: 740px)
+  .personalarea__bigtitle-wrapper
+    margin-top: 0px
+    background: #e9ebf0
+    box-sizing: border-box
+
+.personalarea__bigtitle-text
+  font-size: 30px
+  font-weight: 900
+  text-transform: uppercase
+
+@media (max-width: 1240px)
+  .personalarea__bigtitle-text
+    font-size: 26px
+
+@media (max-width: 740px)
+  .personalarea__bigtitle-text
+    font-size: 18px
+    font-weight: 900
+    text-align: center
+    line-height: 60px
+
+.personalarea__big-wrapper
+  margin-top: 60px
+  margin-bottom: 100px
+  box-sizing: border-box
+
+@media (max-width: 740px)
+  .personalarea__big-wrapper
+    margin-top: 20px
+    margin-bottom: 20px
+
+.personalarea__wrapper-flex
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: flex-start
+    align-content: flex-start
+
+.personalarea__main-wrapper
+  width: 820px
+
+@media (max-width: 1240px)
+  .personalarea__main-wrapper
+    width: 500px
+
+@media (max-width: 740px)
+  .personalarea__main-wrapper
+    width: 320px
+
+.personalarea__main-wrapper-grid
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: 235px 235px
+  grid-gap: 30px
+  grid-template-areas: "mt my fs" "ms hs bs"
+
+@media (max-width: 1240px)
+  .personalarea__main-wrapper-grid
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: 235px 235px 235px
+    grid-gap: 15px
+    grid-template-areas: "mt my" "fs ms" "hs bs"
+
+@media (max-width: 740px)
+  .personalarea__main-wrapper-grid
+    display: grid
+    grid-template-columns: 320px
+    grid-template-rows: 235px 235px 235px 235px 235px 235px
+    grid-gap: 15px
+    grid-template-areas: "mt" "my" "fs" "ms" "hs" "bs"
+
+.personalarea__main-wrapper-mybasket
+  grid-area: mt
+.personalarea__main-wrapper-mydelivery
+  grid-area: my
+.personalarea__main-wrapper-favorites
+  grid-area: fs
+.personalarea__main-wrapper-mydetails
+  grid-area: ms
+.personalarea__main-wrapper-historyofororders
+  grid-area: hs
+.personalarea__main-wrapper-bonuspoints
+  grid-area: bs
+
+.personalarea__main-wrapper-mybasket, .personalarea__main-wrapper-mydelivery, .personalarea__main-wrapper-favorites, .personalarea__main-wrapper-mydetails, .personalarea__main-wrapper-historyofororders, .personalarea__main-wrapper-bonuspoints
+  border: #eaebef 1px solid
+
+.personalarea__card-top
+  height: 90px
+  line-height: 90px
+  text-transform: uppercase
+  font-size: 15px
+  font-weight: 700
+  padding-left: 70px
+
+.personalarea__card-center
+  height: 65px
+
+.personalarea__card-center > span
+  font-size: 14px
+  font-weight: 400
+  margin-left: 15px
+  margin-top: 10px
+  display: inline-block
+
+.personalarea__card-center > p
+  font-size: 18px
+  font-weight: 700
+  display: inline-block
+  line-height: 10px
+  margin-left: 15px
+
+.personalarea__card-bottom
+  height: 80px
+
+.personalarea__card-top, .personalarea__card-center
+  border-bottom: #eaebef 1px solid
+
+.personalarea__card-bottom-link-button
+  display: block
+  border: #f7bb03 1px solid
+  width: 170px
+  line-height: 48px
+  text-align: center
+  cursor: pointer
+  margin-top: 12px
+  margin-left: 15px
+  color: #000
+  font-weight: 500
+  font-size: 14px
+  text-decoration: none
+  &:hover
+    text-decoration: none
+    color: #fff
+    background-color: #f7bb03
+
+.personalarea__card-top-mybasket
+  background: url(../images/icon/svg/shopping-cart-yellow.svg)
+  background-repeat: no-repeat
+  background-size: 40px 40px
+  background-position: 15px 20px
+
+.personalarea__card-top-mydelivery
+  background: url(../images/icon/svg/delivery-truck-yellow.svg)
+  background-repeat: no-repeat
+  background-size: 55px 44px
+  background-position: 15px 22px
+
+.personalarea__card-top-favorites
+  background: url(../images/icon/svg/heart-yellow.svg)
+  background-repeat: no-repeat
+  background-size: 35px 35px
+  background-position: 20px 28px
+
+.personalarea__card-top-mydetails
+  background: url(../images/icon/svg/id-card-yellow.svg)
+  background-repeat: no-repeat
+  background-size: 35px 35px
+  background-position: 20px 28px
+
+.personalarea__card-center-text-block
+  line-height: 45px
+
+.personalarea__card-bottom-link
+  text-decoration: underline
+  color: #a1a1a1
+  margin-left: 60px
+  line-height: 70px
+  font-size: 14px
+  font-weight: 500
+  &:hover
+    color: #f7bb03
+
+.personalarea__card-bottom-mydetails
+  background: url(../images/icon/svg/avatar-grey.svg)
+  background-repeat: no-repeat
+  background-size: 30px 30px
+  background-position: 20px 20px
+
+.personalarea__main-wrapper-historyofororders
+  background: url(../images/icon/svg/invoice-yellow.svg)
+  background-repeat: no-repeat
+  background-size: 35px 35px
+  background-position: 20px 28px
+
+.personalarea__card-center-text-historyofororders
+  line-height: 20px
+
+.personalarea__card-top-bonuspoints
+  background: url(../images/icon/svg/percentage-yellow.svg)
+  background-repeat: no-repeat
+  background-size: 40px 40px
+  background-position: 20px 28px
+
+.personalarea__card-center-link
+  float: right
+  color: #a1a1a1
+  font-size: 14px
+  font-weight: 500
+  margin-right: 15px
+  margin-top: 15px
+  &:hover
+    color: #f7bb03

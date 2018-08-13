@@ -1,0 +1,56 @@
+.historyti__header-links-wrapper
+	.container
+		.historyti__header-links-container
+			a.historyti__header-links-link(href='javascript: void(0);')
+				| Главная | Личный кабинет
+			span.historyti__header-links-unablespan &nbsp;&nbsp;| &nbsp;История заказов
+.historyti__bigtitle-wrapper
+	.container
+		.historyti__bigtitle-text
+			|	История заказов
+.historyti__big-wrapper
+	.container
+		.historyno__wrapper-flex
+			aside.aside__menu-wrapper
+				.aside__menu-container-type
+					a.aside__menu-link(href="javascript: void(0);")
+						| Главная
+					a.aside__menu-link(href="javascript: void(0);")
+						| Моя корзина
+					a.aside__menu-link(href="javascript: void(0);")
+						| Мои доставки
+					a.aside__menu-link(href="javascript: void(0);")
+						| Избранное
+					a.aside__menu-link(href="javascript: void(0);")
+						| Сравнение
+					a.aside__menu-link.aside__menu-link-borderbottom(href="javascript: void(0);")
+						| Мои данные
+					p.aside__menu-link-opened
+						| История заказов
+					a.aside__menu-link(href="javascript: void(0);")
+						| Бонусные баллы
+					a.aside__menu-link(href="javascript: void(0);")
+						| Выход
+			main.historyti__main-wrapper
+				p.historyti__main-history-text
+					| Здесь отображаются все ваши сделанные заказы на сайте, вы можете посмотреть статус заказа и его состав:
+				form.historyno__searchform(action="post")
+					.historyno__searchform-wrapper-flex
+						.historyno__searchform-dates-wrapper
+							span.historyno__searchform-datefrom-text
+								| c
+							input.historyno__searchform-input-datefrom(type="text")
+							span.historyno__searchform-dateto-text
+								| по
+							input.historyno__searchform-input-dateto(type="text")
+						.historyno__searchform-quantity-wrapper
+							| Показывать по:
+							select.historyno__searchform-quantity-select
+								option(value="0")
+									| 5
+								option(value="1")
+									| 10
+								option(value="2")
+									| 20
+				p.historyno__main-youhavenoorders-text
+					| У вас нет заказов

@@ -76,7 +76,7 @@
 
 @media (max-width: 1240px)
   .aside__menu-wrapper
-    width: 240px
+    width: 200px
 
 @media (max-width: 740px)
   .aside__menu-wrapper
@@ -98,6 +98,8 @@
   &:hover
     text-decoration: underline
     font-weight: 500
+  &:first-child
+    border-top: #fff
 
 .aside__menu-link-borderbottom
   border-bottom: #e8eaef 1px solid
@@ -110,22 +112,22 @@
       text-decoration: underline
       font-weight: 500
     &:first-child
-      line-height: 25px
+      line-height: 40px
+
 
 .aside__menu-link-opened
   font-weight: 500
   font-size: 16px
   padding-left: 20px
-  &::before
+  display: block
+  &:before
     content: ""
     position: absolute
     width: 2px
     height: 25px
     border: 0
     background-color: #f7bb03
-    transform: translateX(-20px)
-    z-index: -10
-
+    transform: translate(-20px, -2px)
 
 .bonus__main-wrapper
   width: 820px
