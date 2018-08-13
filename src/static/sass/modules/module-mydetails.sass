@@ -73,3 +73,197 @@
 
 .mydetails__main-wrapper
     width: 820px
+
+.mydetails__main-toptext
+    font-weight: 400
+    font-size: 13px
+    text-transform: uppercase
+
+.mydetails__form
+    margin-top: 35px
+
+.mydetails__form-wrapper-flex
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+
+.mydetails__inputemail-wrapper, .mydetails__inputfirstname-wrapper, .mydetails__inputlastname-wrapper, .mydetails__inputbirthday-wrapper, .mydetails__inputgender-wrapper, .mydetails__inputphone-wrapper
+    height: 100px
+    width: 260px
+
+.mydetails__inputgender-wrapper
+    margin-bottom: -20px
+
+.mydetails__radiogroup-wrapper-flex
+    display: flex
+    flex-flow: row wrap
+    justify-content: flex-start
+    align-items: center
+
+.mydetails__inputemail-text, .mydetails__inputfirstname-text, .mydetails__inputlastname-text, .mydetails__inputbirthday-text, .mydetails__inputgender-text, .mydetails__inputphone-text
+    font-size: 14px
+    font-weight: 400
+    display: block
+    padding-left: 15px
+    margin-bottom: 10px
+    
+.mydetails__inputemail-text, .mydetails__inputfirstname-text, .mydetails__inputlastname-text, .mydetails__inputbirthday-text
+    &:before
+        content: ""
+        position: absolute
+        background: url(../images/icon/png/Star_Gold.png)
+        display: inline-block
+        background-size: 10px 10px
+        background-repeat: no-repeat
+        height: 10px
+        width: 10px
+        transform: translate(-15px, 1px)
+
+.mydetails__inputemail-input, .mydetails__inputfirstname-input, .mydetails__inputlastname-input, .mydetails__inputbirthday-input, .mydetails__inputphone-input
+    outline: none
+    width: 260px
+    line-height: 38px
+    padding-left: 15px
+    border: #dcdee4 1px solid
+
+.mydetails__form-wrapper-flex
+    border-bottom: #dcdee4 1px solid
+
+.mydetails__deliveryaddress-text
+    font-weight: 700
+    font-size: 14px
+    line-height: 60px
+
+.mydetails__deliveryaddress-inputs-wrapper-flex
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    align-items: center
+    align-content: flex-start
+
+.mydetails__deliveryaddress-inputstreet
+    width: 260px
+    padding-left: 15px
+    height: 38px
+    outline: none
+    border: #dcdee4 1px solid
+
+.mydetails__deliveryaddress-inputhouse
+    width: 145px
+    padding-left: 15px
+    height: 38px
+    outline: none
+
+.mydetails__deliveryaddress-inputblock
+    width: 145px
+    padding-left: 15px
+    height: 38px
+    outline: none
+
+.mydetails__deliveryaddress-inputapartment
+    width: 145px
+    padding-left: 15px
+    height: 38px
+    outline: none
+
+.mydetails__deliveryaddress-buttondelete
+    width: 75px
+    line-height: 38px
+    background: transparent
+    text-align: center
+    color: red
+    text-decoration: underline
+    cursor: pointer
+    outline: none
+    font-size: 14px
+    font-weight: 500
+    border: none
+
+.mydetails__deliveryaddress-button-add-wrapper
+    width: 100%
+    border-bottom: #dcdee4 1px solid
+
+.mydetails__deliveryaddress-button-add
+    line-height: 60px
+    font-size: 14px
+    font-weight: 500
+    color: #00a130
+    text-decoration: underline
+    background: transparent
+    border: none
+    cursor: pointer
+    outline: none
+
+.mydetails__deliveryaddress-emaildispatch-title-wrapper
+    font-weight: 700
+    font-size: 14px
+    line-height: 60px
+
+.mydetails__deliveryaddress-emaildispatch-checkboxlabel-wrapper
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    line-height: 30px
+
+.mydetails__deliveryaddress-emaildispatch-button-wrapper
+    margin-top: 20px
+
+.mydetails__deliveryaddress-emaildispatch-button
+    background: transparent
+    text-align: center
+    font-weight: 500
+    font-size: 14px
+    width: 165px
+    height: 60px
+    border: #f7bb03 1px solid
+    cursor: pointer
+    outline: none
+    &:hover
+        background-color: #f7bb03 
+        color: #fff
+
+.mydetails__deliveryaddress-emaildispatch-wrapper
+    border-bottom: #dcdee4 1px solid
+    padding-bottom: 25px
+
+.mydetails__deliveryaddress-emailchange-title-wrapper
+    font-size: 14px
+    font-weight: 700
+    margin-top: 25px
+
+.mydetails__deliveryaddress-emailchange-subtitle-wrapper
+    font-style: 14px
+    font-weight: 400
+    margin-top: 25px
+
+.mydetails__deliveryaddress-emailchange-inputtext-wrapper-flex
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    justify-content: flex-start
+    margin-top: 25px
+
+.mydetails__deliveryaddress-emailchange-input-wrapper > input
+    width: 260px
+    padding-left: 15px
+    line-height: 38px
+    outline: none
+    box-sizing: border-box
+
+.mydetails__deliveryaddress-emailchange-text-wrapper
+    padding-left: 25px
+    font-size: 13px
+    font-weight: 300
+
+.mydetails__deliveryaddress-emailchange-buttonsend-wrapper
+    margin-top: 25px
+    & > button
+        width: 260px
+        line-height: 46px
+        background: transparent
+        border: #f7bb03 1px solid
+        cursor: pointer
+        outline: none
+        &:hover
+            color: #fff
+            background: #f7bb03 

@@ -113,7 +113,104 @@
               <p class="aside__menu-link-opened">Мои данные</p><a class="aside__menu-link" href="javascript: void(0);">История заказов</a><a class="aside__menu-link" href="javascript: void(0);">Бонусные баллы</a><a class="aside__menu-link" href="javascript: void(0);">Выход</a>
             </div>
           </aside>
-          <main class="mydetails__main-wrapper">	2 3</main>
+          <main class="mydetails__main-wrapper">
+            <div class="mydetails__main-toptext">
+              в этом разделе вы можете отредактировать
+              свои контактные данные или изменить пароль для входа:
+            </div>
+            <form class="mydetails__form" action="">
+              <div class="mydetails__form-wrapper-flex">
+                <div class="mydetails__inputemail-wrapper"><span class="mydetails__inputemail-text">Ваш E-mail</span>
+                  <input class="mydetails__inputemail-input" type="text">
+                </div>
+                <div class="mydetails__inputfirstname-wrapper"><span class="mydetails__inputfirstname-text">Имя</span>
+                  <input class="mydetails__inputfirstname-input" type="text">
+                </div>
+                <div class="mydetails__inputlastname-wrapper"><span class="mydetails__inputlastname-text">Фамилия</span>
+                  <input class="mydetails__inputlastname-input" type="text">
+                </div>
+                <div class="mydetails__inputbirthday-wrapper"><span class="mydetails__inputbirthday-text">Дата рождения</span>
+                  <input class="mydetails__inputbirthday-input" type="text">
+                </div>
+                <div class="mydetails__inputgender-wrapper"><span class="mydetails__inputgender-text">Пол</span>
+                  <div class="mydetails__radiogroup-wrapper-flex">
+                    <div class="mydetails__radiogroup-wrapper-male">
+                      <input type="radio" name="group1" id="r1" value="1">
+                      <label for="r1">Мужской&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    </div>
+                    <div class="mydetails__radiogroup-wrapper-female">
+                      <input type="radio" name="group2" id="r2" value="2">
+                      <label for="r2">&nbsp;Женский</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="mydetails__inputphone-wrapper"><span class="mydetails__inputphone-text">Телефон</span>
+                  <input class="mydetails__inputphone-input" type="text">
+                </div>
+              </div>
+              <div class="mydetails__deliveryaddress-text">Адрес доставки:</div>
+              <div class="mydetails__deliveryaddress-inputs-wrapper-flex">
+                <div class="mydetails__deliveryaddress-inputstreet-wrapper">
+                  <input class="mydetails__deliveryaddress-inputstreet" type="text" placeholder="Улица">
+                </div>
+                <div class="mydetails__deliveryaddress-inputhouse-wrapper">
+                  <input class="mydetails__deliveryaddress-inputhouse" type="text" placeholder="Дом">
+                </div>
+                <div class="mydetails__deliveryaddress-inputblock-wrapper">
+                  <input class="mydetails__deliveryaddress-inputblock" type="text" placeholder="Корпус">
+                </div>
+                <div class="mydetails__deliveryaddress-inputapartment-wrapper">
+                  <input class="mydetails__deliveryaddress-inputapartment" type="text" placeholder="Квартира">
+                </div>
+                <div class="mydetails__deliveryaddress-buttondelete-wrapper">
+                  <input class="mydetails__deliveryaddress-buttondelete" type="button" value="Удалить">
+                </div>
+              </div>
+              <div class="mydetails__deliveryaddress-button-add-wrapper">
+                <button class="mydetails__deliveryaddress-button-add">Добавить еще 1 адрес доставки</button>
+              </div>
+              <div class="mydetails__deliveryaddress-emaildispatch-wrapper">
+                <div class="mydetails__deliveryaddress-emaildispatch-title-wrapper">E-mail рассылки:</div>
+                <div class="mydetails__deliveryaddress-emaildispatch-checkboxlabel-wrapper">
+                  <input type="checkbox" name="checkbox-dispatch" id="checkbox-dispatch" value="true" checked>
+                  <label for="checkbox-dispatch">&nbsp;Полезная информация, новинки и скидки для своих!</label>
+                </div>
+                <div class="mydetails__deliveryaddress-emaildispatch-button-wrapper">
+                  <button class="mydetails__deliveryaddress-emaildispatch-button">Сохранить</button>
+                </div>
+              </div>
+              <div class="mydetails__deliveryaddress-emailchange-wrapper">
+                <div class="mydetails__deliveryaddress-emailchange-title-wrapper">Изменить E-mail:</div>
+                <div class="mydetails__deliveryaddress-emailchange-subtitle-wrapper">Введите новый E-mail:</div>
+                <div class="mydetails__deliveryaddress-emailchange-inputtext-wrapper-flex">
+                  <div class="mydetails__deliveryaddress-emailchange-input-wrapper">
+                    <input type="text" placeholder="">
+                  </div>
+                  <div class="mydetails__deliveryaddress-emailchange-text-wrapper">
+                    На указанный вами электронный адрес будет выслано письмо со ссылкой,
+                    перейдите по ней для подтверждения адреса электронной почты
+                  </div>
+                </div>
+                <div class="mydetails__deliveryaddress-emailchange-buttonsend-wrapper">
+                  <button class="mydetails__deliveryaddress-emailchange-buttonsend">Выслать подтверждение</button>
+                </div>
+              </div>
+              <div class="mydetails__passwordchange-wrapper">
+                <div class="mydetails__passwordchange-title-wrapper">Изменить пароль:</div>
+                <div class="mydetails__passwordchange-wrapper-flex">
+                  <div class="mydetails__passwordchange-inputtextnewpassword">Новый пароль
+                    <input class="mydetails__passwordchange-input" type="text">
+                  </div>
+                  <div class="mydetails__passwordchange-confirmnewpassword">Подтвердите новый пароль
+                    <input class="mydetails__confirmpassword-input" type="text">
+                  </div>
+                </div>
+                <div class="mydetails__passwordchange-button-wrapper">
+                  <button class="mydetails__passwordchange-button" type="text" value="Изменить пароль"></button>
+                </div>
+              </div>
+            </form>
+          </main>
         </div>
       </div>
     </div>

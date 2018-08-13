@@ -35,4 +35,84 @@
 					a.aside__menu-link(href="javascript: void(0);")
 						| Выход
 			main.mydetails__main-wrapper
-				|	2 3
+				.mydetails__main-toptext
+					| в этом разделе вы можете отредактировать
+					| свои контактные данные или изменить пароль для входа:
+				form.mydetails__form(action="")
+					.mydetails__form-wrapper-flex
+						.mydetails__inputemail-wrapper
+							span.mydetails__inputemail-text Ваш E-mail
+							input.mydetails__inputemail-input(type="text")
+						.mydetails__inputfirstname-wrapper
+							span.mydetails__inputfirstname-text Имя
+							input.mydetails__inputfirstname-input(type="text")
+						.mydetails__inputlastname-wrapper
+							span.mydetails__inputlastname-text Фамилия
+							input.mydetails__inputlastname-input(type="text")
+						.mydetails__inputbirthday-wrapper
+							span.mydetails__inputbirthday-text Дата рождения
+							input.mydetails__inputbirthday-input(type="text")
+						.mydetails__inputgender-wrapper
+							span.mydetails__inputgender-text Пол
+							.mydetails__radiogroup-wrapper-flex
+								.mydetails__radiogroup-wrapper-male
+									input(type="radio" name="group1" id="r1" value="1")
+									label(for="r1") Мужской&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								.mydetails__radiogroup-wrapper-female
+									input(type="radio" name="group2" id="r2" value="2")
+									label(for="r2") &nbsp;Женский
+						.mydetails__inputphone-wrapper
+							span.mydetails__inputphone-text Телефон
+							input.mydetails__inputphone-input(type="text")
+					.mydetails__deliveryaddress-text
+						| Адрес доставки:
+					.mydetails__deliveryaddress-inputs-wrapper-flex
+						.mydetails__deliveryaddress-inputstreet-wrapper
+							input.mydetails__deliveryaddress-inputstreet(type="text", placeholder="Улица")
+						.mydetails__deliveryaddress-inputhouse-wrapper
+							input.mydetails__deliveryaddress-inputhouse(type="text", placeholder="Дом")
+						.mydetails__deliveryaddress-inputblock-wrapper
+							input.mydetails__deliveryaddress-inputblock(type="text", placeholder="Корпус")
+						.mydetails__deliveryaddress-inputapartment-wrapper
+							input.mydetails__deliveryaddress-inputapartment(type="text", placeholder="Квартира")
+						.mydetails__deliveryaddress-buttondelete-wrapper
+							input.mydetails__deliveryaddress-buttondelete(type="button", value="Удалить")
+					.mydetails__deliveryaddress-button-add-wrapper
+						button.mydetails__deliveryaddress-button-add
+							| Добавить еще 1 адрес доставки
+					.mydetails__deliveryaddress-emaildispatch-wrapper
+						.mydetails__deliveryaddress-emaildispatch-title-wrapper
+							| E-mail рассылки:
+						.mydetails__deliveryaddress-emaildispatch-checkboxlabel-wrapper
+							input(type="checkbox", name="checkbox-dispatch", id="checkbox-dispatch", value="true", checked)
+							label(for="checkbox-dispatch")
+								| &nbsp;Полезная информация, новинки и скидки для своих!
+						.mydetails__deliveryaddress-emaildispatch-button-wrapper
+							button.mydetails__deliveryaddress-emaildispatch-button
+								| Сохранить
+					.mydetails__deliveryaddress-emailchange-wrapper
+						.mydetails__deliveryaddress-emailchange-title-wrapper
+							| Изменить E-mail:
+						.mydetails__deliveryaddress-emailchange-subtitle-wrapper
+							| Введите новый E-mail:
+						.mydetails__deliveryaddress-emailchange-inputtext-wrapper-flex
+							.mydetails__deliveryaddress-emailchange-input-wrapper
+								input(type="text", placeholder="")
+							.mydetails__deliveryaddress-emailchange-text-wrapper
+								| На указанный вами электронный адрес будет выслано письмо со ссылкой,
+								| перейдите по ней для подтверждения адреса электронной почты
+						.mydetails__deliveryaddress-emailchange-buttonsend-wrapper
+							button.mydetails__deliveryaddress-emailchange-buttonsend
+								| Выслать подтверждение
+					.mydetails__passwordchange-wrapper
+						.mydetails__passwordchange-title-wrapper
+							| Изменить пароль:
+						.mydetails__passwordchange-wrapper-flex
+							.mydetails__passwordchange-inputtextnewpassword
+								| Новый пароль
+								input.mydetails__passwordchange-input(type="text")
+							.mydetails__passwordchange-confirmnewpassword
+								| Подтвердите новый пароль
+								input.mydetails__confirmpassword-input(type="text")
+						.mydetails__passwordchange-button-wrapper
+							button.mydetails__passwordchange-button(type="text", value="Изменить пароль")
