@@ -74,10 +74,21 @@
 .mydetails__main-wrapper
     width: 820px
 
+@media (max-width: 1240px)
+    .mydetails__main-wrapper
+        width: 500px
+
+@media (max-width: 740px)
+    .mydetails__main-wrapper
+        width: 320px
+
 .mydetails__main-toptext
     font-weight: 400
     font-size: 13px
     text-transform: uppercase
+    @media (max-width: 740px)
+        padding-right: 10px
+        padding-left: 10px
 
 .mydetails__form
     margin-top: 35px
@@ -99,6 +110,8 @@
     flex-flow: row wrap
     justify-content: flex-start
     align-items: center
+    @media (max-width: 740px)
+        padding-left: 15px
 
 .mydetails__inputemail-text, .mydetails__inputfirstname-text, .mydetails__inputlastname-text, .mydetails__inputbirthday-text, .mydetails__inputgender-text, .mydetails__inputphone-text
     font-size: 14px
@@ -133,6 +146,8 @@
     font-weight: 700
     font-size: 14px
     line-height: 60px
+    @media (max-width: 740px)
+        padding-left: 15px
 
 .mydetails__deliveryaddress-inputs-wrapper-flex
     display: flex
@@ -140,6 +155,13 @@
     justify-content: space-between
     align-items: center
     align-content: flex-start
+
+@media (max-width: 1240px)
+    .mydetails__deliveryaddress-inputs-wrapper-flex
+        display: flex
+        flex-flow: column nowrap
+        justify-content: flex-start
+        align-items: flex-start
 
 .mydetails__deliveryaddress-inputstreet
     width: 260px
@@ -165,6 +187,10 @@
     padding-left: 15px
     height: 38px
     outline: none
+
+@media (max-width: 1240px)
+    .mydetails__deliveryaddress-inputapartment
+        width: 260px
 
 .mydetails__deliveryaddress-buttondelete
     width: 75px
@@ -194,16 +220,31 @@
     cursor: pointer
     outline: none
 
+@media (max-width: 1240px)
+    .mydetails__deliveryaddress-inputstreet, .mydetails__deliveryaddress-inputhouse, .mydetails__deliveryaddress-inputblock, .mydetails__deliveryaddress-inputapartmente
+        width: 260px
+    .mydetails__deliveryaddress-inputhouse, .mydetails__deliveryaddress-inputblock, .mydetails__deliveryaddress-inputapartment, .mydetails__deliveryaddress-buttondelete
+        margin-top: 10px
+    
+
+
 .mydetails__deliveryaddress-emaildispatch-title-wrapper
     font-weight: 700
     font-size: 14px
     line-height: 60px
+    @media (max-width: 740px)
+        padding-left: 15px
 
 .mydetails__deliveryaddress-emaildispatch-checkboxlabel-wrapper
     display: flex
     flex-flow: row nowrap
     align-items: center
     line-height: 30px
+    @media (max-width: 1240px)
+        line-height: 18px
+        font-size: 14px
+        & > label
+            margin-left: 15px
 
 .mydetails__deliveryaddress-emaildispatch-button-wrapper
     margin-top: 20px
@@ -221,6 +262,8 @@
     &:hover
         background-color: #f7bb03 
         color: #fff
+    @media (max-width: 740px)
+        height: 50px
 
 .mydetails__deliveryaddress-emaildispatch-wrapper
     border-bottom: #dcdee4 1px solid
@@ -230,11 +273,15 @@
     font-size: 14px
     font-weight: 700
     margin-top: 25px
+    @media (max-width: 740px)
+        padding-left: 15px
 
 .mydetails__deliveryaddress-emailchange-subtitle-wrapper
     font-style: 14px
     font-weight: 400
     margin-top: 25px
+    @media (max-width: 740px)
+        padding-left: 15px
 
 .mydetails__deliveryaddress-emailchange-inputtext-wrapper-flex
     display: flex
@@ -242,6 +289,10 @@
     align-items: center
     justify-content: flex-start
     margin-top: 25px
+    @media (max-width: 740px)
+        display: flex
+        flex-flow: column nowrap
+        align-items: flex-start
 
 .mydetails__deliveryaddress-emailchange-input-wrapper > input
     width: 260px
@@ -254,6 +305,10 @@
     padding-left: 25px
     font-size: 13px
     font-weight: 300
+    @media (max-width: 740px)
+        padding-left: 10px
+        padding-right: 10px
+        margin-top: 10px
 
 .mydetails__deliveryaddress-emailchange-buttonsend-wrapper
     margin-top: 25px
@@ -266,4 +321,62 @@
         outline: none
         &:hover
             color: #fff
-            background: #f7bb03 
+            background: #f7bb03
+
+.mydetails__passwordchange-title-wrapper
+    font-weight: 700
+    font-size: 14px
+    padding-top: 25px
+    margin-bottom: 20px
+    @media (max-width: 740px)
+        padding-left:  15px
+
+.mydetails__deliveryaddress-emailchange-wrapper
+    border-bottom: #dcdee4 1px solid
+    padding-bottom: 30px
+
+.mydetails__passwordchange-inputtextnewpassword, .mydetails__passwordchange-confirmnewpassword
+    font-weight: 400
+    font-size: 14px
+
+.mydetails__passwordchange-wrapper-flex
+    display: flex
+    flex-flow: row wrap
+    align-items: flex-start
+    justify-content: flex-start
+
+.mydetails__passwordchange-input, .mydetails__confirmpassword-input
+    display: block
+    line-height: 38px
+    border: #dcdee4 1px solid
+    box-sizing: border-box
+    margin-top: 10px
+    width: 260px
+    outline: none
+    padding-left: 15px
+
+.mydetails__passwordchange-confirmnewpassword
+    margin-left: 20px
+
+@media (max-width: 1240px)
+    .mydetails__passwordchange-confirmnewpassword
+        margin-left: 0
+        margin-top: 10px
+
+.mydetails__passwordchange-button
+    width: 260px
+    line-height: 48px
+    background: transparent
+    color: #000
+    font-size: 14px
+    font-weight: 500
+    cursor: pointer
+    outline: none
+    text-align: center
+    border: #f7bb03 1px solid
+    &:hover
+        color: #fff
+        background: #f7bb03
+
+.mydetails__passwordchange-button-wrapper
+    margin-top: 25px

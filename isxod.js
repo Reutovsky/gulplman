@@ -1,11 +1,7 @@
 'use strict';
 
 var gulp = require('gulp'),
-    pug  = require('gulp-pug'),
-    sass = require('gulp-sass'),
-    sourcemaps = require('gulp-sourcemaps'),
-    autoprefixer = require('gulp-autoprefixer'),
-    notify = require('gulp-notify'),
+    gp   = require('gulp-load-plugins')(),
     browserSync = require('browser-sync').create();
 
 gulp.task('serve', function() {
@@ -19,7 +15,7 @@ gulp.task('serve', function() {
 
 gulp.task('pug', function() {
     return gulp.src('src/pug/pages/*.pug')
-        .pipe(pug({
+        .pipe(gp.pug({
             pretty: true
         }))
         .pipe(gulp.dest('build'))
@@ -28,15 +24,15 @@ gulp.task('pug', function() {
 
 gulp.task('sass', function() {
     return gulp.src('src/static/sass/**/*.sass')
-        .pipe(sourcemaps.init())
-        .pipe(sass({}))
-        .pipe(autoprefixer({
+        .pipe(gp.sourcemaps.init())
+        .pipe(gp.sass({}))
+        .pipe(gp.autoprefixer({
             browsers: ['last 2 versions']
         }))
-        .on("error", notify.onError({
+        .on("error", gp.notify.onError({
             title: "style error"
         }))
-        .pipe(sourcemaps.write())
+        .pipe(gp.sourcemaps.write())
         .pipe(gulp.dest('build/styles/'))
         .pipe(browserSync.reload({
             stream:true

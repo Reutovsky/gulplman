@@ -1,0 +1,99 @@
+.favorites__header-links-wrapper
+	.container
+		.favorites__header-links-container
+			a.favorites__header-links-link(href='javascript: void(0);')
+				| Главная
+			span.favorites__header-links-unablespan &nbsp;| 
+			a.favorites__header-links-link(href='javascript: void(0);')
+				| Личный кабинет
+			span.favorites__header-links-unablespan &nbsp;| Избранное
+.favorites__bigtitle-wrapper
+	.container
+		.favorites__bigtitle-text
+			|	Избранное
+.favorites__big-wrapper
+	.container
+		.favorites__wrapper-flex
+			aside.aside__menu-wrapper
+				.aside__menu-container-type
+					a.aside__menu-link(href="javascript: void(0);")
+						| Главная
+					a.aside__menu-link(href="javascript: void(0);")
+						| Моя корзина
+					a.aside__menu-link.aside__menu-link-borderbottom(href="javascript: void(0);")
+						| Мои доставки
+					p.aside__menu-link-opened
+						| Избранное
+					a.aside__menu-link(href="javascript: void(0);")
+						| Сравнение
+					a.aside__menu-link(href="javascript: void(0);")
+						| Мои данные
+					a.aside__menu-link(href="javascript: void(0);")
+						| История заказов
+					a.aside__menu-link(href="javascript: void(0);")
+						| Бонусные баллы
+					a.aside__menu-link(href="javascript: void(0);")
+						| Выход
+			main.favorites__main-wrapper
+				.favorites__main-titlebutton-wrapper-flex
+					.favorites__main-title-wrapper
+						| Здесь вы можете посмотреть отложенные товары
+					.favorites__main-buttondelete-wrapper
+						button Удалить
+				form.favorites__form(action="")
+					.favorites__form-wrapper-grid
+						.favorites__form-goodstitle-wrapper Товар
+						.favorites__form-nametitle-wrapper Название
+						.favorites__form-quantitytitle-wrapper Кол-во
+						.favorites__form-totalamounttitle-wrapper Общая сумма
+						.favorites__form-deletetitle-wrapper Удалить
+						.favorites__form-itemimage-wrapper
+							img(src="images/favorites__itemimage.jpg")
+						.favorites__form-itemnameandbutton-wrapper
+							.favorites__form-itemname
+								| Мультитул Leatherman Charge ALX, 18
+								| функций, кожаный чехол
+							.favorites__form-itembutton
+								button В корзину
+						.favorites__form-itemquantity-wrapper
+							.favorites__form-quantity-wrapper-flex
+								.favorites__form-quantity-input-wrapper
+									input(type="text", placeholder="1")
+								.favorites__form-quantity-buttons-wrapper
+									button.favorites__form-quantity-button-plus +
+									button.favorites__form-quantity-button-minus -
+						.favorites__form-itemamount-wrapper
+							.favorites__form-itemamount-text-crossed 200 Р
+							.favorites__form-itemamount-text 4 800 Р
+						.favorites__form-buttondelete-wrapper
+							.favorites__form-buttondelete
+								button &nbsp;
+						.favorites__form-itemimage2-wrapper
+							img(src="images/favorites__itemimage.jpg")
+						.favorites__form-itemnameandbutton2-wrapper
+							.favorites__form-itemname
+								| Мультитул Leatherman Charge ALX, 18
+								| функций, кожаный чехол
+							.favorites__form-itembutton
+								button В корзину
+						.favorites__form-itemquantity2-wrapper
+							.favorites__form-quantity-wrapper-flex
+								.favorites__form-quantity-input-wrapper
+									input(type="text", placeholder="1")
+								.favorites__form-quantity-buttons-wrapper
+									button.favorites__form-quantity-button-plus +
+									button.favorites__form-quantity-button-minus -
+						.favorites__form-itemamount2-wrapper
+							.favorites__form-itemamount-text-crossed 200 Р
+							.favorites__form-itemamount-text 4 800 Р
+						.favorites__form-buttondelete2-wrapper
+							.favorites__form-buttondelete
+								button &nbsp;
+				.favorites__count-wrapper-flex
+					.favorites__countproduct-wrapper
+						b
+							| Всего товаров:&nbsp;&nbsp;
+						| 3
+					.favorites__counttotal-wrapper
+						b
+							| Итого: 14 800 Р

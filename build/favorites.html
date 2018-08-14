@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/main.css">
-    <title>Lman - Личный кабинет | Мои данные</title>
+    <title>Lman - Личный кабинет | Избранное</title>
   </head>
   <body>
     <header class="header">
@@ -95,121 +95,104 @@
         </form>
       </div>
     </div>
-    <div class="mydetails__header-links-wrapper">
+    <div class="favorites__header-links-wrapper">
       <div class="container">
-        <div class="mydetails__header-links-container"><a class="mydetails__header-links-link" href="javascript: void(0);">Главная</a><span class="mydetails__header-links-unablespan">&nbsp;| </span><a class="mydetails__header-links-link" href="javascript: void(0);">Личный кабинет</a><span class="mydetails__header-links-unablespan">&nbsp;| Мои данные</span></div>
+        <div class="favorites__header-links-container"><a class="favorites__header-links-link" href="javascript: void(0);">Главная</a><span class="favorites__header-links-unablespan">&nbsp;| </span><a class="favorites__header-links-link" href="javascript: void(0);">Личный кабинет</a><span class="favorites__header-links-unablespan">&nbsp;| Избранное</span></div>
       </div>
     </div>
-    <div class="mydetails__bigtitle-wrapper">
+    <div class="favorites__bigtitle-wrapper">
       <div class="container">
-        <div class="mydetails__bigtitle-text">	Мои данные</div>
+        <div class="favorites__bigtitle-text">	Избранное</div>
       </div>
     </div>
-    <div class="mydetails__big-wrapper">
+    <div class="favorites__big-wrapper">
       <div class="container">
-        <div class="mydetails__wrapper-flex">
+        <div class="favorites__wrapper-flex">
           <aside class="aside__menu-wrapper">
-            <div class="aside__menu-container-type"><a class="aside__menu-link" href="javascript: void(0);">Главная</a><a class="aside__menu-link" href="javascript: void(0);">Моя корзина</a><a class="aside__menu-link" href="javascript: void(0);">Мои доставки</a><a class="aside__menu-link" href="javascript: void(0);">Избранное</a><a class="aside__menu-link aside__menu-link-borderbottom" href="javascript: void(0);">Сравнение</a>
-              <p class="aside__menu-link-opened">Мои данные</p><a class="aside__menu-link" href="javascript: void(0);">История заказов</a><a class="aside__menu-link" href="javascript: void(0);">Бонусные баллы</a><a class="aside__menu-link" href="javascript: void(0);">Выход</a>
+            <div class="aside__menu-container-type"><a class="aside__menu-link" href="javascript: void(0);">Главная</a><a class="aside__menu-link" href="javascript: void(0);">Моя корзина</a><a class="aside__menu-link aside__menu-link-borderbottom" href="javascript: void(0);">Мои доставки</a>
+              <p class="aside__menu-link-opened">Избранное</p><a class="aside__menu-link" href="javascript: void(0);">Сравнение</a><a class="aside__menu-link" href="javascript: void(0);">Мои данные</a><a class="aside__menu-link" href="javascript: void(0);">История заказов</a><a class="aside__menu-link" href="javascript: void(0);">Бонусные баллы</a><a class="aside__menu-link" href="javascript: void(0);">Выход</a>
             </div>
           </aside>
-          <main class="mydetails__main-wrapper">
-            <div class="mydetails__main-toptext">
-              в этом разделе вы можете отредактировать
-              свои контактные данные или изменить пароль для входа:
+          <main class="favorites__main-wrapper">
+            <div class="favorites__main-titlebutton-wrapper-flex">
+              <div class="favorites__main-title-wrapper">Здесь вы можете посмотреть отложенные товары</div>
+              <div class="favorites__main-buttondelete-wrapper">
+                <button>Удалить</button>
+              </div>
             </div>
-            <form class="mydetails__form" action="">
-              <div class="mydetails__form-wrapper-flex">
-                <div class="mydetails__inputemail-wrapper"><span class="mydetails__inputemail-text">Ваш E-mail</span>
-                  <input class="mydetails__inputemail-input" type="text">
+            <form class="favorites__form" action="">
+              <div class="favorites__form-wrapper-grid">
+                <div class="favorites__form-goodstitle-wrapper">Товар</div>
+                <div class="favorites__form-nametitle-wrapper">Название</div>
+                <div class="favorites__form-quantitytitle-wrapper">Кол-во</div>
+                <div class="favorites__form-totalamounttitle-wrapper">Общая сумма</div>
+                <div class="favorites__form-deletetitle-wrapper">Удалить</div>
+                <div class="favorites__form-itemimage-wrapper"><img src="images/favorites__itemimage.jpg"></div>
+                <div class="favorites__form-itemnameandbutton-wrapper">
+                  <div class="favorites__form-itemname">
+                    Мультитул Leatherman Charge ALX, 18
+                    функций, кожаный чехол
+                  </div>
+                  <div class="favorites__form-itembutton">
+                    <button>В корзину</button>
+                  </div>
                 </div>
-                <div class="mydetails__inputfirstname-wrapper"><span class="mydetails__inputfirstname-text">Имя</span>
-                  <input class="mydetails__inputfirstname-input" type="text">
-                </div>
-                <div class="mydetails__inputlastname-wrapper"><span class="mydetails__inputlastname-text">Фамилия</span>
-                  <input class="mydetails__inputlastname-input" type="text">
-                </div>
-                <div class="mydetails__inputbirthday-wrapper"><span class="mydetails__inputbirthday-text">Дата рождения</span>
-                  <input class="mydetails__inputbirthday-input" type="text">
-                </div>
-                <div class="mydetails__inputgender-wrapper"><span class="mydetails__inputgender-text">Пол</span>
-                  <div class="mydetails__radiogroup-wrapper-flex">
-                    <div class="mydetails__radiogroup-wrapper-male">
-                      <input type="radio" name="group1" id="r1" value="1">
-                      <label for="r1">&nbsp;Мужской&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <div class="favorites__form-itemquantity-wrapper">
+                  <div class="favorites__form-quantity-wrapper-flex">
+                    <div class="favorites__form-quantity-input-wrapper">
+                      <input type="text" placeholder="1">
                     </div>
-                    <div class="mydetails__radiogroup-wrapper-female">
-                      <input type="radio" name="group2" id="r2" value="2">
-                      <label for="r2">&nbsp;Женский</label>
+                    <div class="favorites__form-quantity-buttons-wrapper">
+                      <button class="favorites__form-quantity-button-plus">+</button>
+                      <button class="favorites__form-quantity-button-minus">-</button>
                     </div>
                   </div>
                 </div>
-                <div class="mydetails__inputphone-wrapper"><span class="mydetails__inputphone-text">Телефон</span>
-                  <input class="mydetails__inputphone-input" type="text">
+                <div class="favorites__form-itemamount-wrapper">
+                  <div class="favorites__form-itemamount-text-crossed">200 Р</div>
+                  <div class="favorites__form-itemamount-text">4 800 Р</div>
                 </div>
-              </div>
-              <div class="mydetails__deliveryaddress-text">Адрес доставки:</div>
-              <div class="mydetails__deliveryaddress-inputs-wrapper-flex">
-                <div class="mydetails__deliveryaddress-inputstreet-wrapper">
-                  <input class="mydetails__deliveryaddress-inputstreet" type="text" placeholder="Улица">
-                </div>
-                <div class="mydetails__deliveryaddress-inputhouse-wrapper">
-                  <input class="mydetails__deliveryaddress-inputhouse" type="text" placeholder="Дом">
-                </div>
-                <div class="mydetails__deliveryaddress-inputblock-wrapper">
-                  <input class="mydetails__deliveryaddress-inputblock" type="text" placeholder="Корпус">
-                </div>
-                <div class="mydetails__deliveryaddress-inputapartment-wrapper">
-                  <input class="mydetails__deliveryaddress-inputapartment" type="text" placeholder="Квартира">
-                </div>
-                <div class="mydetails__deliveryaddress-buttondelete-wrapper">
-                  <input class="mydetails__deliveryaddress-buttondelete" type="button" value="Удалить">
-                </div>
-              </div>
-              <div class="mydetails__deliveryaddress-button-add-wrapper">
-                <button class="mydetails__deliveryaddress-button-add">Добавить еще 1 адрес доставки</button>
-              </div>
-              <div class="mydetails__deliveryaddress-emaildispatch-wrapper">
-                <div class="mydetails__deliveryaddress-emaildispatch-title-wrapper">E-mail рассылки:</div>
-                <div class="mydetails__deliveryaddress-emaildispatch-checkboxlabel-wrapper">
-                  <input type="checkbox" name="checkbox-dispatch" id="checkbox-dispatch" value="true" checked>
-                  <label for="checkbox-dispatch">&nbsp;Полезная информация, новинки и скидки для своих!</label>
-                </div>
-                <div class="mydetails__deliveryaddress-emaildispatch-button-wrapper">
-                  <button class="mydetails__deliveryaddress-emaildispatch-button">Сохранить</button>
-                </div>
-              </div>
-              <div class="mydetails__deliveryaddress-emailchange-wrapper">
-                <div class="mydetails__deliveryaddress-emailchange-title-wrapper">Изменить E-mail:</div>
-                <div class="mydetails__deliveryaddress-emailchange-subtitle-wrapper">Введите новый E-mail:</div>
-                <div class="mydetails__deliveryaddress-emailchange-inputtext-wrapper-flex">
-                  <div class="mydetails__deliveryaddress-emailchange-input-wrapper">
-                    <input type="text" placeholder="">
-                  </div>
-                  <div class="mydetails__deliveryaddress-emailchange-text-wrapper">
-                    На указанный вами электронный адрес будет выслано письмо со ссылкой,
-                    перейдите по ней для подтверждения адреса электронной почты
+                <div class="favorites__form-buttondelete-wrapper">
+                  <div class="favorites__form-buttondelete">
+                    <button>&nbsp;</button>
                   </div>
                 </div>
-                <div class="mydetails__deliveryaddress-emailchange-buttonsend-wrapper">
-                  <button class="mydetails__deliveryaddress-emailchange-buttonsend">Выслать подтверждение</button>
-                </div>
-              </div>
-              <div class="mydetails__passwordchange-wrapper">
-                <div class="mydetails__passwordchange-title-wrapper">Изменить пароль:</div>
-                <div class="mydetails__passwordchange-wrapper-flex">
-                  <div class="mydetails__passwordchange-inputtextnewpassword">Новый пароль
-                    <input class="mydetails__passwordchange-input" type="text">
+                <div class="favorites__form-itemimage2-wrapper"><img src="images/favorites__itemimage.jpg"></div>
+                <div class="favorites__form-itemnameandbutton2-wrapper">
+                  <div class="favorites__form-itemname">
+                    Мультитул Leatherman Charge ALX, 18
+                    функций, кожаный чехол
                   </div>
-                  <div class="mydetails__passwordchange-confirmnewpassword">Подтвердите новый пароль
-                    <input class="mydetails__confirmpassword-input" type="text">
+                  <div class="favorites__form-itembutton">
+                    <button>В корзину</button>
                   </div>
                 </div>
-                <div class="mydetails__passwordchange-button-wrapper">
-                  <input class="mydetails__passwordchange-button" type="button" value="Изменить пароль">
+                <div class="favorites__form-itemquantity2-wrapper">
+                  <div class="favorites__form-quantity-wrapper-flex">
+                    <div class="favorites__form-quantity-input-wrapper">
+                      <input type="text" placeholder="1">
+                    </div>
+                    <div class="favorites__form-quantity-buttons-wrapper">
+                      <button class="favorites__form-quantity-button-plus">+</button>
+                      <button class="favorites__form-quantity-button-minus">-</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="favorites__form-itemamount2-wrapper">
+                  <div class="favorites__form-itemamount-text-crossed">200 Р</div>
+                  <div class="favorites__form-itemamount-text">4 800 Р</div>
+                </div>
+                <div class="favorites__form-buttondelete2-wrapper">
+                  <div class="favorites__form-buttondelete">
+                    <button>&nbsp;</button>
+                  </div>
                 </div>
               </div>
             </form>
+            <div class="favorites__count-wrapper-flex">
+              <div class="favorites__countproduct-wrapper"><b>Всего товаров:&nbsp;&nbsp;</b>3</div>
+              <div class="favorites__counttotal-wrapper"><b>Итого: 14 800 Р</b></div>
+            </div>
           </main>
         </div>
       </div>
