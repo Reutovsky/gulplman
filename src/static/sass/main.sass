@@ -13,11 +13,12 @@
 @import modules/module-personalarea
 @import modules/module-mydetails
 @import modules/module-favorites
+@import modules/module-youwatched
 
 *, body, html
   font-family: "OpenSans", sans-serif
 
-input
+input, button
   box-sizing: border-box
 
 .container
@@ -222,6 +223,8 @@ input
   text-decoration: underline
   color: #afafaf
   padding-left: 8px
+  &:hover
+    color: #f7bb03
 
 .header-phone__image-phone
   width: 15px
@@ -255,6 +258,8 @@ input
 
 .header-problem__link-dont-call
   color: #f7bb03
+  &:hover
+    color: #000
 
 .header-login__image-avatar
   width: 15px
@@ -291,6 +296,20 @@ input
   .header-search
     padding-left: 0
 
+.header-login__link-singin
+  font-weight: 500
+  font-size: 14px
+  color: black
+  &:hover
+    color: #f7bb03
+
+.header-login__link-reg
+  font-weight: 500
+  font-size: 14px
+  color: #a1a1a1
+  &:hover
+    color: #f7bb03
+
 .header-search__input-search
   width: 425px
   line-height: 38px
@@ -321,7 +340,7 @@ input
   flex-flow: row nowrap
   justify-content: flex-end
   > a
-    padding: 0 10px
+    padding: 0 14px
     &:hover
       font-weight: 500
     &:last-child
@@ -335,6 +354,55 @@ input
   color: #000
   text-decoration: none
   font-weight: 400
+  display: block
+  line-height: 40px
+  box-sizing: border-box
+  font-size: 14px
+
+.header-options__link-favorites
+  background: url(../images/icon/svg/heart.svg)
+  background-repeat: no-repeat
+  background-size: 18px
+  background-position: 10px center
+  width: 140px
+  text-align: right
+  &:hover
+    background: url(../images/icon/svg/heart-yellow.svg)
+    background-repeat: no-repeat
+    background-size: 23px
+    background-position: left center
+    width: 140px
+    text-align: right
+
+.header-options__link-compare
+  background: url(../images/icon/svg/bar-chart.svg)
+  background-repeat: no-repeat
+  background-size: 18px
+  background-position: 5px center
+  width: 145px
+  text-align: right
+  &:hover
+    background: url(../images/icon/svg/bar-chart-yellow.svg)
+    background-repeat: no-repeat
+    background-size: 23px
+    background-position: left center
+    width: 145px
+    text-align: right
+
+.header-options__link-basket
+  background: url(../images/icon/svg/shopping-cart.svg)
+  background-repeat: no-repeat
+  background-size: 18px
+  background-position: 5px center
+  width: 105px
+  text-align: right
+  &:hover
+    background: url(../images/icon/svg/shopping-cart-yellow.svg)
+    background-repeat: no-repeat
+    background-size: 23px
+    background-position: left center
+    width: 105px
+    text-align: right
 
 .header-catalog__button
   width: 295px
@@ -423,7 +491,6 @@ input
   .header__whitespace1, .header__whitespace2, .header__whitespace3, .header__whitespace4, .header__whitespace5, .header__whitespace6, .header-city, .header-city__image-arrow, .header-city__title-city, .header-city__link-chosen-city, .header-phone, .header-time, .header-time__image-clock, .header-time__span-time, .header-problem, .header-problem__link-dont-call, .header-login__image-avatar, .header-login__link-signin, .header-login__link-reg, .header-login, .header-options, .header-options__link-favorites, .header-options__link-compare, .header-options__link-basket, .header-options__image-favorites, .header-options__image-compare, .header-options__image-basket, .header-conditions
     display: none
 
-  
 
 /* MENU STYLES + HEADER START
 
@@ -648,6 +715,7 @@ input
 @media (max-width: 740px)
   .menu__wrapper-multitool-image, .menu__wrapper-multitool-links, .menu__wrapper-bracelet-image, .menu__wrapper-bracelet-links, .menu__wrapper-clock-image, .menu__wrapper-clock-links, .menu__wrapper-knife-image, .menu__wrapper-knife-links, .menu__wrapper-pockettool-image, .menu__wrapper-pockettool-links
     border-bottom: #e9ebf0 1px solid
+
 /* //MENU STYLES + HEADER END
 
 .banner
@@ -817,30 +885,34 @@ input
 .novelties-wrapper-white
   padding-bottom: 65px
   border-bottom: #e5e7eb 1px solid
+  // position: relative
+  background: url(../images/novelties-right.png)
+  background-repeat: no-repeat
+  background-position: 1500px 0
 
-.novelties-wrapper-grid
-  display: grid
-  grid-template-columns: repeat(12, 1fr)
-  grid-template-rows: 120px 600px
-  grid-template-areas: "ll ll ll ll ll ll ll ll ll ll bs bs" "i1 i1 i1 i2 i2 i2 i3 i3 i3 i4 i4 i4"
-  grid-gap: 10px
+// .novelties-right
+//   position: absolute
+//   right: 0
+//   transform: translateY(200px)
+//   @media (max-width: 1240px)
+//     display: none
+
+.novelties__labelbuttons-flex
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+  align-items: center
+  margin-top: 60px
+  margin-bottom: 48px
 
 .novelties__label
-  grid-area: ll
   font-size: 30px
   font-weight: 900
-  display: flex
-  flex-flow: row nowrap
-  align-items: center
 
-.novelties__buttons
-  grid-area: bs
-  display: flex
-  flex-flow: row nowrap
-  justify-content: flex-end
-  align-items: center
+.blog-wrapper
+  margin-bottom: 50px
 
-.novelties__buttons-button-back
+.novelties__buttons-button-back, .novelties__buttons-button-back-second, .blog-wrapper__buttons-button-back
   width: 45px
   height: 45px
   margin-right: 10px
@@ -850,7 +922,7 @@ input
   cursor: pointer
   outline: none
 
-.novelties__buttons-button-forward
+.novelties__buttons-button-forward, .novelties__buttons-button-forward-second, .blog-wrapper__buttons-button-forward
   width: 45px
   height: 45px
   border: none
@@ -859,17 +931,17 @@ input
   cursor: pointer
   outline: none
 
-.novelties__item1
-  grid-area: i1
+.novelties__item, .blog__div
+  margin-right: 20px
+  outline: none
 
-.novelties__item2
-  grid-area: i2
+.novelties__item
+  &:hover
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2)
+    cursor: pointer
 
-.novelties__item3
-  grid-area: i3
-
-.novelties__item4
-  grid-area: i4
+.slick-novelties, .slick-novelties-second, .blog__story-slick
+  margin-right: -20px
 
 .novelties-wrapper-grey
   width: 100%
@@ -877,6 +949,14 @@ input
   border-top: #f1f2f4 1px solid
   border-bottom: #f1f2f4 1px solid
   padding-bottom: 60px
+  position: relative
+
+.novelties-left
+  position: absolute
+  left: 0
+  transform: translate(-200px, 160px)
+  @media (max-width: 1240px)
+    display: none
 
 .novelties__buttons-button-grey
   background-color: #f6f7f9
@@ -884,39 +964,33 @@ input
 .novelties-item-bg-white
   background: #fff
 
-/* 93 с отступом в 32 от верха, низ 225
-
-.blog-container
-  display: grid
-  grid-template-columns: repeat(12, 1fr)
-  grid-template-rows: 100px 225px
-  grid-template-areas: "te te te te te te te te te te br br" "so so so so so so st st st st st st"
-  grid-gap: 20px
+.blog-title-buttons-container
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+  align-items: center
   margin-top: 60px
   margin-bottom: 50px
 
 .blog__title
-  grid-area: te
+  // grid-area: te
   font-size: 30px
   font-weight: 900
 
-.blog__buttons-mr0
+// .blog__buttons-mr0
+//   display: flex
+//   flex-flow: row nowrap
+//   justify-content: flex-end
+
+// .blog__buttons-container
+//   grid-area: br
+
+.blog__story-wrapper
   display: flex
   flex-flow: row nowrap
-  justify-content: flex-end
-
-.blog__buttons-container
-  grid-area: br
-
-.blog__story-wrapper1
-  grid-area: so
-  display: flex
-  flex-flow: row nowrap
-
-.blog__story-wrapper2
-  grid-area: st
-  display: flex
-  flex-flow: row nowrap
+  @media (max-width: 740px)
+    display: flex
+    flex-flow: column nowrap
 
 .blog__story-container-image
   width: 295px
@@ -926,6 +1000,9 @@ input
   justify-content: center
   align-items: center
   box-sizing: border-box
+  @media (max-width: 740px)
+    width: 290px
+    height: 210px
 
 .blog__story-container-text
   width: 315px
@@ -936,17 +1013,25 @@ input
   padding-left: 25px
   padding-right: 20px
   box-sizing: border-box
+  @media (max-width: 740px)
+    width: 290px
+    height: 210px
+    padding-top: 25px
 
 .blog__story-title
   font-weight: 700
   font-size: 15px
   display: block
+  @media (max-width: 740px)
+    font-size: 14px
 
 .blog__story-text
   font-size: 13px
   font-weight: 300
   display: block
   padding-top: 25px
+  @media (max-width: 740px)
+    font-size: 12px
 
 .blog__story-link
   font-size: 14px
@@ -955,6 +1040,11 @@ input
   display: block
   float: right
   padding-top: 35px
+  outline: none
+  &:hover
+    color: #f7bb03
+  @media (max-width: 740px)
+    font-size: 13px
 
 .prefooter
   width: 100%
@@ -1383,6 +1473,20 @@ input
     height: 20px
     left: 0
     top: 23px
+  @media (max-width: 1240px)
+    &:hover, &:first-child:hover
+      position: relative
+      padding-left: 20px
+    &:hover:before
+      content: " "
+      display: inline-block
+      background-image: url(../images/icon/png/right-arrow.png)
+      background-repeat: no-repeat
+      position: absolute
+      width: 20px
+      height: 20px
+      left: 0
+      top: 20px
 
 .footer__catalog-link
   &:first-child:hover:before
@@ -1394,12 +1498,12 @@ input
     width: 20px
     height: 20px
     left: 0
-    top: 4px
+    top: 2px
 
-@media (max-width: 1240px)
-  .footer__catalog-link
-    &:hover, &:first-child:hover
-      padding-left: 20px
+// @media (max-width: 1240px)
+//   .footer__catalog-link
+//     &:hover, &:first-child:hover
+//       padding-left: 20px
 
 .footer__container-catalog > a, .footer__container-info > a, .footer__container-buyer > a
   padding: 20px 0 0 0

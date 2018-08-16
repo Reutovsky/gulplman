@@ -9,15 +9,16 @@
   grid-area: im
   background-image: url(../images/novelties__item-image.jpg)
   background-repeat: no-repeat
-  background-position-x: 40px
-
-@media (max-width: 1240px)
-  .item__image
-    background-position: 0px 0px
-
-@media (max-width: 1240px)
-  .item__image
+  background-position: center top
+  @media (max-width: 1240px)
     background-position: center top
+  @media (max-width: 740px)
+    background-position: center top
+
+.item__image__youwatched
+  background-image: url(../images/novelties__item-image.jpg)
+  background-repeat: no-repeat
+  background-position: center 10px
 
 .item__quantity
   grid-area: qu
@@ -32,7 +33,10 @@
 .item__stars-and-reviews
   grid-area: st
   padding-left: 25px
-  align-self: center
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: flex-start
 
 .item__price
   grid-area: pr
@@ -73,8 +77,9 @@
 .item__about
   padding-left: 25px
   padding-right: 15px
+  padding-top: 10px
   justify-self: center
-  align-self: center
+  align-self: stretch
 
 .item__about-text
   font-size: 15px
@@ -82,12 +87,14 @@
 
 .item__image-star
   width: 20px
+  display: inline
 
 .item__stars-and-reviews-link
   font-size: 14px
   text-decoration: underline
   color: #a8a8a8
-  padding-left: 15px
+  padding-left: 10px
+  display: inline
 
 .item__price-span
   font-weight: 900
@@ -116,32 +123,17 @@
   border: #f7bb03 1px solid
   outline: none
   cursor: pointer
-  background-image: url(../images/icon/png/shopping-cart-yellow.png)
+  background-image: url(../images/icon/svg/shopping-cart-yellow.svg)
   background-repeat: no-repeat
   background-position: 25px 8px
+  background-size: 30px
   padding-left: 35px
-
-@media (max-width: 1240px)
-  .item__buttons-inbasket
-    width: 125px
-    height: 45px
-    font-weight: 700
-    font-size: 13px
-    background-image: url(../images/icon/png/shopping-cart-yellow.png)
-    background-repeat: no-repeat
-    background-position: 10px 7px
-    background-size: 25px 25px
-
-@media (max-width: 740px)
-  .item__buttons-inbasket
-    width: 165px
-    height: 45px
-    font-weight: 700
-    font-size: 13px
-    background-image: url(../images/icon/png/shopping-cart-yellow.png)
+  &:hover
+    background-color: #f7bb03
+    background-image: url(../images/icon/svg/shopping-cart.svg)
     background-repeat: no-repeat
     background-position: 25px 8px
-    padding-left: 35px
+    background-size: 30px
 
 .item__buttons-heart
   width: 48px
@@ -153,16 +145,6 @@
   background-repeat: no-repeat
   background-position: center center
 
-@media (max-width: 1240px)
-  .item__buttons-heart
-    width: 35px
-    height: 45px
-
-@media (max-width: 740px)
-  .item__buttons-heart
-    width: 45px
-    height: 45px
-
 .item__buttons-diagram
   width: 48px
   height: 48px
@@ -173,12 +155,26 @@
   background-repeat: no-repeat
   background-position: center center
 
-@media (max-width: 1240px)
-  .item__buttons-diagram
-    width: 35px
-    height: 45px
 
-@media (max-width: 740px)
-  .item__buttons-diagram
-    width: 45px
-    height: 45px
+.item__buttons-inbasket-catalog
+  @media (max-width: 1240px)
+    background-image: url(../images/icon/svg/shopping-cart-yellow.svg)
+    background-repeat: no-repeat
+    background-position: 10px 10px
+    background-size: 16px
+    &:hover
+      background-image: url(../images/icon/svg/shopping-cart.svg)
+      background-repeat: no-repeat
+      background-position: 10px 10px
+      background-size: 16px
+  @media (max-width: 740px)
+    background-image: url(../images/icon/svg/shopping-cart-yellow.svg)
+    background-repeat: no-repeat
+    background-position: 25px 8px
+    background-size: 30px
+    &:hover
+      background-color: #f7bb03
+      background-image: url(../images/icon/svg/shopping-cart.svg)
+      background-repeat: no-repeat
+      background-position: 25px 8px
+      background-size: 30px

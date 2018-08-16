@@ -3,6 +3,7 @@
 var gulp = require('gulp'),
     pug  = require('gulp-pug'),
     sass = require('gulp-sass'),
+    // cleanCSS = require('gulp-clean-css'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),
     notify = require('gulp-notify'),
@@ -14,7 +15,7 @@ gulp.task('serve', function() {
             baseDir: "./build"
         }
     });
-    // browserSync.watch('build',browserSync.reload);
+    browserSync.watch('build',browserSync.reload);
 });
 
 gulp.task('pug', function() {
@@ -23,7 +24,7 @@ gulp.task('pug', function() {
             pretty: true
         }))
         .pipe(gulp.dest('build'))
-        .on('end',browserSync.reload);
+        .on('end', browserSync.reload);
 });
 
 gulp.task('sass', function() {
@@ -37,7 +38,7 @@ gulp.task('sass', function() {
             title: "style error"
         }))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('build/styles/'))
+        .pipe(gulp.dest('build/styles'))
         .pipe(browserSync.reload({
             stream:true
         }));
@@ -45,7 +46,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', function() {
     gulp.watch('src/pug/pages/**/*.pug', gulp.series('pug'));
-    gulp.watch('src/static/sass/**/*.sass', gulp.series('sass'))
+    gulp.watch('src/static/sass/**/*.sass', gulp.series('sass'));
 });
 
 gulp.task('default', gulp.series(
