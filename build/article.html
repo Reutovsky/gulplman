@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Lman - Статьи</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="header__whitespace1"></div>
+        <div class="header-city"><img class="header-city__image-arrow" src="images/icon/svg/you-are-here.svg" alt="target"><span class="header-city__title-city">Ваш город:</span><a class="header-city__link-chosen-city" href="javascript: void(0);">Москва</a></div>
+        <div class="header-phone"><img class="header-phone__image-phone" src="images/icon/svg/phone-call.svg" alt="phone"><span class="header-phone__span-number">8 800 123-45-67</span></div>
+        <div class="header-time"><img class="header-time__image-clock" src="images/icon/svg/clock.svg" alt="clock"><span class="header-time__span-time">Без выходных с 9:00 до 21:00</span></div>
+        <div class="header-problem"><a class="header-problem__link-dont-call" href="javascript: void(0);">Не дозвонились?</a></div>
+        <div class="header-login"><img class="header-login__image-avatar" src="images/icon/svg/avatar.svg" alt="avatar"><a class="header-login__link-singin" href="javascript: void(0);">Вход</a>&nbsp; |  <a class="header-login__link-reg" href="javascript: void(0);">Регистрация</a></div>
+        <div class="header__whitespace2"></div>
+        <div class="header__whitespace3"></div>
+        <div class="header-logo"><a class="header-logo__link-logo" href="index.html"><img class="header-logo__image-logo" src="images/logo_leatherman.png" alt="logo"></a></div>
+        <div class="header-search">
+          <input class="header-search__input-search" type="text" placeholder="Поиск по разделам, названию или артикулу">
+        </div>
+        <div class="header-options"><a class="header-options__link-favorites" href="javascript: void(0);">Избранное (0)</a><a class="header-options__link-compare" href="javascript: void(0);">Сравнение (12)</a><a class="header-options__link-basket" href="javascript: void(0);">Корзина (5)</a></div>
+        <div class="header__whitespace4"></div>
+        <div class="header__whitespace5"></div>
+        <div class="header-catalog">
+          <button class="header-catalog__button" id="hcb">Каталог товаров</button>
+        </div>
+        <div class="header-conditions"><a class="header-conditions__link-delivery" href="javascript: void(0);">Условия доставки</a>|<a class="header-conditions__link-payment" href="javascript: void(0);">Условия оплаты</a>|<a class="header-conditions__link-exchange" href="javascript: void(0);">Обмен и возврат</a></div>
+        <div class="header__whitespace6"></div>
+        <div class="header__buttons__shadow-wrapper">
+          <button class="header__shadow_basket"></button>
+          <button class="header__shadow_avatar"></button>
+          <button class="header__shadow_question"></button>
+        </div>
+      </div>
+      <div class="menu" id="menu">
+        <div class="menu-wrapper-grid">
+          <div class="menu__empty-grey1"></div>
+          <div class="menu__empty-grey2"></div>
+          <div class="menu__empty-grey3"></div>
+          <div class="menu__empty-grey4"></div>
+          <div class="menu__empty-grey5"></div>
+          <div class="menu__empty-grey6"></div>
+          <div class="menu__wrapper-multitool-title menu__wrapper-title">Мультитулы</div>
+          <div class="menu__wrapper-multitool-image"><img class="menu__image" src="images/menu/menu__image-1.png" alt="image knife"></div>
+          <div class="menu__wrapper-multitool-links"><a class="menu__link" href="javascript: void(0);">Все мультитулы</a><a class="menu__link" href="javascript: void(0);">Полноразмерные</a><a class="menu__link" href="javascript: void(0);">Усиленные</a><a class="menu__link" href="javascript: void(0);">Брелоки</a></div>
+          <div class="menu__wrapper-bracelet-title menu__wrapper-title">Браслеты</div>
+          <div class="menu__wrapper-bracelet-image"><img class="menu__image" src="images/menu/menu__image-2.png" alt="image knife"></div>
+          <div class="menu__wrapper-bracelet-links"><a class="menu__link" href="javascript: void(0);">Все браслеты</a><a class="menu__link" href="javascript: void(0);">Широкие браслеты</a><a class="menu__link" href="javascript: void(0);">Узские браслеты</a><a class="menu__link" href="javascript: void(0);">Стальные браслеты</a></div>
+          <div class="menu__wrapper-clock-title menu__wrapper-title">Часы</div>
+          <div class="menu__wrapper-clock-image"><img class="menu__image" src="images/menu/menu__image-3.png" alt="image knife"></div>
+          <div class="menu__wrapper-clock-links"><a class="menu__link" href="javascript: void(0);">Все часы</a><a class="menu__link" href="javascript: void(0);">Стальные часы</a><a class="menu__link" href="javascript: void(0);">Черные часы</a></div>
+          <div class="menu__wrapper-knife-title menu__wrapper-title">Ножи</div>
+          <div class="menu__wrapper-knife-image"><img class="menu__image" src="images/menu/menu__image-4.png" alt="image knife"></div>
+          <div class="menu__wrapper-knife-links"><a class="menu__link" href="javascript: void(0);">Все ножи</a><a class="menu__link" href="javascript: void(0);">Полусеррейтор</a><a class="menu__link" href="javascript: void(0);">Прямой клинок</a></div>
+          <div class="menu__wrapper-pockettool-title menu__wrapper-title">Карманные инструменты</div>
+          <div class="menu__wrapper-pockettool-image"><img class="menu__image" src="images/menu/menu__image-5.png" alt="image knife"></div>
+          <div class="menu__wrapper-pockettool-links"><a class="menu__link" href="javascript: void(0);">Все инструменты</a><a class="menu__link" href="javascript: void(0);">Для оружия</a><a class="menu__link" href="javascript: void(0);">Для скейтборда</a><a class="menu__link" href="javascript: void(0);">Для сноуборда</a></div>
+          <div class="menu__wrapper-accessory-title menu__wrapper-title">Аксессуары</div>
+          <div class="menu__wrapper-accessory-image"><img class="menu__image" src="images/menu/menu__image-6.png" alt="image knife"></div>
+          <div class="menu__wrapper-accessory-links"><a class="menu__link" href="javascript: void(0);">Все аксессуары</a><a class="menu__link" href="javascript: void(0);">Кожаные чехлы</a><a class="menu__link" href="javascript: void(0);">Нейлоновые чехлы</a><a class="menu__link" href="javascript: void(0);">Дополнения / Запчасти</a><a class="menu__link" href="javascript: void(0);">Черные браслеты</a><a class="menu__link" href="javascript: void(0);">Для серфинга</a></div>
+        </div>
+        <div class="menu__close">
+          <buttom class="menu__close-button" id="hmc">Закрыть меню</buttom>
+        </div>
+      </div>
+      <div class="menu__avatarhidden">
+        <dis></dis>
+      </div>
+    </header>
+    <div class="ordercall-overlay">
+      <div class="ordercall-form-container">
+        <div class="ordercall-container-button-close">
+          <button class="ordercall-button-close" id="ordercall-button-close"></button>
+        </div>
+        <form class="form-overcall" id="form-ordercall" name="form-ordercall">
+          <div class="ordercall-wrapper-flex">
+            <div class="ordercall-container-title">Заказать звонок</div>
+            <div class="ordercall-container-inputname">
+              <input class="form-ordercall__inputname" type="text" name="ordercall-name" placeholder="Имя">
+            </div>
+            <div class="ordercall-container-inputphone">
+              <input class="form-ordercall__inputphone" type="text" name="ordercall-phone" placeholder="Телефон">
+            </div>
+            <div class="ordercall-container-checkboxed">
+              <input class="checkbox" id="checkbox" type="checkbox" checked>
+              <label class="ordercall-accept-label" for="checkbox">Согласен(на) обработку персональных данных</label>
+            </div>
+            <div class="ordercall-container-submit">
+              <input class="form-odercall__submit" type="submit" value="Заказать звонок">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="articles__header-links-wrapper">
+      <div class="container">
+        <div class="articles__header-links-container"><a class="articles__header-links-link" href="javascript: void(0);">	Главная</a><a class="articles__header-links-link" href="javascript: void(0);">	Блог</a><span class="articles__header-links-unablespan">&nbsp;&nbsp;| &nbsp;Здесь будет заголовок статьи</span></div>
+      </div>
+    </div>
+    <div class="articles__bigtitle-wrapper">
+      <div class="container">
+        <div class="articles__bigtitle-text">	здесь будет заголовок статьи</div>
+      </div>
+    </div>
+    <div class="articles__allpage-wrapper">
+      <div class="container">
+        <div class="articles__bothsides-wrapper">
+          <aside class="articles__menu-wrapper">
+            <div class="articles__menu-container-type"><a class="articles__menu-link" href="javascript: void(0);">О компании</a><a class="articles__menu-link" href="javascript: void(0);">О бренде</a><a class="articles__menu-link" href="javascript: void(0);">Бонусная программа</a>
+              <p class="articles__menu-link-opened">Наш блог</p>
+            </div>
+            <div class="articles__recommend-wrapper"><span class="articles__recommend-title">Рекомендуем</span><a class="articles__recommend-item-image-wrapper" href="javascript: void(0);"></a><a class="articles__recommend-item-name-link" href="javascript: void(0);">Мультитул Leatherman Charge ALX, 18 функций, кожаный чехол</a>
+              <div class="articles__recommend-cost-wrapper">
+                <div class="articles__recommend-item-cost">4 800 </div>
+                <div class="articles__recommend-item-cost-crossed">5 000 Р</div>
+              </div>
+            </div>
+            <div class="articles__recommend-wrapper"><a class="articles__recommend-item-image-wrapper" href="javascript: void(0);"></a><a class="articles__recommend-item-name-link" href="javascript: void(0);">Мультитул Leatherman Charge ALX, 18 функций, кожаный чехол</a>
+              <div class="articles__recommend-cost-wrapper">
+                <div class="articles__recommend-item-cost">4 800 Р</div>
+                <div class="articles__recommend-item-cost-crossed">5 000 Р</div>
+              </div>
+            </div>
+            <div class="articles__recommend-wrapper"><a class="articles__recommend-item-image-wrapper" href="javascript: void(0);"></a><a class="articles__recommend-item-name-link" href="javascript: void(0);">Мультитул Leatherman Charge ALX, 18 функций, кожаный чехол</a>
+              <div class="articles__recommend-cost-wrapper">
+                <div class="articles__recommend-item-cost">4 800 Р</div>
+                <div class="articles__recommend-item-cost-crossed">5 000 Р</div>
+              </div>
+            </div>
+            <div class="articles__recommend-wrapper"><a class="articles__recommend-item-image-wrapper" href="javascript: void(0);"></a><a class="articles__recommend-item-name-link" href="javascript: void(0);">Мультитул Leatherman Charge ALX, 18 функций, кожаный чехол</a>
+              <div class="articles__recommend-cost-wrapper">
+                <div class="articles__recommend-item-cost">4 800 Р</div>
+                <div class="articles__recommend-item-cost-crossed">5 000 Р</div>
+              </div>
+            </div>
+          </aside>
+          <main class="articles__main-wrapper">
+            <div class="articles__main-wrapper-grid">
+              <div class="articles__content-wrapper">
+                <h3 class="articles__content-title">Содержание:</h3>
+                <ol class="articles__content-list">
+                  <li class="articles__content-list-item">Пункт содержания</li>
+                  <li class="articles__content-list-item">Пункт содержания</li>
+                  <li class="articles__content-list-item">Пункт содержания</li>
+                  <li class="articles__content-list-item">Пункт содержания</li>
+                  <li class="articles__content-list-item">Пункт содержания</li>
+                  <li class="articles__content-list-item">Пункт содержания</li>
+                  <li class="articles__content-list-item">Пункт содержания</li>
+                  <li class="articles__content-list-item">Пункт содержания</li>
+                </ol>
+              </div>
+              <div class="articles__article1-wrapper">
+                <p class="articles__article1-text">
+                  Lorem ipsum dolor sit amet, pro doctus expetenda no,
+                  harum libris liberavisse sea ut. Vel ut scripta
+                  bonorum, sed praesent torquatos id. Duo ea brute
+                  referrentur, at delicata comprehensam mediocritatem
+                  mea. Ex nonumes similique nam. Vim scripserit appellantur
+                  Sumo solum maluisset id pri, eum no erat molestie.
+                  Lorem ipsum dolor sit amet, pro doctus expetenda no,
+                  harum libris liberavisse sea ut. Vel ut scripta
+                  bonorum, sed praesent torquatos id. Duo ea brute
+                  referrentur, at delicata comprehensam mediocritatem
+                  mea. Ex nonumes similique nam. Vim scripserit appellantur
+                  Sumo solum maluisset id pri, eum no erat molestie.
+                  Lorem ipsum dolor sit amet, pro doctus expetenda no,
+                  harum libris liberavisse sea ut. Vel ut scripta
+                  bonorum, sed praesent torquatos id. Duo ea brute
+                  referrentur, at delicata comprehensam mediocritatem
+                  mea. Ex nonumes similique nam. Vim scripserit appellantur
+                  Sumo solum maluisset id pri, eum no erat molestie.
+                </p>
+              </div>
+              <div class="articles__bannersmall-wrapper">
+                <div class="articles__bannersmall-image-wrapper">
+                  <div class="articles__bannersmall-warranty-circle">- 25 year - warranty </div>
+                </div>
+                <div class="articles__bannersmall-image-wrapper">
+                  <div class="articles__bannersmall-warranty-circle">- 25 year - warranty </div>
+                </div>
+                <div class="articles__bannersmall-image-wrapper">
+                  <div class="articles__bannersmall-warranty-circle">- 25 year - warranty </div>
+                </div>
+              </div>
+              <div class="articles__article2-wrapper">
+                <h2 class="articles__article2-title">Это заголовок h2 в статье</h2>
+                <p class="articles__article2-text">
+                  Lorem ipsum dolor sit amet, pro doctus expetenda no,
+                  harum libris liberavisse sea ut. Vel ut scripta
+                  bonorum, sed praesent torquatos id. Duo ea brute
+                  referrentur, at delicata comprehensam mediocritatem
+                  mea. Ex nonumes similique nam. Vim scripserit appellantur
+                  Sumo solum maluisset id pri, eum no erat molestie.
+                  Lorem ipsum dolor sit amet, pro doctus expetenda no,
+                  harum libris liberavisse sea ut. Vel ut scripta
+                  bonorum, sed praesent torquatos id. Duo ea brute
+                  referrentur, at delicata comprehensam mediocritatem
+                  mea. Ex nonumes similique nam.
+                </p>
+              </div>
+              <div class="articles__banner-big-wrapper">
+                <div class="articles__banner-big-title">new!<br>black & silver surge</div><a class="articles__banner-big-link" href="javascript: void(0);">Подробнее</a>
+                <div class="articles__banner-big-logo"></div>
+              </div>
+              <div class="articles__article3-wrapper">
+                <h2 class="articles__article3-title">Это заголовок h2 в статье</h2>
+                <p class="articles__article3-text">
+                  Lorem ipsum dolor sit amet, pro doctus expetenda no,
+                  harum libris liberavisse sea ut. Vel ut scripta
+                  bonorum, sed praesent torquatos id. Duo ea brute
+                  referrentur, at delicata comprehensam mediocritatem
+                  mea. Ex nonumes similique nam. Vim scripserit appellantur
+                  Sumo solum maluisset id pri, eum no erat molestie.
+                  Lorem ipsum dolor sit amet, pro doctus expetenda no.
+                </p>
+              </div>
+              <div class="articles__interesting-wrapper">
+                <h3 class="articles__interesting-title">Это интересно</h3>
+                <p class="articles__interesting-text">
+                  Lorem ipsum dolor sit amet, pro doctus expetenda no,
+                  harum libris liberavisse sea ut. Vel ut scripta
+                  bonorum, sed praesent torquatos id. Duo ea brute
+                  referrentur, at delicata comprehensam mediocritatem
+                  mea. Ex nonumes similique nam. Vim scripserit appellantur
+                  Sumo solum maluisset id pri, eum no erat molestie.
+                  Lorem ipsum dolor sit amet, pro doctus expetenda no.
+                </p>
+              </div>
+              <div class="articles__table-wrapper">
+                <table class="articles__table" cellspacing="0" cellpadding="0">
+                  <thead class="articles__table-thead">
+                    <tr>
+                      <td class="articles__table-col1">Заголовок 1</td>
+                      <td class="articles__table-col2">Заголовок 2</td>
+                      <td class="articles__table-col3">Заголовок 1</td>
+                      <td class="articles__table-col4">Заголовок 2</td>
+                    </tr>
+                  </thead>
+                  <tbody class="articles__table-tbody">
+                    <tr>
+                      <td class="articles__table-col1">Lorem ipsum dolor sit amet</td>
+                      <td class="articles__table-col2">5000 р.</td>
+                      <td class="articles__table-col3">Lorem ipsum dolor sit amet</td>
+                      <td class="articles__table-col4">Lorem ipsum dolor sit amet</td>
+                    </tr>
+                    <tr>
+                      <td class="articles__table-col1">Lorem ipsum dolor sit amet</td>
+                      <td class="articles__table-col2">5000 р.</td>
+                      <td class="articles__table-col3">Lorem ipsum dolor sit amet</td>
+                      <td class="articles__table-col4">Lorem ipsum dolor sit amet</td>
+                    </tr>
+                    <tr>
+                      <td class="articles__table-col1">Lorem ipsum dolor sit amet</td>
+                      <td class="articles__table-col2">5000 р.</td>
+                      <td class="articles__table-col3">Lorem ipsum dolor sit amet</td>
+                      <td class="articles__table-col4">Lorem ipsum dolor sit amet</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="articles__youtube-wrapper">
+                <video controls="controls" poster="images/banner-big-video.jpg"></video>
+              </div>
+              <div class="articles__youtube-text-wrapper">
+                <p class="articles__youtube-text">
+                  Lorem ipsum dolor sit amet, pro doctus expetenda no,
+                  harum libris liberavisse sea ut. Vel ut scripta
+                  bonorum, sed praesent torquatos id. Duo ea brute
+                  referrentur, at delicata comprehensam mediocritatem
+                  mea. Ex nonumes similique nam. Vim scripserit appellantur
+                  Sumo solum maluisset id pri, eum no erat molestie.
+                  Lorem ipsum dolor sit amet, pro doctus expetenda no.
+                </p>
+              </div>
+              <div class="articles__socials-wrapper"><img class="articles__socials-image-fb" src="images/icon/png/fb.png"><img class="articles__socials-image-vk" src="images/icon/png/vk.png"><img class="articles__socials-image-tw" src="images/icon/png/tw.png"><img class="articles__socials-image-ok" src="images/icon/png/ok.png"><br><img class="articles__socials-image-greystar" src="images/icon/png/grey-star-small.png"><img class="articles__socials-image-greystar" src="images/icon/png/grey-star-small.png"><img class="articles__socials-image-greystar" src="images/icon/png/grey-star-small.png"><img class="articles__socials-image-greystar" src="images/icon/png/grey-star-small.png"><img class="articles__socials-image-greystar" src="images/icon/png/grey-star-small.png"><span class="articles__socials-text">&nbsp;(Пока оценок нет)</span><br><span class="articles__socials-text">Просмотров: 16</span></div>
+              <div class="articles__form-wrapper">
+                <div class="articles__form-title">Оставить комментарий</div>
+                <form class="articles__form" id="articles__form" action="">
+                  <div class="articles__form-grid">
+                    <div class="articles__form-inputname-wrapper">Ваше имя<br>
+                      <input class="articles__form-inputname-input" type="text" placeholder="Введите данные">
+                    </div>
+                    <div class="articles__form-inputmail-wrapper">E-mail<br>
+                      <input class="articles__form-inputmail-input" type="text">
+                    </div>
+                    <div class="articles__form-inputcomment-wrapper">Комментарий<br>
+                      <textarea class="articles__form-inputcomment-textarea" type="text" placeholder=""></textarea>
+                    </div>
+                    <div class="articles__form-checkboxsubmit-wrapper">
+                      <div class="articles__form-checkboxlabel-wrapper">
+                        <input class="articles__form-checkbox" type="checkbox" id="accept" value="accept">
+                        <label class="articles__form-labelforcheckbox">Согласен(на) наобработку персональных данных</label>
+                      </div>
+                      <input class="articles__form-submit" type="submit" value="Отправить">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <div class="prefooter">
+      <div class="container">
+        <p class="prefooter__title">Lorem ipsum dolor sit amet, quod exerci posidonium.</p>
+        <p class="prefooter__text">
+          Lorem ipsum dolor sit amet, cum ei antiopam facilisis.
+          Veniam malorum vim ut, has lorem mucius option at. No dicam
+          suscipit temporibus usu. In mel utamur iudicabit, platonem
+          vituperatoribus cu mea, modo imperdiet concludaturque in vix.
+          Dolor aliquando omittantur ei pri, nibh option oportere eos ea,
+          vim aeterno elaboraret ad. Amet prima id per.
+          Lorem ipsum dolor sit amet, cum ei antiopam facilisis.
+          Veniam malorum vim ut, has lorem mucius option at. No dicam
+          suscipit temporibus usu. In mel utamur iudicabit, platonem
+          vituperatoribus cu mea, modo imperdiet concludaturque in vix.
+          Dolor aliquando omittantur ei pri, nibh option oportere eos ea,
+          vim aeterno elaboraret ad. Amet prima id per.
+          Lorem ipsum dolor sit amet, cum ei antiopam facilisis.
+          Veniam malorum vim ut, has lorem mucius option at. No dicam
+          suscipit temporibus usu. In mel utamur iudicabit, platonem
+          vituperatoribus cu mea, modo imperdiet concludaturque in vix.
+          Dolor aliquando omittantur ei pri, nibh option oportere eos ea,
+          vim aeterno elaboraret ad. Amet prima id per.
+          Lorem ipsum dolor sit amet, cum ei antiopam facilisis.
+          Veniam malorum vim ut, has lorem mucius option at. No dicam
+          suscipit temporibus usu. In mel utamur iudicabit, platonem
+          vituperatoribus cu mea, modo imperdiet concludaturque in vix.
+          Dolor aliquando omittantur ei pri, nibh option oportere eos ea,
+          vim aeterno elaboraret ad. Amet prima id per.
+        </p>
+        <p class="prefooter__text">
+          Lorem ipsum dolor sit amet, cum ei antiopam facilisis.
+          Veniam malorum vim ut, has lorem mucius option at. No dicam
+          suscipit temporibus usu. In mel utamur iudicabit, platonem
+          vituperatoribus cu mea, modo imperdiet concludaturque in vix.
+          Dolor aliquando omittantur ei pri, nibh option oportere eos ea,
+          vim aeterno elaboraret ad. Amet prima id per.
+          Lorem ipsum dolor sit amet, cum ei antiopam facilisis.
+          Veniam malorum vim ut, has lorem mucius option at. No dicam
+          suscipit temporibus usu. In mel utamur iudicabit, platonem
+          vituperatoribus cu mea, modo imperdiet concludaturque in vix.
+          Dolor aliquando omittantur ei pri, nibh option oportere eos ea,
+          vim aeterno elaboraret ad. Amet prima id per.
+        </p>
+      </div>
+    </div>
+    <div class="helpful">
+      <div class="container">
+        <div class="helpful__container-flex">
+          <div class="helpful__container-imagetext">
+            <div class="helpful__container-image"><img class="helpful__image-envelope" src="images/icon/svg/envelope.svg" alt="envelope"></div>
+            <div class="helpful__container-text">
+              <p class="helpful__text">Только полезная информация, новинки и скидки для своих!</p>
+            </div>
+          </div>
+          <div class="helpful__container-inputbutton">
+            <div class="helpful__container-input">
+              <input class="helpful__input-email" type="text" placeholder="Введите Ваш E-mail">
+            </div>
+            <div class="helpful__container-button">
+              <button class="helpful__button-join">Вступить в клуб</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper-grid">
+          <div class="footer__container-logo"></div>
+          <div class="footer__container-phone"><img class="footer__phone-image" src="images/icon/svg/phone-call.svg" alt="phone"><span class="footer__phone-number">8 800 123-45-67</span>
+            <p class="footer__phone-text">Бесплатно по России</p>
+          </div>
+          <div class="footer__container-socials"><img class="footer__socials-image footer__socials-image-vkontakte" src="images/icon/png/vkontakte.png" alt="vkontakte"><img class="footer__socials-image footer__socials-image-facebook" src="images/icon/png/facebook.png" alt="facebook"><img class="footer__socials-image footer__socials-image-instagram" src="images/icon/png/instagram.png" alt="instagram"><img class="footer__socials-image footer__socials-image-youtubew" src="images/icon/png/youtube.png" alt="youtube"></div>
+          <div class="footer__container-title-catalog">Каталог товаров</div>
+          <div class="footer__container-title-info">Информация</div>
+          <div class="footer__container-title-buyer">Покупателю</div>
+          <div class="footer__container-title-acceptforpay">Принимаем к оплате</div>
+          <div class="footer__container-catalog"><a class="footer__catalog-link" href="javascript: void(0);">Мультититулы</a><a class="footer__catalog-link" href="javascript: void(0);">Браслеты</a><a class="footer__catalog-link" href="javascript: void(0);">Часы</a><a class="footer__catalog-link" href="javascript: void(0);">Ножи</a><a class="footer__catalog-link" href="javascript: void(0);">Аксессуары</a></div>
+          <div class="footer__container-info"><a class="footer__catalog-link" href="javascript: void(0);">О компании</a><a class="footer__catalog-link" href="javascript: void(0);">О бренде</a><a class="footer__catalog-link" href="javascript: void(0);">Бонусная программа</a><a class="footer__catalog-link" href="javascript: void(0);">Наш блог</a><a class="footer__catalog-link" href="javascript: void(0);">Пользовательское соглашение</a><a class="footer__catalog-link" href="javascript: void(0);">Политика конфиденциальности</a></div>
+          <div class="footer__container-buyer"><a class="footer__catalog-link" href="javascript: void(0);">Условия доставки</a><a class="footer__catalog-link" href="javascript: void(0);">Условия оплаты</a><a class="footer__catalog-link" href="javascript: void(0);">Обмен и возврат</a><a class="footer__catalog-link" href="javascript: void(0);">Гарантия 25 лет</a><a class="footer__catalog-link" href="javascript: void(0);">Как сделать заказ</a><a class="footer__catalog-link" href="javascript: void(0);">Как отследить заказ</a></div>
+          <div class="footer__container-acceptforpay"><img class="footer__image-acceptforpay" src="images/icon/png/acceptforpay.png" alt="visa mastercard МИР"></div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright-wrapper">
+      <div class="container">
+        <div class="copyright-container-grid">
+          <div class="copyright__text">Copyright 2013-2018 © ileatherman.ru - официальный дилер Leatherman в России</div>
+          <div class="copyright__studio"> <a class="copyright__link" href="javascript: void(0);">СОЗДАНИЕ САЙТА ВЕБ СТУДИЯ WAYTOSTART</a></div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/jquery331dev.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

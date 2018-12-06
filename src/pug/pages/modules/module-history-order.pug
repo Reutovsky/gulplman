@@ -1,0 +1,130 @@
+.historyti__header-links-wrapper
+	.container
+		.historyti__header-links-container
+			a.historyti__header-links-link(href='javascript: void(0);')
+				| Главная | Личный кабинет
+			span.historyti__header-links-unablespan &nbsp;&nbsp;| &nbsp;История заказов
+.historyti__bigtitle-wrapper
+	.container
+		.historyti__bigtitle-text
+			|	История заказов
+.historyti__big-wrapper
+	.container
+		.historyno__wrapper-flex
+			aside.aside__menu-wrapper
+				.aside__menu-container-type
+					a.aside__menu-link(href="javascript: void(0);")
+						| Главная
+					a.aside__menu-link(href="javascript: void(0);")
+						| Моя корзина
+					a.aside__menu-link(href="javascript: void(0);")
+						| Мои доставки
+					a.aside__menu-link(href="javascript: void(0);")
+						| Избранное
+					a.aside__menu-link(href="javascript: void(0);")
+						| Сравнение
+					a.aside__menu-link.aside__menu-link-borderbottom(href="javascript: void(0);")
+						| Мои данные
+					p.aside__menu-link-opened
+						| История заказов
+					a.aside__menu-link(href="javascript: void(0);")
+						| Бонусные баллы
+					a.aside__menu-link(href="javascript: void(0);")
+						| Выход
+			main.historyoo__main-wrapper
+				.historyoo__about-wrapper
+					.historyoo__order-wrapper
+						p.historyoo__order-text-bold
+							| Заказ:
+							span.historyoo__order-text-light
+								|  № 12
+						p.historyoo__orderdate-text-bold
+							| Дата заказа:
+							span.historyoo__orderdate-text-light
+								|  28.05.2018
+					.historyoo__shipping-wrapper
+						p.historyoo__shippingkind-text-bold
+							| Доставка:
+							span.historyoo__shippingkind-text-light
+								|  срочная доставка
+						p.historyoo__shippingdate-text-bold
+							| Дата доставки:
+							span.historyoo__shippingdate-text-light
+								|  25.07.2018
+					.historyoo__wrapper-status
+						p.historyoo__status-text-bold
+							| Статус заказа:
+							span.historyoo__shipping-text-light
+								|  заказ в пути
+				form.historyno__searchform(action="post")
+					.historyno__searchform-wrapper-flex
+						.historyno__searchform-dates-wrapper
+							span.historyno__searchform-datefrom-text
+								| c
+							input.historyno__searchform-input-datefrom(type="text")
+							span.historyno__searchform-dateto-text
+								| по
+							input.historyno__searchform-input-dateto(type="text")
+						.historyno__searchform-quantity-wrapper
+							| Показывать по:
+							select.historyno__searchform-quantity-select
+								option(value="0")
+									| 5
+								option(value="1")
+									| 10
+								option(value="2")
+									| 20
+				.hystoryoo__orders-wrapper-grid
+					.hystoryoo__orders-title-product Товар
+					.hystoryoo__orders-title-name Название
+					.hystoryoo__orders-title-quantity Кол-во
+					.hystoryoo__orders-title-cost Цена
+					.hystoryoo__orders-title-summ Сумма
+					.hystoryoo__orders1-wrapper-product-image
+						img.hystoryoo__orders1-wrapper-product-image-item(src="images/hystoryoo__item.jpg")
+					.hystoryoo__orders1-wrapper-name
+						| Мультитул Leatherman Charge ALX, 18 функций, кожаный чехол
+					.hystoryoo__orders1-wrapper-quantity
+						| 2 шт.
+					.hystoryoo__orders1-wrapper-cost
+						| 5 000 Р
+					.hystoryoo__orders1-wrapper-summ
+						| 10 000 Р
+					.hystoryoo__orders2-wrapper-product-image
+						img.hystoryoo__orders2-wrapper-product-image-item(src="images/hystoryoo__item.jpg")
+					.hystoryoo__orders2-wrapper-name
+						| Мультитул Leatherman Charge ALX, 18 функций, кожаный чехол
+					.hystoryoo__orders2-wrapper-quantity
+						| 2 шт.
+					.hystoryoo__orders2-wrapper-cost
+						| 5 000 Р
+					.hystoryoo__orders2-wrapper-summ
+						| 10 000 Р
+				.hystoryoo__calc-wrapper-flex
+					.hystoryoo__calc-bonus-wrap
+						p.hystoryoo__calc-bonus-text
+							| Сумма предоставленной скидки:
+							span
+								|  1500 Р
+						p.hystoryoo__calc-bonus-text
+							| Бонусов за покупку: 
+							span
+								|  500 Р
+					.hystoryoo__calc-cost-wrap
+						.hystoryoo__calc-cost-wrapper-flex
+							.hystoryoo__calc-cost-wrapper-left
+								p.hystoryoo__calc-cost-text-light
+									| Стоимость товаров: 
+								p.hystoryoo__calc-cost-text-light
+									| Стоимость доставки:
+							.hystoryoo__calc-cost-wrapper-right
+									p.hystoryoo__calc-cost-text-bold
+										|  7500 Р
+									p.hystoryoo__calc-cost-text-bold
+										|  0 Р
+				.hystoryoo__total-wrapper-flex
+					.hystoryoo__total-text
+						| Итого:
+					.hystoryoo__total-cost
+						| 7500 Р
+

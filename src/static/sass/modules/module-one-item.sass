@@ -1,0 +1,180 @@
+.item-wrapper
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: 45px 265px 50px 90px 30px 45px 75px
+  grid-template-areas: "qu . ." "im im im" "bo bo bo" "ab ab ab" "st st st" "pr pr ." "bu bu bu"
+  border: #e8eaef 1px solid
+
+.item__image
+  grid-area: im
+  background-image: url(../images/novelties__item-image.jpg)
+  background-repeat: no-repeat
+  background-position: center top
+  @media (max-width: 1240px)
+    background-position: center top
+  @media (max-width: 740px)
+    background-position: center top
+
+.item__image__youwatched
+  background-image: url(../images/novelties__item-image.jpg)
+  background-repeat: no-repeat
+  background-position: center 10px
+
+.item__quantity
+  grid-area: qu
+
+.item__bonus
+  grid-area: bo
+  border-bottom: #e8eaef 1px solid
+
+.item__about
+  grid-area: ab
+
+.item__stars-and-reviews
+  grid-area: st
+  padding-left: 25px
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: flex-start
+
+.item__price
+  grid-area: pr
+  align-self: center
+
+.item__buttons
+  grid-area: bu
+
+.item__quantity-container
+  width: 80px
+  background: #e8eaef
+  height: 45px
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+
+.item__quantity-image
+  width: 30px
+  padding-left: 10px
+
+.item__quantity-span
+  font-size: 18px
+  font-weight: 500
+  padding-left: 5px
+
+.item__bonus-container
+  margin-left: 25px
+  width: 90px
+  height: 30px
+  background: #fdf1cd
+  font-size: 14px
+  font-weight: 500
+  display: flex
+  flex-flow: row nowrap
+  justify-content: center
+  align-items: center
+
+.item__about
+  padding-left: 25px
+  padding-right: 15px
+  padding-top: 10px
+  justify-self: center
+  align-self: stretch
+
+.item__about-text
+  font-size: 15px
+  font-weight: 700
+
+.item__image-star
+  width: 20px
+  display: inline
+
+.item__stars-and-reviews-link
+  font-size: 14px
+  text-decoration: underline
+  color: #a8a8a8
+  padding-left: 10px
+  display: inline
+
+.item__price-span
+  font-weight: 900
+  font-size: 22px
+  padding-left: 25px
+
+.item__price-span-underlined
+  font-weight: 400
+  font-size: 16px
+  text-decoration: line-through
+  padding-left: 15px
+
+.item__buttons
+  margin-top: 15px
+  padding-left: 10px
+  padding-right: 10px
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+
+.item__buttons-inbasket
+  width: 169px
+  height: 48px
+  font-size: 14px
+  font-weight: 700
+  border: #f7bb03 1px solid
+  outline: none
+  cursor: pointer
+  background-image: url(../images/icon/svg/shopping-cart-yellow.svg)
+  background-repeat: no-repeat
+  background-position: 25px 8px
+  background-size: 30px
+  padding-left: 35px
+  &:hover
+    background-color: #f7bb03
+    background-image: url(../images/icon/svg/shopping-cart.svg)
+    background-repeat: no-repeat
+    background-position: 25px 8px
+    background-size: 30px
+
+.item__buttons-heart
+  width: 48px
+  height: 48px
+  outline: none
+  cursor: pointer
+  border: #e8eaef 1px solid
+  background-image: url(../images/icon/png/heart.png)
+  background-repeat: no-repeat
+  background-position: center center
+
+.item__buttons-diagram
+  width: 48px
+  height: 48px
+  outline: none
+  cursor: pointer
+  border: #e8eaef 1px solid
+  background-image: url(../images/icon/png/bar-chart-png.png)
+  background-repeat: no-repeat
+  background-position: center center
+
+
+.item__buttons-inbasket-catalog
+  @media (max-width: 1240px)
+    background-image: url(../images/icon/svg/shopping-cart-yellow.svg)
+    background-repeat: no-repeat
+    background-position: 10px 10px
+    background-size: 16px
+    &:hover
+      background-image: url(../images/icon/svg/shopping-cart.svg)
+      background-repeat: no-repeat
+      background-position: 10px 10px
+      background-size: 16px
+  @media (max-width: 740px)
+    background-image: url(../images/icon/svg/shopping-cart-yellow.svg)
+    background-repeat: no-repeat
+    background-position: 25px 8px
+    background-size: 30px
+    &:hover
+      background-color: #f7bb03
+      background-image: url(../images/icon/svg/shopping-cart.svg)
+      background-repeat: no-repeat
+      background-position: 25px 8px
+      background-size: 30px

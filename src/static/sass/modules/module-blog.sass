@@ -1,0 +1,436 @@
+.blog__header-links-wrapper
+  display: block
+  padding-top: 10px
+
+@media (max-width: 1240px)
+  .blog__header-links-wrapper
+    display: block
+
+@media (max-width: 740px)
+  .blog__header-links-wrapper
+    display: none
+
+.blog__menu-link-opened
+  font-weight: 500
+  font-size: 16px
+  padding-left: 20px
+  &::before
+    content: ""
+    position: absolute
+    width: 2px
+    height: 25px
+    border: 0
+    background-color: #f7bb03
+    transform: translateX(-20px)
+    z-index: -10
+
+.blog__header-links-link
+  font-size: 14px
+  font-weight: 400
+  text-decoration: none
+  color: #000
+
+.blog__header-links-link
+  &:hover
+      text-decoration: underline
+
+.blog__header-links-unablespan
+  font-size: 14px
+  font-weight: 300
+  color: #a1a1a1
+
+.blog__bigtitle-wrapper
+  margin-top: 100px
+
+.blog__bigtitle-text
+  font-size: 30px
+  font-weight: 900
+  text-transform: uppercase
+
+@media (max-width: 740px)
+  .blog__bigtitle-text
+    background: #e9ebf0
+    font-size: 18px
+    font-weight: 900
+    text-align: center
+    line-height: 60px
+
+.blog__allpage-wrapper
+  margin-top: 60px
+
+.blog__bothsides-wrapper
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+  align-items: flex-start
+  align-content: flex-start
+
+@media (max-width: 740px)
+  .blog__bothsides-wrapper
+    display: block
+
+.blog__menu-wrapper
+  width: 295px
+
+@media (max-width: 1240px)
+  .blog__menu-wrapper
+    width: 220px
+
+.blog__menu-container-type
+  border: #e8eaef 1px solid
+  padding-left: 20px
+  padding-right: 15px
+
+.blog__menu-container-type > a
+  display: block
+  line-height: 45px
+  font-weight: 400
+  font-size: 13px
+  text-decoration: none
+  color: #000
+  border-top: #e8eaef 1px solid
+  &:hover
+    text-decoration: underline
+    font-weight: 500
+
+@media (max-width: 1240px)
+  .blog__menu-container-type > a
+    font-size: 14px
+    line-height: 40px
+    &:hover
+      text-decoration: underline
+      font-weight: 500
+    &:first-child
+      line-height: 25px
+
+.blog__main-wrapper
+  width: 820px
+
+@media (max-width: 1240px)
+  .blog__main-wrapper
+    width: 470px
+
+@media (max-width: 740px)
+  .blog__main-wrapper
+    width: 320px
+
+h2
+  display: inline
+  font-size: 20px
+
+h2 > a
+  color: black
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+    color: #f7bb03
+
+.blog__main-wrapper-grid
+  display: grid
+  grid-template-columns: 295px 525px
+  grid-template-rows: 265px 265px 265px 265px 265px
+  grid-template-areas: "i1 t1" "i2 t2" "i3 t3" "i4 t4" "i5 t5"
+  margin-top: -45px
+
+.blog__main-container-text1
+  grid-area: t1
+  padding-left: 20px
+  padding-top: 40px
+  border-bottom: #e8e9ed 1px solid
+
+.blog__main-container-text2
+  grid-area: t2
+  padding-left: 20px
+  padding-top: 40px
+  border-bottom: #e8e9ed 1px solid
+
+.blog__main-container-text3
+  grid-area: t3
+  padding-left: 20px
+  padding-top: 40px
+  border-bottom: #e8e9ed 1px solid
+
+.blog__main-container-text4
+  grid-area: t4
+  padding-left: 20px
+  padding-top: 40px
+  border-bottom: #e8e9ed 1px solid
+
+.blog__main-container-text5
+  grid-area: t5
+  padding-left: 20px
+  padding-top: 40px
+  border-bottom: #e8e9ed 1px solid
+
+.blog__main-container-image1
+  grid-area: i1
+  border-bottom: #e8e9ed 1px solid
+
+.blog__main-container-image2
+  grid-area: i2
+  border-bottom: #e8e9ed 1px solid
+  position: relative
+
+.blog__main-container-image3
+  grid-area: i3
+  border-bottom: #e8e9ed 1px solid
+
+.blog__main-container-image4
+  grid-area: i4
+  border-bottom: #e8e9ed 1px solid
+
+.blog__main-container-image5
+  grid-area: i5
+  border-bottom: #e8e9ed 1px solid
+
+.blog__main-image
+  width: 295px
+  height: 180px
+  padding-top: 45px
+
+.blog__showbutton-wrapper
+  grid-area: csbw
+  align-self: center
+  justify-self: stretch
+
+.blog__showbutton-button
+  border: none
+  line-height: 40px
+  border-top: #e8e9ed 1px solid
+  border-bottom: #e8e9ed 1px solid
+  text-transform: uppercase
+  font-size: 14px
+  font-weight: 500
+  width: 100%
+  outline: none
+  cursor: pointer
+  background-image: url(../images/icon/png/menu_arrow_down.png)
+  background-repeat: no-repeat
+  background-size: 15px 8px
+  background-position: 530px 18px
+
+@media (max-width: 1240px)
+  .blog__showbutton-button
+    background-image: url(../images/icon/png/menu_arrow_down.png)
+    background-repeat: no-repeat
+    background-size: 15px 8px
+    background-position: 300px 17px
+
+@media (max-width: 740px)
+  .blog__showbutton-button
+    background-position: 225px 17px
+
+.blog__showoptions-container
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+  justify-content: space-between
+  margin-top: 40px
+
+.blog__showoptions-wrapper
+  grid-area: csow
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-start
+  align-items: center
+
+@media (max-width: 740px)
+  .blog__showoptions-wrapper
+    grid-area: csow
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    background: #e9ebf0
+    margin-top: -20px
+
+.blog__showoptions-button-tostart
+  font-size: 13px
+  font-weight: 500
+  cursor: pointer
+  border: none
+  width: 105px
+  height: 38px
+  border-radius: 20px
+  border: #bcbfc4 1px solid
+  position: relative
+  outline: none
+  &:after
+    content: "В начало"
+    position: absolute
+    display: block
+    padding-left: 15px
+    margin-top: -5px
+
+@media (max-width: 1240px)
+  .blog__showoptions-button-tostart
+    width: 45px
+    height: 1px
+    border-radius: 50%
+    visibility: hidden
+    position: relative
+    outline: none
+    &:after
+      content: "\2039"
+      visibility: visible
+      display: flex
+      justify-content: center
+      align-items: center
+      border: #bcbfc4 1px solid
+      width: 33px
+      height: 33px
+      border-radius: 50%
+      padding: 1px
+      position: absolute
+      font-size: 35px
+      margin-top: -20px
+
+.blog__showoptions-link-disabled
+  font-weight: 700
+  font-size: 14px
+  text-decoration: underline
+  cursor: default
+  pointer-events: none
+  color: black
+  padding-left: 10px
+
+@media (max-width: 1240px)
+  .blog__showoptions-link-disabled
+    padding-left: 25px
+
+.blog__showoptions-link
+  font-weight: 400
+  font-size: 14px
+  color: black
+  text-decoration: none
+  padding-left: 15px
+  padding-right: 15px
+  &:hover
+    text-decoration: underline
+    font-weight: 500
+
+@media (max-width: 740px)
+  .blog__showoptions-link
+    padding-left: 10px
+    padding-right: 10px
+
+.blog__showoptions-button-next
+  font-size: 13px
+  font-weight: 500
+  cursor: pointer
+  border: none
+  width: 118px
+  height: 38px
+  border-radius: 20px
+  border: #bcbfc4 1px solid
+  outline: none
+  position: relative
+  &:after
+    content: "Следующая"
+    position: absolute
+    display: block
+    padding-left: 15px
+    margin-top: -5px
+
+@media (max-width: 1240px)
+  .blog__showoptions-button-next
+    width: 1px
+    height: 1px
+    border-radius: 50%
+    visibility: hidden
+    position: relative
+    outline: none
+    &:after
+      content: "\203A"
+      visibility: visible
+      display: flex
+      justify-content: center
+      align-items: center
+      border: #bcbfc4 1px solid
+      width: 33px
+      height: 33px
+      border-radius: 50%
+      padding: 1px
+      position: absolute
+      font-size: 35px
+      margin-top: -20px
+
+@media (max-width: 740px)
+  .blog__showoptions-button-next
+    width: 1px
+    height: 1px
+    visibility: hidden
+    position: relative
+    &:after
+      content: "\203A"
+      visibility: visible
+      display: flex
+      justify-content: center
+      align-items: center
+      border: #bcbfc4 1px solid
+      width: 33px
+      height: 33px
+      border-radius: 50%
+      padding: 1px
+      position: absolute
+      font-size: 35px
+      margin-top: -20px
+      margin-left: -27px
+
+.blog__showoptions-displaymode-wrapper > select
+  height: 35px
+  width: 85px
+  border: #bcbfc4 1px solid
+
+@media (max-width: 1240px)
+  .blog__showoptions-displaymode-wrapper > select
+    width: 50px
+    height: 33px
+    display: inline
+
+@media (max-width: 740px)
+  .blog__showoptions-displaymode-wrapper > select
+    width: 75px
+    height: 33px
+    display: inline
+
+@media (max-width: 740px)
+  .blog__showoptions-displaymode-wrapper
+    padding-right: 15px
+
+.blog__showoptions-text-show
+  font-size: 14px
+  font-weight: 500
+  padding-right: 1px
+
+@media (max-width: 1240px)
+  .blog__showoptions-text-show
+    font-size: 13px
+    font-weight: 400
+
+@media (max-width: 740px)
+  .blog__showoptions-text-show
+    font-size: 12px
+    font-weight: 500
+    padding-right: 15px
+
+.mt105
+  margin-top: 105px
+
+.blog__main-image-warranty
+  position: absolute
+  border: #f8c802 2px solid
+  width: 125px
+  height: 125px
+  border-radius: 50%
+  color: #f8c802
+  font-size: 20px
+  font-weight: 500
+  text-transform: uppercase
+  text-align: center
+  display: flex
+  align-items: center
+  margin-left: 80px
+  z-index: 10
+  margin-top: -160px
+  

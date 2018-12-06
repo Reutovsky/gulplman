@@ -1,0 +1,17 @@
+.ordercall-overlay
+	.ordercall-form-container
+		.ordercall-container-button-close
+			button#ordercall-button-close.ordercall-button-close
+		form#form-ordercall.form-overcall(name='form-ordercall')
+			.ordercall-wrapper-flex
+				.ordercall-container-title
+					| Заказать звонок
+				.ordercall-container-inputname
+					input.form-ordercall__inputname(type='text', name='ordercall-name', placeholder='Имя')
+				.ordercall-container-inputphone
+					input.form-ordercall__inputphone(type='text', name='ordercall-phone', placeholder='Телефон')
+				.ordercall-container-checkboxed
+					input#checkbox(type='checkbox', class='checkbox', checked)
+					label(for='checkbox' class='ordercall-accept-label') Согласен(на) обработку персональных данных
+				.ordercall-container-submit
+					input.form-odercall__submit(type='submit', value='Заказать звонок')

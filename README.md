@@ -1,2 +1,2 @@
 # gulplman
-internet shop @ gulp, pug, sass
+internet shop @ Gulp, Pug, Sass

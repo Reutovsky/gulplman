@@ -1,0 +1,1594 @@
+@import modules/module-error
+@import modules/module-ordercall
+@import modules/module-catalog
+@import modules/module-one-item
+@import modules/module-blog
+@import modules/module-articles
+@import modules/module-signin
+@import modules/module-successreg
+@import modules/module-lk-bonus
+@import modules/module-history-thereis
+@import modules/module-history-noorders
+@import modules/module-history-order
+@import modules/module-personalarea
+@import modules/module-mydetails
+@import modules/module-favorites
+@import modules/module-youwatched
+
+*, body, html
+  font-family: "OpenSans", sans-serif
+
+input, button
+  box-sizing: border-box
+
+.container
+  width: 1240px
+  padding-left: 20px
+  padding-right: 20px
+  margin-left: auto
+  margin-right: auto
+
+@media (max-width: 1240px)
+  .container
+    width: 720px
+    padding-left: 15px
+    padding-right: 15px
+    margin-left: auto
+    margin-right: auto
+
+@media (max-width: 740px)
+    .container
+      width: 320px
+      margin-left: auto
+      margin-right: auto
+      padding-left: 0
+      padding-right: 0
+
+@media (max-width: 1240px)
+  .header
+    width: 720px
+    padding-left: 15px
+    padding-right: 15px
+    margin-left: auto
+    margin-right: auto
+
+@media (max-width: 740px)
+  .header
+    width: 320px
+    padding-left: 0
+    padding-right: 0
+    margin-left: auto
+    margin-right: auto
+
+.header-wrapper
+  display: grid
+  grid-template-columns: auto 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px auto
+  grid-template-rows: 40px 100px 50px
+  grid-template-areas: "ws1 cy cy cy cy pe pe pe te te te te pm pm pm pm pm ln ln ln ln ws2" "ws3 lo lo lo lo lo sh sh sh sh sh sh sh sh os os os os os os os ws4" "ws5 cg cg cg cg cg cg cg cs cs cs cs cs cs cs cs cs cs cs cs cs ws6"
+  box-sizing: border-box
+
+@media (max-width: 1240px)
+  .header-wrapper
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 40px 60px 90px 45px
+    grid-template-areas: "cy cy cy pe pe pe te te te te pm pm" "sh sh sh sh sh sh sh sh ln ln ln ln" "lo lo lo lo lo os os os os os os os" "cg cg cg cg cs cs cs cs cs cs cs cs"
+    box-sizing: border-box
+
+@media (max-width: 740px)
+  .header-wrapper
+    display: grid
+    grid-template-columns: 188px 132px
+    grid-template-rows: 45px 90px 60px
+    grid-template-areas: "cg bw" "lo lo" "sh sh"
+    margin-left: auto
+    margin-right: auto
+    box-sizing: border-box
+
+.header__buttons__shadow-wrapper
+  display: none
+
+@media (max-width: 740px)
+  .header__buttons__shadow-wrapper
+    grid-area: bw
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    box-sizing: border-box
+
+.header__shadow_basket, .header__shadow_avatar, .header__shadow_question
+  width: 44px
+  height: 45px
+  background: transparent
+  cursor: pointer
+  outline: none
+  border: none
+  border-bottom: #e3e5ea 1px solid
+  border-right: #e3e5ea 1px solid
+
+.header__shadow_basket
+  background-image: url(../images/icon/svg/shopping-cart.svg)
+  background-repeat: no-repeat
+  background-size: 20px 20px
+  background-position: 10px 10px
+
+.header__shadow_avatar
+  background-image: url(../images/icon/svg/avatar.svg)
+  background-repeat: no-repeat
+  background-size: 20px 20px
+  background-position: 10px 10px
+
+.header__shadow_question
+  background-image: url(../images/icon/svg/question.svg)
+  background-repeat: no-repeat
+  background-size: 20px 20px
+  background-position: 10px 10px
+
+.header-city
+  grid-area: cy
+
+.header-phone
+  grid-area: pe
+  margin-left: -30px
+
+@media (max-width: 1240px)
+  .header-phone
+    margin-left: 0
+
+.header-time
+  grid-area: te
+
+.header-problem
+  grid-area: pm
+
+.header-login
+  grid-area: ln
+
+.header-logo
+  grid-area: lo
+
+.header-search
+  grid-area: sh
+
+.header-options
+  grid-area: os
+
+.header-catalog
+  grid-area: cg
+
+.header-conditions
+  grid-area: cs
+
+.header__whitespace1
+  grid-area: ws1
+  border-bottom: #e1e2e8 1px solid
+
+.header__whitespace2
+  grid-area: ws2
+  border-bottom: #e1e2e8 1px solid
+
+.header__whitespace3
+  grid-area: ws3
+  border-bottom: #e1e2e8 1px solid
+
+.header__whitespace4
+  grid-area: ws4
+  border-bottom: #e1e2e8 1px solid
+
+.header__whitespace5
+  grid-area: ws5
+  border-bottom: #e1e2e8 1px solid
+
+.header__whitespace6
+  grid-area: ws6
+  border-bottom: #e1e2e8 1px solid
+
+@media (max-width: 1240px)
+  .header__whitespace1, .header__whitespace2, .header__whitespace3, .header__whitespace4, .header__whitespace5, .header__whitespace6
+    display: none
+
+.header-city, .header-phone, .header-time, .header-problem, .header-login, .header-logo, .header-search, .header-options, .header-catalog, .header-conditions
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  font-size: 14px
+  border-bottom: #e1e2e8 1px solid
+
+@media (max-width: 740px)
+  .header-search
+    border-bottom: none
+
+@media (max-width: 1240px)
+  .header-city, .header-phone, .header-time, .header-problem
+    border: none
+
+@media (max-width: 1240px)
+  .header-city, .header-phone, .header-time, .header-problem, .header-login, .header-logo, .header-search, .header-options, .header-catalog, .header-conditions
+    font-size: 13px
+
+.header-city__image-arrow
+  width: 15px
+
+@media (max-width: 1240px)
+  .header-city__image-arrow
+    width: 12px
+
+.header-city__title-city
+  font-weight: 400
+  padding-left: 8px
+
+.header-city__link-chosen-city
+  font-weight: 400
+  text-decoration: underline
+  color: #afafaf
+  padding-left: 8px
+  &:hover
+    color: #f7bb03
+
+.header-phone__image-phone
+  width: 15px
+
+.header-phone__span-number
+  font-weight: 700
+  padding-left: 10px
+
+.header-time__image-clock
+  width: 15px
+
+.header-time__span-time
+  font-weight: 400
+  padding-left: 10px
+
+.header-time
+  margin-left: -30px
+
+@media (max-width: 1240px)
+  .header-time
+    margin-left: -20px
+
+.header-problem
+  padding-left: 25px
+
+@media (max-width: 1240px)
+  .header-problem
+    display: flex
+    justify-content: flex-end
+    margin-left: -20px;
+
+.header-problem__link-dont-call
+  color: #f7bb03
+  &:hover
+    color: #000
+
+.header-login__image-avatar
+  width: 15px
+  padding-right: 10px
+
+.header-login
+  color: #777
+  font-weight: 500
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-end
+
+.header-login__link-signin
+  color: #000
+
+.header-login__link-reg
+  color: #a1a1a1
+
+.header-logo__image-logo
+  width: 300px
+
+@media (max-width: 740px)
+  .header-logo
+    border-bottom: none
+
+@media (max-width: 1240px)
+  .header-logo__image-logo
+    width: 275px
+
+.header-search
+  padding-left: 35px
+
+@media (max-width: 1240px)
+  .header-search
+    padding-left: 0
+
+.header-login__link-singin
+  font-weight: 500
+  font-size: 14px
+  color: black
+  &:hover
+    color: #f7bb03
+
+.header-login__link-reg
+  font-weight: 500
+  font-size: 14px
+  color: #a1a1a1
+  &:hover
+    color: #f7bb03
+
+.header-search__input-search
+  width: 425px
+  line-height: 38px
+  padding-left: 45px
+  border-radius: 20px
+  font-weight: 300
+  border: #dcdee4 1px solid
+  color: #bdbdbd
+  outline: none
+  background-image: url(../images/icon/svg/searching.svg)
+  background-repeat: no-repeat
+  background-size: 50px 15px
+  background-position: 5px 12px
+
+@media (max-width: 1240px)
+  .header-search__input-search
+    width: 470px
+    line-height: 35px
+
+@media (max-width: 740px)
+  .header-search__input-search
+    width: 290px
+    line-height: 35px
+    margin-bottom: 25px
+
+.header-options
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-end
+  > a
+    padding: 0 14px
+    &:hover
+      font-weight: 500
+    &:last-child
+      padding-right: 0
+
+.header-options__image-favorites, .header-options__image-compare, .header-options__image-basket
+  width: 15px
+  padding-right: 5px
+
+.header-options__link-favorites, .header-options__link-compare, .header-options__link-basket
+  color: #000
+  text-decoration: none
+  font-weight: 400
+  display: block
+  line-height: 40px
+  box-sizing: border-box
+  font-size: 14px
+
+.header-options__link-favorites
+  background: url(../images/icon/svg/heart.svg)
+  background-repeat: no-repeat
+  background-size: 18px
+  background-position: 10px center
+  width: 140px
+  text-align: right
+  &:hover
+    background: url(../images/icon/svg/heart-yellow.svg)
+    background-repeat: no-repeat
+    background-size: 23px
+    background-position: left center
+    width: 140px
+    text-align: right
+
+.header-options__link-compare
+  background: url(../images/icon/svg/bar-chart.svg)
+  background-repeat: no-repeat
+  background-size: 18px
+  background-position: 5px center
+  width: 145px
+  text-align: right
+  &:hover
+    background: url(../images/icon/svg/bar-chart-yellow.svg)
+    background-repeat: no-repeat
+    background-size: 23px
+    background-position: left center
+    width: 145px
+    text-align: right
+
+.header-options__link-basket
+  background: url(../images/icon/svg/shopping-cart.svg)
+  background-repeat: no-repeat
+  background-size: 18px
+  background-position: 5px center
+  width: 105px
+  text-align: right
+  &:hover
+    background: url(../images/icon/svg/shopping-cart-yellow.svg)
+    background-repeat: no-repeat
+    background-size: 23px
+    background-position: left center
+    width: 105px
+    text-align: right
+
+.header-catalog__button
+  width: 295px
+  height: 50px
+  color: #000
+  text-transform: uppercase
+  cursor: pointer
+  background: #f7bb03
+  font-weight: 700
+  padding-left: 40px
+  background-image: url(../images/icon/svg/menu.svg)
+  background-repeat: no-repeat
+  background-size: 100px 30px
+  background-position: 10px 10px
+  outline: 0
+  border: none
+
+@media (max-width: 1240px)
+  .header-catalog__button
+    width: 220px
+    height: 45px
+    background-image: url(../images/icon/svg/menu.svg)
+    background-repeat: no-repeat
+    background-size: 27px 20px
+    background-position: 20px 11px
+
+@media (max-width: 740px)
+  .header-catalog__button
+    width: 188px
+    height: 45px
+    background-image: url(../images/icon/svg/menu.svg)
+    background-repeat: no-repeat
+    background-size: 27px 20px
+    background-position: 10px 11px
+    font-size: 13px
+
+.header-conditions
+  color: #6b6b6b
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-end
+  > a
+    padding: 30px
+    text-decoration: none
+    color: #000
+    font-weight: 700
+    &:first-child
+      padding-left: 0
+    &:last-child
+      padding-right: 0
+
+@media (max-width: 1240px)
+  .header-conditions
+    > a
+      padding: 25px
+      &:last-child
+        padding-right: 2px
+
+.header-bottomline-clicked
+  background: #f7f8f6
+
+.header-catalog-button-clicked
+  background: #e8eaef
+  background-image: url(../images/icon/svg/menu.svg)
+  background-repeat: no-repeat
+  background-size: 100px 30px
+  background-position: 10px 10px
+
+@media (max-width: 1240px)
+  .header-catalog-button-clicked
+    background-repeat: no-repeat
+    background-size: 27px 20px
+    background-position: 20px 11px
+
+@media (max-width: 740px)
+  .header-catalog-button-clicked
+    background-image: url(../images/icon/svg/menu.svg)
+    background-repeat: no-repeat
+    background-size: 27px 20px
+    background-position: 10px 11px
+    font-size: 13px
+
+// HIDE 320PX SOME ELEMENTS FROM HEADER
+
+@media (max-width: 740px)
+  .header__whitespace1, .header__whitespace2, .header__whitespace3, .header__whitespace4, .header__whitespace5, .header__whitespace6, .header-city, .header-city__image-arrow, .header-city__title-city, .header-city__link-chosen-city, .header-phone, .header-time, .header-time__image-clock, .header-time__span-time, .header-problem, .header-problem__link-dont-call, .header-login__image-avatar, .header-login__link-signin, .header-login__link-reg, .header-login, .header-options, .header-options__link-favorites, .header-options__link-compare, .header-options__link-basket, .header-options__image-favorites, .header-options__image-compare, .header-options__image-basket, .header-conditions
+    display: none
+
+
+/* MENU STYLES + HEADER START
+
+.header
+  position: relative
+
+.menu
+  position: absolute
+  width: 100%
+  background-color: #f7f8fb
+  display: none
+  z-index: 200
+
+@media (max-width: 1240px)
+  .menu
+    width: 720px
+    margin-left: auto
+    margin-right: auto
+
+@media (max-width: 740px)
+  .menu
+    width: 320px
+    margin-left: auto
+    margin-right: auto
+    margin-top: -150px
+    padding-top: 30px
+
+.menu-visible
+  display: grid
+  animation-name: fadeOut
+  animation-duration: 0.3s
+  animation-duration: alternate
+
+@keyframes fadeOut
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+.menu-wrapper-grid
+  display: grid
+  grid-template-columns: auto 200px 200px 200px 200px 200px 200px auto
+  grid-template-rows: 100px 175px 200px 40px
+  grid-template-areas: "eg1 mt bt ct kt pt at eg2" "eg3 mi bi ci ki pi ai eg4" "eg5 ml bl cl kl pl al eg6"
+  grid-gap: 8px
+
+@media (max-width: 1240px)
+  .menu-wrapper-grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 50px 175px 120px 50px 175px 150px
+    grid-template-areas: "mt bt ct" "mi bi ci" "ml bl cl" "kt pt at" "ki pi ai" "kl pl al"
+
+@media (max-width: 740px)
+  .menu-wrapper-grid
+    display: grid
+    grid-template-columns: 160px 160px
+    grid-template-rows: 50px 150px 50px 150px 50px 150px 50px 150px 50px 150px 50px 200px
+    grid-template-areas: "mi mt" "mi ml" "bi bt" "bi bl" "ci ct" "ci cl" "ki kt" "ki kl" "pi pt" "pi pl" "ai at" "ai al"
+    grid-gap: 0px
+        
+    
+.menu__wrapper-multitool-title
+  grid-area: mt
+
+.menu__wrapper-multitool-image
+  grid-area: mi
+
+.menu__wrapper-multitool-links
+  grid-area: ml
+
+.menu__wrapper-bracelet-title
+  grid-area: bt
+
+.menu__wrapper-bracelet-image
+  grid-area: bi
+
+.menu__wrapper-bracelet-links
+  grid-area: bl
+
+.menu__wrapper-clock-title
+  grid-area: ct
+
+.menu__wrapper-clock-image
+  grid-area: ci
+
+.menu__wrapper-clock-links
+  grid-area: cl
+
+.menu__wrapper-knife-title
+  grid-area: kt
+
+.menu__wrapper-knife-image
+  grid-area: ki
+
+.menu__wrapper-knife-links
+  grid-area: kl
+
+.menu__wrapper-pockettool-title
+  grid-area: pt
+
+.menu__wrapper-pockettool-image
+  grid-area: pi
+
+.menu__wrapper-pockettool-links
+  grid-area: pl
+
+.menu__wrapper-accessory-title
+  grid-area: at
+
+.menu__wrapper-accessory-image
+  grid-area: ai
+
+.menu__wrapper-accessory-links
+  grid-area: al
+
+.empty-grey1
+  grid-area: eg1
+
+.empty-grey2
+  grid-area: eg2
+
+.empty-grey3
+  grid-area: eg3
+
+.empty-grey4
+  grid-area: eg4
+
+.empty-grey5
+  grid-area: eg5
+
+.empty-grey6
+  grid-area: eg6
+
+.menu__close
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #e8eaef
+  width: 100%
+  line-height: 40px
+
+.menu__close-button
+  background: transparent
+  cursor: pointer
+  outline: none
+  width: 170px
+  background-image: url(../images/icon/svg/ic_close_48px.svg)
+  background-repeat: no-repeat
+  background-size: 25px 25px
+  background-position: 140px 8px
+  padding-left: 20px
+
+@media (max-width: 1240px)
+  .menu__close-button
+    font-size: 14px
+    background-size: 20px 20px
+    background-position: 130px 10px
+
+.menu__wrapper-title
+  font-size: 16px
+  font-weight: 500
+  padding-top: 40px
+
+@media (max-width: 1240px)
+  .menu__wrapper-title
+    font-size: 14px
+    padding-top: 20px
+    padding-left: 10px
+
+@media (max-width: 740px)
+  .menu__wrapper-title
+    padding-top: 15px
+
+.menu__wrapper-multitool-links > a, .menu__wrapper-bracelet-links > a, .menu__wrapper-clock-links > a, .menu__wrapper-knife-links > a, .menu__wrapper-pockettool-links > a, .menu__wrapper-accessory-links > a
+  display: block
+  text-decoration: none
+  padding-bottom: 20px
+  font-size: 13px
+  font-weight: 400
+  color: black
+
+@media (max-width: 1240px)
+  .menu__wrapper-multitool-links > a, .menu__wrapper-bracelet-links > a, .menu__wrapper-clock-links > a, .menu__wrapper-knife-links > a, .menu__wrapper-pockettool-links > a, .menu__wrapper-accessory-links > a
+    padding-bottom: 10px
+    padding-left: 10px
+
+.menu__wrapper-multitool-links > a:first-child, .menu__wrapper-bracelet-links > a:first-child, .menu__wrapper-clock-links > a:first-child, .menu__wrapper-knife-links > a:first-child, .menu__wrapper-pockettool-links > a:first-child, .menu__wrapper-accessory-links > a:first-child
+  padding-top: 40px
+
+@media (max-width: 1240px)
+  .menu__wrapper-multitool-links > a:first-child, .menu__wrapper-bracelet-links > a:first-child, .menu__wrapper-clock-links > a:first-child, .menu__wrapper-knife-links > a:first-child, .menu__wrapper-pockettool-links > a:first-child, .menu__wrapper-accessory-links > a:first-child
+    padding-top: 5px
+
+.menu__wrapper-multitool-links > a:hover, .menu__wrapper-bracelet-links > a:hover, .menu__wrapper-clock-links > a:hover, .menu__wrapper-knife-links > a:hover, .menu__wrapper-pockettool-links > a:hover, .menu__wrapper-accessory-links > a:hover
+  font-weight: 700
+  text-decoration: underline
+  color: black
+
+@media (max-width: 740px)
+  .menu__wrapper-multitool-links > a, .menu__wrapper-bracelet-links > a, .menu__wrapper-clock-links > a, .menu__wrapper-knife-links > a, .menu__wrapper-pockettool-links > a, .menu__wrapper-accessory-links > a
+    font-size: 12px
+  .menu__wrapper-pockettool-links
+    padding-top: 10px
+
+.menu__image
+  width: 150px
+
+@media (max-width: 1240px)
+  .menu__image
+    padding-left: 10px
+
+@media (max-width: 740px)
+  .menu__image
+    padding-left: 10px
+    padding-top: 20px
+
+@media (max-width: 740px)
+  .menu__empty-grey1, .menu__empty-grey2, .menu__empty-grey3, .menu__empty-grey4, .menu__empty-grey5, .menu__empty-grey6
+    display: none
+
+@media (max-width: 740px)
+  .menu__wrapper-multitool-image, .menu__wrapper-multitool-links, .menu__wrapper-bracelet-image, .menu__wrapper-bracelet-links, .menu__wrapper-clock-image, .menu__wrapper-clock-links, .menu__wrapper-knife-image, .menu__wrapper-knife-links, .menu__wrapper-pockettool-image, .menu__wrapper-pockettool-links
+    border-bottom: #e9ebf0 1px solid
+
+/* //MENU STYLES + HEADER END
+
+.banner
+  margin-top: 20px
+
+@media (max-width: 740px)
+  .banner
+    width: 320px
+    height: 350px
+    background-image: url(../images/banner_big.jpg)
+    background-repeat: no-repeat
+    background-size: 800px 400px
+    background-position: center
+
+.banner__image-banner
+  width: 1240px
+
+@media (max-width: 1240px)
+  .banner__image-banner
+    width: 720px
+
+@media (max-width: 740px)
+  .banner__image-banner
+    display: none
+
+.multitools
+  padding-bottom: 45px;
+  border-bottom: #e5e7eb 1px solid;
+
+.multitool-wrapper
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  grid-template-rows: 100px 125px
+  grid-template-areas: "ll ll ll ll ll" "dr wy sg fg at"
+
+@media (max-width: 1240px)
+  .multitool-wrapper
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 100px 100px 100px
+    grid-template-areas: "ll ll ll ll ll ll ll ll ll ll ll ll" "dr dr dr dr wy wy wy wy sg sg sg sg" ". . fg fg fg fg at at at at . ."
+
+@media (max-width: 740px)
+  .multitool-wrapper
+    display: grid
+    grid-template-columns: 100px 220px
+    grid-template-rows: 140px 60px 60px 60px 60px 60px
+    grid-template-areas: "ll ll" "dr dr" "wy wy" "sg sg" "fg fg" "at at"
+
+.multitool__label
+  grid-area: ll
+  color: #000
+  font-size: 30px
+  font-weight: 900
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+  align-items: center
+
+@media (max-width: 740px)
+  .multitool__label
+    grid-area: ll
+    text-align: center
+    padding-top: 20px
+
+.multitool__dealer
+  grid-area: dr
+  display: flex
+  flex-flow: column nowrap
+  justify-content: flex-end
+  line-height: 40px
+
+@media (max-width: 1240px)
+  .multitool__dealer, .multitool__warranty, .multitool__shipping, .multitool__freeshipping, .multitool__alltypes-payment
+    justify-self: center
+
+.multitool__warranty
+  grid-area: wy
+  display: flex
+  flex-flow: column nowrap
+  justify-content: flex-end
+  align-items: center
+  line-height: 40px
+
+.multitool__shipping
+  grid-area: sg
+  display: flex
+  flex-flow: column nowrap
+  justify-content: flex-end
+  align-items: center
+  line-height: 40px
+
+.multitool__freeshipping
+  grid-area: fg
+  display: flex
+  flex-flow: column nowrap
+  justify-content: flex-end
+  align-items: center
+  line-height: 40px
+
+.multitool__alltypes-payment
+  grid-area: at
+  display: flex
+  flex-flow: column nowrap
+  justify-content: flex-end
+  align-items: flex-end
+  line-height: 40px
+
+@media (max-width: 740px)
+  .multitool__dealer, .multitool__warranty, .multitool__shipping, .multitool__freeshipping, .multitool__alltypes-payment
+    display: flex
+    flex-flow: row nowrap
+    justify-self: start
+    align-items: center
+    padding-left: 15px
+
+.multitool__dealer-image-handshake
+  width: 45px
+  margin-left: 60px
+
+@media (max-width: 740px)
+  .multitool__dealer-image-handshake
+    margin-left: 0
+
+.multitool__warranty-image-warranty
+  width: 45px
+
+.multitool__shipping-image-translation
+  width: 40px
+
+.multitool__freeshipping-image-shipping
+  width: 56px
+
+.multitool__alltypes-payment-image-wallet
+  width: 40px
+  margin-right: 80px
+
+@media (max-width: 740px)
+  .multitool__alltypes-payment-image-wallet
+    margin-right: 0
+
+@media (max-width: 740px)
+  .multitool__dealer-label
+    padding-left: 40px
+    font-size: 15px
+
+@media (max-width: 740px)
+  .multitool__warranty-label
+    padding-left: 40px
+    font-size: 15px
+
+@media (max-width: 740px)
+  .multitool__shipping-label
+    padding-left: 45px
+    font-size: 15px
+
+@media (max-width: 740px)
+  .multitool__freeshipping-label
+    padding-left: 28px
+    font-size: 15px
+
+@media (max-width: 740px)
+  .multitool__alltypes-payment-label
+    padding-left: 44px
+    font-size: 15px
+
+.novelties-wrapper-white
+  padding-bottom: 65px
+  border-bottom: #e5e7eb 1px solid
+  // position: relative
+  background: url(../images/novelties-right.png)
+  background-repeat: no-repeat
+  background-position: 1500px 0
+
+// .novelties-right
+//   position: absolute
+//   right: 0
+//   transform: translateY(200px)
+//   @media (max-width: 1240px)
+//     display: none
+
+.novelties__labelbuttons-flex
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+  align-items: center
+  margin-top: 60px
+  margin-bottom: 48px
+
+.novelties__label
+  font-size: 30px
+  font-weight: 900
+
+.blog-wrapper
+  margin-bottom: 50px
+
+.novelties__buttons-button-back, .novelties__buttons-button-back-second, .blog-wrapper__buttons-button-back
+  width: 45px
+  height: 45px
+  margin-right: 10px
+  border: none
+  background-image: url(../images/icon/png/arrows_square_left.png)
+  background-repeat: no-repeat
+  cursor: pointer
+  outline: none
+
+.novelties__buttons-button-forward, .novelties__buttons-button-forward-second, .blog-wrapper__buttons-button-forward
+  width: 45px
+  height: 45px
+  border: none
+  background-image: url(../images/icon/png/arrows_square_right.png)
+  background-repeat: no-repeat
+  cursor: pointer
+  outline: none
+
+.novelties__item, .blog__div
+  margin-right: 20px
+  outline: none
+
+.novelties__item
+  &:hover
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2)
+    cursor: pointer
+
+.slick-novelties, .slick-novelties-second, .blog__story-slick
+  margin-right: -20px
+
+.novelties-wrapper-grey
+  width: 100%
+  background: #f6f7f9
+  border-top: #f1f2f4 1px solid
+  border-bottom: #f1f2f4 1px solid
+  padding-bottom: 60px
+  position: relative
+
+.novelties-left
+  position: absolute
+  left: 0
+  transform: translate(-200px, 160px)
+  @media (max-width: 1240px)
+    display: none
+
+.novelties__buttons-button-grey
+  background-color: #f6f7f9
+
+.novelties-item-bg-white
+  background: #fff
+
+.blog-title-buttons-container
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+  align-items: center
+  margin-top: 60px
+  margin-bottom: 50px
+
+.blog__title
+  // grid-area: te
+  font-size: 30px
+  font-weight: 900
+
+// .blog__buttons-mr0
+//   display: flex
+//   flex-flow: row nowrap
+//   justify-content: flex-end
+
+// .blog__buttons-container
+//   grid-area: br
+
+.blog__story-wrapper
+  display: flex
+  flex-flow: row nowrap
+  @media (max-width: 740px)
+    display: flex
+    flex-flow: column nowrap
+
+.blog__story-container-image
+  width: 295px
+  height: 225px
+  border: #e9eaef 1px solid
+  display: flex
+  justify-content: center
+  align-items: center
+  box-sizing: border-box
+  @media (max-width: 740px)
+    width: 290px
+    height: 210px
+
+.blog__story-container-text
+  width: 315px
+  height: 225px
+  border: #e9eaef 1px solid
+  background-color: #f6f7f9
+  padding-top: 35px
+  padding-left: 25px
+  padding-right: 20px
+  box-sizing: border-box
+  @media (max-width: 740px)
+    width: 290px
+    height: 210px
+    padding-top: 25px
+
+.blog__story-title
+  font-weight: 700
+  font-size: 15px
+  display: block
+  @media (max-width: 740px)
+    font-size: 14px
+
+.blog__story-text
+  font-size: 13px
+  font-weight: 300
+  display: block
+  padding-top: 25px
+  @media (max-width: 740px)
+    font-size: 12px
+
+.blog__story-link
+  font-size: 14px
+  font-weight: 500
+  color: #a1a1a1
+  display: block
+  float: right
+  padding-top: 35px
+  outline: none
+  &:hover
+    color: #f7bb03
+  @media (max-width: 740px)
+    font-size: 13px
+
+.prefooter
+  width: 100%
+  border-top: #dee0e5 1px solid
+  border-bottom: #dee0e5 1px solid
+  background: #f6f7f9
+  padding-bottom: 100px
+  padding-top: 20px
+
+@media (max-width: 1240px)
+  .prefooter
+    padding-bottom: 80px
+    padding-top: 20px
+
+@media (max-width: 740px)
+  .prefooter
+    padding-bottom: 40px
+    padding-top: 40px
+
+.prefooter__title
+  font-size: 24px
+  font-weight: 900
+  color: #c1c1c1
+  text-transform: uppercase
+
+@media (max-width: 1240px)
+  .prefooter__title
+    font-size: 22px
+
+@media (max-width: 740px)
+  .prefooter__title
+    font-size: 22px
+    padding-left: 15px
+    padding-right: 15px
+
+.prefooter__text
+  color: #3f3f40
+  font-size: 13px
+  font-weight: 300
+  padding-top: 10px
+
+@media (max-width: 1240px)
+  .prefooter__text
+    font-size: 12px
+    padding-top: 20px
+
+@media (max-width: 740px)
+  .prefooter__text
+    font-size: 12px
+    padding-left: 15px
+    padding-right: 15px
+
+@media (max-width: 1240px)
+  .prefooter > .container > p 
+    &:last-child
+      padding-top: 10px
+
+.helpful
+  background: #f7bb03
+  line-height: 36px
+
+@media (max-width: 740px)
+  .helpful
+    line-height: 20px
+
+.helpful__container-flex
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: space-between
+
+@media (max-width: 1240px)
+  .helpful__container-flex
+    display: flex
+    flex-flow: column nowrap
+
+@media (max-width: 740px)
+  .helpful__container-flex
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+
+
+.helpful__container-imagetext
+  display: flex
+  flex-flow: row wrap
+  justify-content: flex-start
+  align-items: center
+
+@media (max-width: 740px)
+  .helpful__container-imagetext
+    display: flex
+    flex-flow: column nowrap
+
+.helpful__container-inputbutton
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-end
+  align-items: center
+
+@media (max-width: 1240px)
+  .helpful__container-inputbutton
+    height: 68px
+
+@media (max-width: 740px)
+  .helpful__container-inputbutton
+    display: flex
+    flex-flow: column nowrap
+    height: 120px
+    justify-content: space-around
+
+.helpful__image-envelope
+  width: 30px
+  margin-top: 10px
+
+@media (max-width: 740px)
+  .helpful__image-envelope
+    margin-top: 20px
+
+.helpful__text
+  color: #fff
+  font-size: 16px
+  font-weight: 500
+  padding-left: 15px
+
+.helpful__input-email
+  color: #b49949
+  font-size: 14px
+  background-color: #fad668
+  border: none
+  border-radius: 20px
+  line-height: 38px
+  padding-left: 20px
+  width: 360px
+  outline: none
+  z-index: 10
+  margin-right: -35px
+
+@media (max-width: 740px)
+  .helpful__input-email
+    line-height: 35px
+    width: 290px
+    margin-right: 0
+
+.helpful__button-join
+  border: none
+  border-radius: 20px
+  background-color: white
+  font-size: 13px
+  color: #000
+  line-height: 38px
+  width: 165px
+  cursor: pointer
+  outline: none
+  z-index: 20
+  background-image: url(../images/icon/png/right-arrow.png)
+  background-repeat: no-repeat
+  background-position: 130px 15px
+  display: flex
+  padding-left: 22px
+
+@media (max-width: 745px)
+  .helpful__button-join
+    line-height: 35px
+    width: 175px
+    padding-left: 20px
+    background-image: url(../images/icon/png/right-arrow.png)
+    background-repeat: no-repeat
+    background-position: 135px 13px
+    font-size: 12px
+    font-weight: 900
+
+@media (max-width: 740px)
+  .helpful__container-text
+    text-align: center
+  .helpful__container-button
+    
+/* FOOTER
+
+.footer__wrapper-grid
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+  grid-template-rows: 50px 60px 90px 70px
+  grid-template-areas: "cl cl cl ctc ctc cti cti cti ctb ctb cta cta" "cl cl cl cc  cc  ci  ci  ci  cb  cb  ca  ca" "cp cp cp cc  cc  ci  ci  ci  cb  cb  ca  ca" "cs cs cs cc  cc  ci  ci  ci  cb  cb  ca  ca"
+  margin-top: 35px
+  grid-gap: 5px
+
+@media (max-width: 1240px)
+  .footer__wrapper-grid
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 100px 70px 200px
+    grid-template-areas: "cl  cl  cl  cl  cl  cp  cp  cp  cp  cs  cs  cs" "ctc ctc ctc cti cti cti cti ctb ctb ctb cta cta" "cc  cc  cc  ci  ci  ci  ci  cb  cb  cb  ca  ca"
+    grid-gap: 0px
+
+@media (max-width: 740px)
+  .footer__wrapper-grid
+    display: grid
+    grid-template-columns: 160px 160px
+    grid-template-rows: 90px 60px 160px 45px 45px 45px
+    grid-gap: 0
+    grid-template-areas: "cp cp" "ctc ctc" "cc cc" "cti cti" "ctb ctb" "cta cta"
+
+.footer__container-logo
+  grid-area: cl
+  background-image: url(../images/logo_leatherman.png)
+  background-size: 300px
+  background-repeat: no-repeat
+  background-position: 0px 0px
+
+@media (max-width: 1240px)
+  .footer__container-logo
+    background-image: url(../images/logo_leatherman.png)
+    background-size: 275px
+    background-repeat: no-repeat
+    background-position: 0px 25px 
+
+@media (max-width: 740px)
+  .footer__container-logo
+    display: none
+
+.footer__container-phone
+  grid-area: cp
+
+@media (max-width: 1240px)
+  .footer__container-phone
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+    padding-top: 12px
+
+@media (max-width: 740px)
+  .footer__container-phone
+    border-bottom: #e8eaee 1ps solid
+
+.footer__container-socials
+  grid-area: cs
+
+@media (max-width: 1240px)
+  .footer__container-logo, .footer__container-phone, .footer__container-socials
+    border-bottom: #eaebef 1px solid
+
+@media (max-width: 1240px)
+  .footer__container-socials
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    justify-content: center
+
+@media (max-width: 740px)
+  .footer__container-socials
+    display: none
+
+.footer__container-title-catalog
+  grid-area: ctc
+  margin-left: 35px
+
+@media (max-width: 1240px)
+  .footer__container-title-catalog
+    margin-left: 0px
+    padding-top: 20px
+    font-size: 15px
+
+@media (max-width: 740px)
+  .footer__container-title-catalog
+    padding-top: 0px
+    align-self: center
+    // background-color: #f6f7f9
+    line-height: 60px
+
+.footer__container-title-info
+  grid-area: cti
+  margin-left: 30px
+
+@media (max-width: 1240px)
+  .footer__container-title-info
+    margin-left: 0
+    padding-top: 20px
+    font-size: 15px
+
+@media (max-width: 740px)
+  .footer__container-title-info
+    padding-top: 15px
+    padding-bottom: 15px
+    align-self: center
+    border-top: #e8eaee 1px solid
+
+.footer__container-title-buyer
+  grid-area: ctb
+
+@media (max-width: 1240px)
+  .footer__container-title-buyer
+    font-size: 15px
+    padding-top: 20px
+
+@media (max-width: 740px)
+  .footer__container-title-buyer
+    padding-top: 15px
+    padding-bottom: 15px
+    align-self: center
+    border-top: #e8eaee 1px solid
+
+.footer__container-title-acceptforpay
+  grid-area: cta
+
+@media (max-width: 1240px)
+  .footer__container-title-acceptforpay
+    padding-top: 20px
+
+@media (max-width: 740px)
+  .footer__container-title-acceptforpay
+    padding-top: 15px
+    padding-bottom: 15px
+    align-self: center
+    border-top: #e8eaee 1px solid
+
+.footer__container-catalog
+  grid-area: cc
+  margin-left: 35px
+
+@media (max-width: 1240px)
+  .footer__container-catalog
+    margin-left: 0
+
+@media (max-width: 740px)
+  .footer__container-catalog
+    // background-color: #f6f7f9
+
+.footer__container-info
+  grid-area: ci
+  margin-left: 30px
+
+@media (max-width: 1240px)
+  .footer__container-info
+    margin-left: 0
+
+@media (max-width: 740px)
+  .footer__container-info
+    display: none
+
+.footer__container-buyer
+  grid-area: cb
+
+@media (max-width: 740px)
+  .footer__container-buyer
+    display: none
+
+@media (max-width: 1240px)
+  .footer__container-catalog > a, .footer__container-info > a, .footer__container-buyer > a
+    font-size: 12px
+
+.footer__container-acceptforpay
+  grid-area: ca
+
+@media (max-width: 740px)
+  .footer__container-acceptforpay
+    display: none
+
+.footer__phone-image
+  width: 25px
+
+@media (max-width: 1240px)
+  .footer__phone-image
+    width: 20px
+
+.footer__phone-number
+  padding-left: 15px
+  font-weight: 900
+  font-size: 24px
+
+@media (max-width: 1240px)
+  .footer__phone-number
+    padding-left: 10px
+    font-size: 22px
+
+.footer__phone-text
+  color: #8d8d8d
+  font-weight: 500
+  font-size: 13px
+  margin-left: 88px
+  margin-top: 5px
+
+@media (max-width: 1240px)
+  .footer__phone-text
+    font-size: 12px
+    margin-left: 68px
+    margin-top: -30px
+
+
+.footer__socials-image
+  width: 35px
+
+@media (max-width: 1240px)
+  .footer__socials-image
+    width: 30px
+
+.footer__container-socials > img
+  padding-left: 8px
+  cursor: pointer
+  &:first-child
+    padding-left: 0
+
+.footer__container-title-catalog, .footer__container-title-info, .footer__container-title-buyer, .footer__container-title-acceptforpay
+  font-weight: 700
+  font-size: 16px
+  text-transform: uppercase
+
+.footer__catalog-link
+  font-size: 14px
+  font-weight: 400
+  text-decoration: none
+  color: #000
+  display: block
+  position: relative
+  &:hover, &:first-child:hover
+    font-weight: 700
+    padding-left: 30px
+    position: relative
+  &:hover:before
+    content: " "
+    display: inline-block
+    background-image: url(../images/icon/png/right-arrow.png)
+    background-repeat: no-repeat
+    position: absolute
+    width: 20px
+    height: 20px
+    left: 0
+    top: 23px
+  @media (max-width: 1240px)
+    &:hover, &:first-child:hover
+      position: relative
+      padding-left: 20px
+    &:hover:before
+      content: " "
+      display: inline-block
+      background-image: url(../images/icon/png/right-arrow.png)
+      background-repeat: no-repeat
+      position: absolute
+      width: 20px
+      height: 20px
+      left: 0
+      top: 20px
+
+.footer__catalog-link
+  &:first-child:hover:before
+    content: " "
+    display: inline-block
+    background-image: url(../images/icon/png/right-arrow.png)
+    background-repeat: no-repeat
+    position: absolute
+    width: 20px
+    height: 20px
+    left: 0
+    top: 2px
+
+// @media (max-width: 1240px)
+//   .footer__catalog-link
+//     &:hover, &:first-child:hover
+//       padding-left: 20px
+
+.footer__container-catalog > a, .footer__container-info > a, .footer__container-buyer > a
+  padding: 20px 0 0 0
+
+.footer__container-catalog > a:first-child, .footer__container-info > a:first-child, .footer__container-buyer > a:first-child
+  padding: 0
+
+.footer__image-acceptforpay
+  margin-left: -5px
+
+@media (max-width: 1240px)
+  .footer__image-acceptforpay
+    width: 120px
+
+.footer
+  border-bottom: 1px solid #e5e7eb
+
+/* // FOOTER
+
+.copyright-wrapper
+  width: auto
+  height: 40px
+@media (max-width: 740px)
+  .copyright-wrapper
+    height: 100px
+
+.copyright-container-grid
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: 20px 20px
+  grid-template-areas: "ct ct cs" "ct ct cs"
+  padding-top: 18px
+
+@media (max-width: 740px)
+  .copyright-container-grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 40px 40px
+    grid-template-areas: "ct ct ct" "cs cs cs"
+
+.copyright__text
+  grid-area: ct
+  justify-self: left
+  text-transform: uppercase
+  font-size: 11px
+
+@media (max-width: 1240px)
+  .copyright__text
+    grid-area: ct
+    justify-self: left
+    font-size: 10px
+
+@media (max-width: 740px)
+  .copyright__text
+    grid-area: ct
+    justify-self: center
+    font-size: 10px
+    text-align: center
+    line-height: 15px
+
+.copyright__studio
+  grid-area: cs
+  justify-self: right
+  color: #8d8d8d
+  font-size: 11px
+
+@media (max-width: 1240px)
+  .copyright__studio
+    font-size: 10px
+    grid-area: cs
+
+@media (max-width: 740px)
+  .copyright__studio
+    font-size: 10px
+    grid-area: cs
+    justify-self: center
+    align-self: center
+
+.copyright__link
+  color: #8d8d8d
+  text-decoration: none
+  &:hover
+    color: #000
+    text-decoration: underline
+
+.aside__menu-link
+  font-size: 14px
+  font-weight: 500

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Lman - Личный кабинет | Мои данные</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="header__whitespace1"></div>
+        <div class="header-city"><img class="header-city__image-arrow" src="images/icon/svg/you-are-here.svg" alt="target"><span class="header-city__title-city">Ваш город:</span><a class="header-city__link-chosen-city" href="javascript: void(0);">Москва</a></div>
+        <div class="header-phone"><img class="header-phone__image-phone" src="images/icon/svg/phone-call.svg" alt="phone"><span class="header-phone__span-number">8 800 123-45-67</span></div>
+        <div class="header-time"><img class="header-time__image-clock" src="images/icon/svg/clock.svg" alt="clock"><span class="header-time__span-time">Без выходных с 9:00 до 21:00</span></div>
+        <div class="header-problem"><a class="header-problem__link-dont-call" href="javascript: void(0);">Не дозвонились?</a></div>
+        <div class="header-login"><img class="header-login__image-avatar" src="images/icon/svg/avatar.svg" alt="avatar"><a class="header-login__link-singin" href="javascript: void(0);">Вход</a>&nbsp; |  <a class="header-login__link-reg" href="javascript: void(0);">Регистрация</a></div>
+        <div class="header__whitespace2"></div>
+        <div class="header__whitespace3"></div>
+        <div class="header-logo"><a class="header-logo__link-logo" href="index.html"><img class="header-logo__image-logo" src="images/logo_leatherman.png" alt="logo"></a></div>
+        <div class="header-search">
+          <input class="header-search__input-search" type="text" placeholder="Поиск по разделам, названию или артикулу">
+        </div>
+        <div class="header-options"><a class="header-options__link-favorites" href="javascript: void(0);">Избранное (0)</a><a class="header-options__link-compare" href="javascript: void(0);">Сравнение (12)</a><a class="header-options__link-basket" href="javascript: void(0);">Корзина (5)</a></div>
+        <div class="header__whitespace4"></div>
+        <div class="header__whitespace5"></div>
+        <div class="header-catalog">
+          <button class="header-catalog__button" id="hcb">Каталог товаров</button>
+        </div>
+        <div class="header-conditions"><a class="header-conditions__link-delivery" href="javascript: void(0);">Условия доставки</a>|<a class="header-conditions__link-payment" href="javascript: void(0);">Условия оплаты</a>|<a class="header-conditions__link-exchange" href="javascript: void(0);">Обмен и возврат</a></div>
+        <div class="header__whitespace6"></div>
+        <div class="header__buttons__shadow-wrapper">
+          <button class="header__shadow_basket"></button>
+          <button class="header__shadow_avatar"></button>
+          <button class="header__shadow_question"></button>
+        </div>
+      </div>
+      <div class="menu" id="menu">
+        <div class="menu-wrapper-grid">
+          <div class="menu__empty-grey1"></div>
+          <div class="menu__empty-grey2"></div>
+          <div class="menu__empty-grey3"></div>
+          <div class="menu__empty-grey4"></div>
+          <div class="menu__empty-grey5"></div>
+          <div class="menu__empty-grey6"></div>
+          <div class="menu__wrapper-multitool-title menu__wrapper-title">Мультитулы</div>
+          <div class="menu__wrapper-multitool-image"><img class="menu__image" src="images/menu/menu__image-1.png" alt="image knife"></div>
+          <div class="menu__wrapper-multitool-links"><a class="menu__link" href="javascript: void(0);">Все мультитулы</a><a class="menu__link" href="javascript: void(0);">Полноразмерные</a><a class="menu__link" href="javascript: void(0);">Усиленные</a><a class="menu__link" href="javascript: void(0);">Брелоки</a></div>
+          <div class="menu__wrapper-bracelet-title menu__wrapper-title">Браслеты</div>
+          <div class="menu__wrapper-bracelet-image"><img class="menu__image" src="images/menu/menu__image-2.png" alt="image knife"></div>
+          <div class="menu__wrapper-bracelet-links"><a class="menu__link" href="javascript: void(0);">Все браслеты</a><a class="menu__link" href="javascript: void(0);">Широкие браслеты</a><a class="menu__link" href="javascript: void(0);">Узские браслеты</a><a class="menu__link" href="javascript: void(0);">Стальные браслеты</a></div>
+          <div class="menu__wrapper-clock-title menu__wrapper-title">Часы</div>
+          <div class="menu__wrapper-clock-image"><img class="menu__image" src="images/menu/menu__image-3.png" alt="image knife"></div>
+          <div class="menu__wrapper-clock-links"><a class="menu__link" href="javascript: void(0);">Все часы</a><a class="menu__link" href="javascript: void(0);">Стальные часы</a><a class="menu__link" href="javascript: void(0);">Черные часы</a></div>
+          <div class="menu__wrapper-knife-title menu__wrapper-title">Ножи</div>
+          <div class="menu__wrapper-knife-image"><img class="menu__image" src="images/menu/menu__image-4.png" alt="image knife"></div>
+          <div class="menu__wrapper-knife-links"><a class="menu__link" href="javascript: void(0);">Все ножи</a><a class="menu__link" href="javascript: void(0);">Полусеррейтор</a><a class="menu__link" href="javascript: void(0);">Прямой клинок</a></div>
+          <div class="menu__wrapper-pockettool-title menu__wrapper-title">Карманные инструменты</div>
+          <div class="menu__wrapper-pockettool-image"><img class="menu__image" src="images/menu/menu__image-5.png" alt="image knife"></div>
+          <div class="menu__wrapper-pockettool-links"><a class="menu__link" href="javascript: void(0);">Все инструменты</a><a class="menu__link" href="javascript: void(0);">Для оружия</a><a class="menu__link" href="javascript: void(0);">Для скейтборда</a><a class="menu__link" href="javascript: void(0);">Для сноуборда</a></div>
+          <div class="menu__wrapper-accessory-title menu__wrapper-title">Аксессуары</div>
+          <div class="menu__wrapper-accessory-image"><img class="menu__image" src="images/menu/menu__image-6.png" alt="image knife"></div>
+          <div class="menu__wrapper-accessory-links"><a class="menu__link" href="javascript: void(0);">Все аксессуары</a><a class="menu__link" href="javascript: void(0);">Кожаные чехлы</a><a class="menu__link" href="javascript: void(0);">Нейлоновые чехлы</a><a class="menu__link" href="javascript: void(0);">Дополнения / Запчасти</a><a class="menu__link" href="javascript: void(0);">Черные браслеты</a><a class="menu__link" href="javascript: void(0);">Для серфинга</a></div>
+        </div>
+        <div class="menu__close">
+          <buttom class="menu__close-button" id="hmc">Закрыть меню</buttom>
+        </div>
+      </div>
+      <div class="menu__avatarhidden">
+        <dis></dis>
+      </div>
+    </header>
+    <div class="ordercall-overlay">
+      <div class="ordercall-form-container">
+        <div class="ordercall-container-button-close">
+          <button class="ordercall-button-close" id="ordercall-button-close"></button>
+        </div>
+        <form class="form-overcall" id="form-ordercall" name="form-ordercall">
+          <div class="ordercall-wrapper-flex">
+            <div class="ordercall-container-title">Заказать звонок</div>
+            <div class="ordercall-container-inputname">
+              <input class="form-ordercall__inputname" type="text" name="ordercall-name" placeholder="Имя">
+            </div>
+            <div class="ordercall-container-inputphone">
+              <input class="form-ordercall__inputphone" type="text" name="ordercall-phone" placeholder="Телефон">
+            </div>
+            <div class="ordercall-container-checkboxed">
+              <input class="checkbox" id="checkbox" type="checkbox" checked>
+              <label class="ordercall-accept-label" for="checkbox">Согласен(на) обработку персональных данных</label>
+            </div>
+            <div class="ordercall-container-submit">
+              <input class="form-odercall__submit" type="submit" value="Заказать звонок">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="mydetails__header-links-wrapper">
+      <div class="container">
+        <div class="mydetails__header-links-container"><a class="mydetails__header-links-link" href="javascript: void(0);">Главная</a><span class="mydetails__header-links-unablespan">&nbsp;| </span><a class="mydetails__header-links-link" href="javascript: void(0);">Личный кабинет</a><span class="mydetails__header-links-unablespan">&nbsp;| Мои данные</span></div>
+      </div>
+    </div>
+    <div class="mydetails__bigtitle-wrapper">
+      <div class="container">
+        <div class="mydetails__bigtitle-text">	Мои данные</div>
+      </div>
+    </div>
+    <div class="mydetails__big-wrapper">
+      <div class="container">
+        <div class="mydetails__wrapper-flex">
+          <aside class="aside__menu-wrapper">
+            <div class="aside__menu-container-type"><a class="aside__menu-link" href="javascript: void(0);">Главная</a><a class="aside__menu-link" href="javascript: void(0);">Моя корзина</a><a class="aside__menu-link" href="javascript: void(0);">Мои доставки</a><a class="aside__menu-link" href="javascript: void(0);">Избранное</a><a class="aside__menu-link aside__menu-link-borderbottom" href="javascript: void(0);">Сравнение</a>
+              <p class="aside__menu-link-opened">Мои данные</p><a class="aside__menu-link" href="javascript: void(0);">История заказов</a><a class="aside__menu-link" href="javascript: void(0);">Бонусные баллы</a><a class="aside__menu-link" href="javascript: void(0);">Выход</a>
+            </div>
+          </aside>
+          <main class="mydetails__main-wrapper">
+            <div class="mydetails__main-toptext">
+              в этом разделе вы можете отредактировать
+              свои контактные данные или изменить пароль для входа:
+            </div>
+            <form class="mydetails__form" action="">
+              <div class="mydetails__form-wrapper-flex">
+                <div class="mydetails__inputemail-wrapper"><span class="mydetails__inputemail-text">Ваш E-mail</span>
+                  <input class="mydetails__inputemail-input" type="text">
+                </div>
+                <div class="mydetails__inputfirstname-wrapper"><span class="mydetails__inputfirstname-text">Имя</span>
+                  <input class="mydetails__inputfirstname-input" type="text">
+                </div>
+                <div class="mydetails__inputlastname-wrapper"><span class="mydetails__inputlastname-text">Фамилия</span>
+                  <input class="mydetails__inputlastname-input" type="text">
+                </div>
+                <div class="mydetails__inputbirthday-wrapper"><span class="mydetails__inputbirthday-text">Дата рождения</span>
+                  <input class="mydetails__inputbirthday-input" type="text">
+                </div>
+                <div class="mydetails__inputgender-wrapper"><span class="mydetails__inputgender-text">Пол</span>
+                  <div class="mydetails__radiogroup-wrapper-flex">
+                    <div class="mydetails__radiogroup-wrapper-male">
+                      <input type="radio" name="group1" id="r1" value="1">
+                      <label for="r1">&nbsp;Мужской&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    </div>
+                    <div class="mydetails__radiogroup-wrapper-female">
+                      <input type="radio" name="group2" id="r2" value="2">
+                      <label for="r2">&nbsp;Женский</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="mydetails__inputphone-wrapper"><span class="mydetails__inputphone-text">Телефон</span>
+                  <input class="mydetails__inputphone-input" type="text">
+                </div>
+              </div>
+              <div class="mydetails__deliveryaddress-text">Адрес доставки:</div>
+              <div class="mydetails__deliveryaddress-inputs-wrapper-flex">
+                <div class="mydetails__deliveryaddress-inputstreet-wrapper">
+                  <input class="mydetails__deliveryaddress-inputstreet" type="text" placeholder="Улица">
+                </div>
+                <div class="mydetails__deliveryaddress-inputhouse-wrapper">
+                  <input class="mydetails__deliveryaddress-inputhouse" type="text" placeholder="Дом">
+                </div>
+                <div class="mydetails__deliveryaddress-inputblock-wrapper">
+                  <input class="mydetails__deliveryaddress-inputblock" type="text" placeholder="Корпус">
+                </div>
+                <div class="mydetails__deliveryaddress-inputapartment-wrapper">
+                  <input class="mydetails__deliveryaddress-inputapartment" type="text" placeholder="Квартира">
+                </div>
+                <div class="mydetails__deliveryaddress-buttondelete-wrapper">
+                  <input class="mydetails__deliveryaddress-buttondelete" type="button" value="Удалить">
+                </div>
+              </div>
+              <div class="mydetails__deliveryaddress-button-add-wrapper">
+                <button class="mydetails__deliveryaddress-button-add">Добавить еще 1 адрес доставки</button>
+              </div>
+              <div class="mydetails__deliveryaddress-emaildispatch-wrapper">
+                <div class="mydetails__deliveryaddress-emaildispatch-title-wrapper">E-mail рассылки:</div>
+                <div class="mydetails__deliveryaddress-emaildispatch-checkboxlabel-wrapper">
+                  <input type="checkbox" name="checkbox-dispatch" id="checkbox-dispatch" value="true" checked>
+                  <label for="checkbox-dispatch">&nbsp;Полезная информация, новинки и скидки для своих!</label>
+                </div>
+                <div class="mydetails__deliveryaddress-emaildispatch-button-wrapper">
+                  <button class="mydetails__deliveryaddress-emaildispatch-button">Сохранить</button>
+                </div>
+              </div>
+              <div class="mydetails__deliveryaddress-emailchange-wrapper">
+                <div class="mydetails__deliveryaddress-emailchange-title-wrapper">Изменить E-mail:</div>
+                <div class="mydetails__deliveryaddress-emailchange-subtitle-wrapper">Введите новый E-mail:</div>
+                <div class="mydetails__deliveryaddress-emailchange-inputtext-wrapper-flex">
+                  <div class="mydetails__deliveryaddress-emailchange-input-wrapper">
+                    <input type="text" placeholder="">
+                  </div>
+                  <div class="mydetails__deliveryaddress-emailchange-text-wrapper">
+                    На указанный вами электронный адрес будет выслано письмо со ссылкой,
+                    перейдите по ней для подтверждения адреса электронной почты
+                  </div>
+                </div>
+                <div class="mydetails__deliveryaddress-emailchange-buttonsend-wrapper">
+                  <button class="mydetails__deliveryaddress-emailchange-buttonsend">Выслать подтверждение</button>
+                </div>
+              </div>
+              <div class="mydetails__passwordchange-wrapper">
+                <div class="mydetails__passwordchange-title-wrapper">Изменить пароль:</div>
+                <div class="mydetails__passwordchange-wrapper-flex">
+                  <div class="mydetails__passwordchange-inputtextnewpassword">Новый пароль
+                    <input class="mydetails__passwordchange-input" type="text">
+                  </div>
+                  <div class="mydetails__passwordchange-confirmnewpassword">Подтвердите новый пароль
+                    <input class="mydetails__confirmpassword-input" type="text">
+                  </div>
+                </div>
+                <div class="mydetails__passwordchange-button-wrapper">
+                  <input class="mydetails__passwordchange-button" type="button" value="Изменить пароль">
+                </div>
+              </div>
+            </form>
+          </main>
+        </div>
+      </div>
+    </div>
+    <div class="helpful">
+      <div class="container">
+        <div class="helpful__container-flex">
+          <div class="helpful__container-imagetext">
+            <div class="helpful__container-image"><img class="helpful__image-envelope" src="images/icon/svg/envelope.svg" alt="envelope"></div>
+            <div class="helpful__container-text">
+              <p class="helpful__text">Только полезная информация, новинки и скидки для своих!</p>
+            </div>
+          </div>
+          <div class="helpful__container-inputbutton">
+            <div class="helpful__container-input">
+              <input class="helpful__input-email" type="text" placeholder="Введите Ваш E-mail">
+            </div>
+            <div class="helpful__container-button">
+              <button class="helpful__button-join">Вступить в клуб</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper-grid">
+          <div class="footer__container-logo"></div>
+          <div class="footer__container-phone"><img class="footer__phone-image" src="images/icon/svg/phone-call.svg" alt="phone"><span class="footer__phone-number">8 800 123-45-67</span>
+            <p class="footer__phone-text">Бесплатно по России</p>
+          </div>
+          <div class="footer__container-socials"><img class="footer__socials-image footer__socials-image-vkontakte" src="images/icon/png/vkontakte.png" alt="vkontakte"><img class="footer__socials-image footer__socials-image-facebook" src="images/icon/png/facebook.png" alt="facebook"><img class="footer__socials-image footer__socials-image-instagram" src="images/icon/png/instagram.png" alt="instagram"><img class="footer__socials-image footer__socials-image-youtubew" src="images/icon/png/youtube.png" alt="youtube"></div>
+          <div class="footer__container-title-catalog">Каталог товаров</div>
+          <div class="footer__container-title-info">Информация</div>
+          <div class="footer__container-title-buyer">Покупателю</div>
+          <div class="footer__container-title-acceptforpay">Принимаем к оплате</div>
+          <div class="footer__container-catalog"><a class="footer__catalog-link" href="javascript: void(0);">Мультититулы</a><a class="footer__catalog-link" href="javascript: void(0);">Браслеты</a><a class="footer__catalog-link" href="javascript: void(0);">Часы</a><a class="footer__catalog-link" href="javascript: void(0);">Ножи</a><a class="footer__catalog-link" href="javascript: void(0);">Аксессуары</a></div>
+          <div class="footer__container-info"><a class="footer__catalog-link" href="javascript: void(0);">О компании</a><a class="footer__catalog-link" href="javascript: void(0);">О бренде</a><a class="footer__catalog-link" href="javascript: void(0);">Бонусная программа</a><a class="footer__catalog-link" href="javascript: void(0);">Наш блог</a><a class="footer__catalog-link" href="javascript: void(0);">Пользовательское соглашение</a><a class="footer__catalog-link" href="javascript: void(0);">Политика конфиденциальности</a></div>
+          <div class="footer__container-buyer"><a class="footer__catalog-link" href="javascript: void(0);">Условия доставки</a><a class="footer__catalog-link" href="javascript: void(0);">Условия оплаты</a><a class="footer__catalog-link" href="javascript: void(0);">Обмен и возврат</a><a class="footer__catalog-link" href="javascript: void(0);">Гарантия 25 лет</a><a class="footer__catalog-link" href="javascript: void(0);">Как сделать заказ</a><a class="footer__catalog-link" href="javascript: void(0);">Как отследить заказ</a></div>
+          <div class="footer__container-acceptforpay"><img class="footer__image-acceptforpay" src="images/icon/png/acceptforpay.png" alt="visa mastercard МИР"></div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright-wrapper">
+      <div class="container">
+        <div class="copyright-container-grid">
+          <div class="copyright__text">Copyright 2013-2018 © ileatherman.ru - официальный дилер Leatherman в России</div>
+          <div class="copyright__studio"> <a class="copyright__link" href="javascript: void(0);">СОЗДАНИЕ САЙТА ВЕБ СТУДИЯ WAYTOSTART</a></div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/jquery331dev.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

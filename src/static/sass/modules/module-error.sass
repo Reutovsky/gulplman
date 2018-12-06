@@ -1,0 +1,93 @@
+.error-wrapper
+  padding-top: 80px
+  padding-bottom: 145px
+
+@media (max-width: 740px)
+  .error-wrapper
+    padding-top: 30px
+    padding-bottom: 30px
+
+.error__image-container
+  width: 285px
+  height: 128px
+  background-image: url(../images/logo404.jpg)
+  background-repeat: no-repeat
+  background-position: center center
+
+@media (max-width: 1240px)
+  .error__image-container
+    width: 200px
+    height: 100px
+    background-image: url(../images/logo404.jpg)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 200px 80px
+
+.error-container-flex
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-start
+  align-items: center
+
+@media (max-width: 740px)
+  .error-container-flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: stretch
+
+.error__notfound
+  padding-left: 65px
+  > p:first-child
+    padding-top: 0
+    margin-top: 0
+
+@media (max-width: 1240px)
+  .error__notfound
+    padding-left: 30px
+@media (max-width: 740px)
+  .error__notfound
+    padding-left: 0px
+
+.error__title
+  font-weight: bold
+  font-size: 16px
+
+@media (max-width: 1240px)
+  .error__title
+    font-size: 15px
+
+.error__text
+  font-weight: 400
+  font-size: 14px
+  margin-top: 30px
+
+@media (max-width: 1240px)
+  .error__text
+    font-size: 13px
+
+.error__link-button
+  width: 180px
+  height: 50px
+  border: #f7bb03 1px solid
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  outline: none
+  font-size: 14px
+  font-weight: 500
+  text-decoration: none
+  &:hover
+    background-color: #f7bb03
+    color: #fff
+
+@media (max-width: 1240px)
+  .error__link-button
+    width: 150px
+    height: 40px
+    font-size: 13px
+
+.error__link
+  text-decoration: none
+  margin-top: 30px
+  display: block

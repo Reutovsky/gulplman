@@ -1,0 +1,231 @@
+.signin__header-links-wrapper
+  display: block
+  padding-top: 10px
+
+@media (max-width: 1240px)
+  .signin__header-links-wrapper
+    display: block
+
+@media (max-width: 740px)
+  .signin__header-links-wrapper
+    display: none
+
+.signin__header-links-link
+  font-size: 14px
+  font-weight: 400 
+  text-decoration: none
+  color: #000
+
+.signin__header-links-link
+  &:hover
+      text-decoration: underline
+
+.signin__header-links-unablespan
+  font-size: 14px
+  font-weight: 300
+  color: #a1a1a1
+
+.signin__bigtitle-wrapper
+  margin-top: 100px
+
+@media (max-width: 1240px)
+  .signin__bigtitle-wrapper
+    margin-top: 50px
+
+.signin__bigtitle-text
+  font-size: 30px
+  font-weight: 900
+  text-transform: uppercase
+
+.signin__enterreg-wrapper
+  margin-bottom: 150px
+
+@media (max-width: 1240px)
+  .signin__enterreg-wrapper
+    margin-bottom: 50px
+
+.signin__enterreg-wrapper-flex
+  margin-top: 60px
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  align-items: flex-start
+  align-content: flex-start
+
+@media (max-width: 1240px)
+  .signin__enterreg-wrapper-flex
+    margin-top: 30px
+
+.signin__enter-wrapper, .signin__reg-wrapper
+  width: 505px
+  box-sizing: border-box
+
+@media (max-width: 1240px)
+  .signin__enter-wrapper, .signin__reg-wrapper
+    width: 100%
+  .signin__reg-wrapper
+    margin-top: 80px
+
+.signin__enter-title, .signin__reg-title
+  padding-left: 20px
+  font-weight: 500
+  font-size: 18px
+  position: relative
+  &:before
+    content: ""
+    position: absolute
+    width: 3px
+    height: 25px
+    background: #f7bb03
+    left: 0
+
+.signin__enter-undersmall, .signin__reg-undersmall
+  padding-top: 50px
+  padding-left: 20px
+  font-weight: 400
+  font-size: 13px
+  text-transform: uppercase
+
+@media (max-width: 1240px)
+  .signin__enter-undersmall, .signin__reg-undersmall
+    padding-top: 30px
+
+@media (max-width: 740px)
+  .signin__enter-undersmall, .signin__reg-undersmall
+    line-height: 20px
+
+
+.signin__enter-email, .signin__enter-password, .signin__reg-email, .signin__reg-name, .signin__reg-surname
+  padding-left: 35px
+  font-weight: 400
+  font-size: 14px
+  position: relative
+  &:before
+    content: " "
+    display: inline-block
+    background-image: url(../images/icon/svg/star.svg)
+    background-size: 8px 8px
+    transform: translateX(-15px)
+    height: 8px
+    width: 8px
+    position: absolute
+
+.signin__reg-name
+  padding-top: 25px
+  display: block
+
+.signin__enter-inputemail, .signin__enter-inputpassword, .signin__reg-inputname, .signin__reg-inputsurname, .signin__reg-inputemail
+  line-height: 30px
+  width: 295px
+  display: block
+  outline: none
+  color: #000
+  padding-left: 15px
+  margin-left: 20px
+  margin-top: 10px
+
+@media (max-width: 1240px)
+  .signin__enter-inputemail, .signin__enter-inputpassword, .signin__reg-inputname, .signin__reg-inputsurname, .signin__reg-inputemail
+    width: 260px
+
+.signin__enter-email
+  display: block
+  padding-top: 25px
+
+.signin__enter-password, .signin__reg-surname, .signin__reg-email
+  padding-top: 10px
+  display: block
+
+.signin__remember, .signin__helpful
+  line-height: 50px
+  width: 505px
+  border-top: #e1e2e8 1px solid
+  border-bottom: #e1e2e8 1px solid
+  margin-top: 25px
+
+@media (max-width: 1240px)
+  .signin__remember, .signin__helpful
+    width: 100%
+
+.signin__enter-checkbox-remember, .signin__reg-checkbox-helpful
+  margin-left: 20px
+
+.signin__enter-labelforcheckbox, .signin__reg-labelforcheckbox
+  font-size: 13px
+  font-weight: 400
+  padding-left: 10px
+
+.signin__enter-submitforget-wrapper
+  width: 505px
+  height: 90px
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+  justify-content: flex-start
+  border-bottom: #e1e2e8 1px solid
+
+@media (max-width: 1240px)
+  .signin__enter-submitforget-wrapper
+    width: 100%
+
+.signin__enter-button-submit
+  border: #f7bb03 1px solid
+  margin-left: 20px
+  line-height: 40px
+  width: 135px
+  cursor: pointer
+  outline: none
+
+.signin__enter-forget-link
+  color: #a1a1a1
+  font-weight: 400
+  font-size: 14px
+  padding-left: 45px
+  &:hover
+    color: #f7bb03
+
+.signin__enter-socials-text
+  padding-left: 20px
+  font-weight: 400
+  font-size: 14px
+
+.signin__enter-form > a
+  padding-left: 15px
+
+.signin__reg-errortext
+  display: block
+  color: #ff0000
+  font-weight: 400
+  font-size: 13px
+  padding: 15px 0 15px 15px
+  visibility: hidden
+
+.signin__reg-submitandtext
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+  justify-content: flex-start
+  margin-top: 25px
+
+.signin__reg-submitbutton
+  width: 165px
+  line-height: 48px
+  color: #000
+  cursor: pointer
+  outline: none
+  border: none
+  background: #f7bb03
+  margin-left: 20px
+  font-size: 14px
+  font-weight: 700
+  display: block
+
+.signin__reg-submittext
+  font-size: 12px
+  font-weight: 300
+  padding-left: 20px
+  width: 300px
+
+@media (max-width: 1240px)
+  .signin__reg-submittext
+    width: 500px
